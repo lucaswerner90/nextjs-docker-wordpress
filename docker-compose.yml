@@ -29,7 +29,7 @@ services:
     image: wordpress:latest
     restart: always
     volumes:
-      - ./backend/wp-content:/var/www/html/wp-content 
+      - ./backend/wordpress:/var/www/html/
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: p4ssw0rd!

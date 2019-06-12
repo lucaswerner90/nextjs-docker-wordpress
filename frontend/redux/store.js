@@ -4,6 +4,12 @@ import rootReducer from './reducers';
 
 const initialState = {
     siteInfo: {
+        name: '',
+        description: '',
+        logo: '',
+        menus: {
+            header: []
+        },
     }
 };
 const middleware = [thunk];

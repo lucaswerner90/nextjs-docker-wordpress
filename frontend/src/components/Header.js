@@ -13,13 +13,13 @@ export class Header extends Component {
         }
         this.props.getSiteMenus();
     }
-    showMenuItems = (items) => {
+    showMenuItems = (items = []) => {
         return items.map(({ url = '', title = '' }) => {
             return (
                 <Typography variant="body1" align="left" key={url}>
                     <Link href={url}>
                         <a>
-                            {title}
+                            {title}Y
                         </a>
                     </Link>
                 </Typography>
@@ -27,16 +27,17 @@ export class Header extends Component {
         });
     }
     render() {
+        const menuItems = this.props.menu || [];
         return (
             <Grid container justify="center" alignItems="center">
                 <Grid item xs={12} sm={12} md={2}>
                     <Avatar alt="Remy Sharp" src={this.props.logo} />
                 </Grid>
                 <Grid item xs={12} sm={12} md={10}>
-                    {this.showMenuItems(this.props.menu)}
+                    {menuItems.length > 0 && this.showMenuItems(menuItems)}
                 </Grid>
             </Grid>
-        )
+        );
     }
 }
 

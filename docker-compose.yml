@@ -26,13 +26,17 @@ services:
   wordpress:
     depends_on:
       - phpmyadmin
-    image: wordpress:latest
+    image: wordpress
     restart: always
     volumes:
-      - ./backend/wordpress:/var/www/html/
+      - ./backend/wordpress/wp-content:/var/www/html/wp-content
+      - ./backend/wordpress/.htaccess:/var/www/html/.htaccess
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: p4ssw0rd!
+      WORDPRESS_CONFIG_EXTRA:
+        define('JWT_AUTH_SECRET_KEY', 'secret');
+        define('JWT_AUTH_CORS_ENABLE', true);
     ports:
       - 8000:80 # Expose http and https
       - 8001:443

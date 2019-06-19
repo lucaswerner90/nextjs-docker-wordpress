@@ -1,1 +1,0 @@
-export const PAGE_TITLE = 'Some page title here'

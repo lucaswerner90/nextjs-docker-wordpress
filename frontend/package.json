@@ -10,6 +10,7 @@
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "latest",
+    "next-redux-wrapper": "^3.0.0-alpha.3",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
@@ -17,8 +18,31 @@
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   },
+  "devDependencies": {
+    "@types/enzyme": "^3.9.3",
+    "@types/jasmine": "^3.3.13",
+    "@types/jest": "latest",
+    "@types/mocha": "^5.2.7",
+    "@types/next": "^8.0.1",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
+    "@zeit/next-typescript": "^1.1.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "latest",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "jasmine-core": "^3.4.0",
+    "jest": "latest",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.8.4",
+    "redux-mock-store": "^1.5.3",
+    "sinon": "^7.3.2",
+    "typescript": "^3.3.3333"
+  },
   "scripts": {
-    "dev": "node server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "dev": "next",
     "build": "next build",
     "start": "next start"
   }

@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import { About } from '../../pages/about';
 import Layout from '../../src/components/Layout';
 
-describe('Render index page correctly', () => {
+describe('Render about page correctly', () => {
     let _component;
     beforeEach(() => {
         _component = shallow(<About />);

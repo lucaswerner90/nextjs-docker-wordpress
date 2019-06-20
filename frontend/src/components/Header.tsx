@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import { Typography, Avatar, Grid } from '@material-ui/core';
 import Link from 'next/link';
 
-import { getSiteLogo, getSiteMenus } from '../redux/actions/siteInfoActions';
-
 export class Header extends Component<any> {
 
     showMenuItems = (items = []) => {
@@ -13,7 +11,7 @@ export class Header extends Component<any> {
                 <Typography variant="body1" align="left" key={url}>
                     <Link href={url}>
                         <a>
-                            {title}Y
+                            {title}
                         </a>
                     </Link>
                 </Typography>
@@ -25,7 +23,7 @@ export class Header extends Component<any> {
         return (
             <Grid container justify="center" alignItems="center">
                 <Grid item xs={12} sm={12} md={2}>
-                    <Avatar alt="Remy Sharp" src={this.props.logo} />
+                    <Avatar alt="Logo" src={this.props.logo} />
                 </Grid>
                 <Grid item xs={12} sm={12} md={10}>
                     {menuItems.length > 0 && this.showMenuItems(menuItems)}
@@ -40,4 +38,4 @@ const mapReduxStateToComponentProps = (state) => ({
     menu: state.siteInfo.menus.header
 });
 
-export default connect(mapReduxStateToComponentProps, { getSiteLogo, getSiteMenus })(Header)
+export default connect(mapReduxStateToComponentProps)(Header);

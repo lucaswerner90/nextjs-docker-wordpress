@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Layout from '../src/components/Layout';
@@ -27,12 +26,15 @@ export const Index = ({ basicInfo = { name: '', description: '' } }) => {
 
 
 Index.getInitialProps = async ({ store }) => {
-  const [{ payload: basicInfo }] = await Promise.all([
+  const [siteInfo] = await Promise.all([
     store.dispatch(getSiteInfo()),
     store.dispatch(getSiteLogo()),
     store.dispatch(getSiteMenus())
   ]);
-  return { basicInfo };
+  if (siteInfo && siteInfo.payload) {
+    return { basicInfo: siteInfo };
+  }
+  return {};
 }
 
 const mapReduxStateToComponentProps = (state) => ({

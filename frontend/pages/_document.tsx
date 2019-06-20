@@ -5,7 +5,7 @@ import flush from 'styled-jsx/server';
 import theme from '../src/theme';
 
 class MyDocument extends Document {
-  
+
   render() {
     return (
       <html lang="en">

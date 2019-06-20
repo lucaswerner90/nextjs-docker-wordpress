@@ -1,5 +1,6 @@
 import React from 'react';
 import App, { Container } from 'next/app';
+import Router from "next/router";
 import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -8,6 +9,10 @@ import theme from '../src/theme';
 import { Provider } from 'react-redux';
 import { makeStore } from '../src/redux/store';
 import withRedux from "next-redux-wrapper";
+
+import { hotjar } from 'react-hotjar';
+import withGA from "next-ga";
+
 
 class MyApp extends App<any> {
   componentDidMount() {
@@ -38,4 +43,14 @@ class MyApp extends App<any> {
   }
 }
 
-export default withRedux(makeStore)(MyApp);
+if (process.env.HOTJAR_KEY) {
+  hotjar.initialize(process.env.HOTJAR_KEY, 6);
+}
+
+let app = withRedux(makeStore)(MyApp);
+
+if (process.env.GA_KEY) {
+  app = withGA(process.env.GA_KEY, Router)(app);
+}
+
+export default app;

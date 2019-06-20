@@ -1,2 +1,7 @@
 node_modules
 yarn.lock
+backend/db_data/ib_logfile0
+backend/db_data/ib_logfile1
+backend/db_data/ibdata1
+backend/db_data/ibtmp1
+backend/db_data/sys

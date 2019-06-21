@@ -5,7 +5,7 @@ import getConfig from 'next/config';
 const { publicRuntimeConfig } = getConfig();
 const { API } = publicRuntimeConfig;
 
-import { API_POSTS_URL, API_GET_SITE_INFO, API_GET_MEDIA, API_GET_MENUS } from '../../config/urls';
+import { API_GET_SITE_INFO, API_GET_MEDIA, API_GET_MENUS } from '../../config/urls';
 
 export const getSiteInfo = () => async dispatch => {
     try {
@@ -55,22 +55,6 @@ export const getSiteMenus = () => async dispatch => {
         dispatch({
             payload,
             type: UPDATE_SITE_MENUS,
-        });
-    } catch (error) {
-    }
-}
-export const getPosts = () => async dispatch => {
-    try {
-        const [postsResponse] = await Promise.all([
-            fetch(`${API}/${API_POSTS_URL}`)
-        ]);
-        const [posts] = await Promise.all([
-            postsResponse.json()
-        ]);
-        const payload = { ...posts };
-        dispatch({
-            payload,
-            type: UPDATE_SITE_INFO,
         });
     } catch (error) {
     }

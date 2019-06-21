@@ -1,3 +1,5 @@
 export const UPDATE_SITE_INFO = 'UPDATE_SITE_INFO';
 export const UPDATE_SITE_LOGO = 'UPDATE_SITE_LOGO';
 export const UPDATE_SITE_MENUS = 'UPDATE_SITE_MENUS';
+
+export const GET_POSTS = 'GET_POSTS';

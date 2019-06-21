@@ -10,19 +10,13 @@ export const initialState = {
         menus: {
             header: []
         },
-    }
+    },
+    posts: []
 };
 
 const enhancers = compose(
     applyMiddleware(thunk)
 );
-// const store = createStore(
-//     rootReducer,
-//     initialState,
-//     compose(
-//         applyMiddleware(...middleware)
-//     )
-// );
 
 // export default store;
 export const makeStore = (state = initialState) => {

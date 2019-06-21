@@ -1,38 +1,76 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Layout from '../src/components/Layout';
 import { connect } from 'react-redux';
 import { getSiteInfo, getSiteLogo, getSiteMenus } from '../src/redux/actions/siteInfoActions';
+import { getPosts } from '../src/redux/actions/postActions';
+import Link from 'next/link';
+import { Grid } from '@material-ui/core';
 
 
 
+const simplePostRender = (post) => {
+  const { id = '', title = { rendered: '' }, date = new Date(), slug = '' } = post;
+  return (
+    <Grid item xs={12} sm={6} md={4} key={id}>
+      <Link prefetch href={`post/${id}`} as={`post/${slug}`}>
+        <Typography variant="button" style={{ cursor: 'pointer' }} gutterBottom>
+          {title.rendered}
+        </Typography>
+      </Link>
+      <Typography variant="body2" gutterBottom>
+        {new Date(date).toLocaleString()}
+      </Typography>
+    </Grid>
+  );
+}
 
-export const Index = ({ basicInfo = { name: '', description: '' } }) => {
+const renderPosts = (posts = []) => {
+  return posts.map(post => simplePostRender(post));
+}
+
+export const Index = ({ basicInfo = { name: '', description: '' }, posts = [] }) => {
   const { name = '', description = '' } = basicInfo;
   return (
     <Layout>
-      <Container maxWidth="sm">
-        <Typography variant="h4" component="h1" gutterBottom>
-          {`Welcome to ${name}`}
-        </Typography>
-        <Typography variant="body2" gutterBottom>
-          {description}
-        </Typography>
-      </Container>
+      <Grid container justify="center">
+        <Grid item xs={12}>
+          <Typography variant="h4" component="h1" gutterBottom>
+            {name}
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="body2" gutterBottom>
+            {description}
+          </Typography>
+        </Grid>
+
+        {posts.length > 0 &&
+          <Grid container >
+            <Grid item xs={12}>
+              <Typography variant="body1" gutterBottom>
+                Posts
+            </Typography>
+            </Grid>
+            {renderPosts(posts)}
+          </Grid>
+        }
+
+      </Grid>
     </Layout>
   );
 }
 
 
 Index.getInitialProps = async ({ store }) => {
-  const [siteInfo] = await Promise.all([
+  const [siteInfo, posts] = await Promise.all([
     store.dispatch(getSiteInfo()),
+    store.dispatch(getPosts()),
     store.dispatch(getSiteLogo()),
-    store.dispatch(getSiteMenus())
+    store.dispatch(getSiteMenus()),
   ]);
   if (siteInfo && siteInfo.payload) {
-    return { basicInfo: siteInfo };
+    return { basicInfo: siteInfo.payload, posts: Object.values(posts.payload) };
   }
   return {};
 }

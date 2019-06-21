@@ -5,3 +5,4 @@ backend/db_data/ib_logfile1
 backend/db_data/ibdata1
 backend/db_data/ibtmp1
 backend/db_data/sys
+backend/db_data/**/*.ibd

@@ -7,7 +7,7 @@
 	- [Installation](#installation)
 	- [URLs](#urls)
 - [Configuration](#configuration)
-	- [Plugins](#plugins)
+	- [NextJS Plugins](#nextjs-plugins)
 		- [Google Analytics](#google-analytics-integration)
 		- [Hotjar](#hotjar-integration)
 - [Running the tests](#running-the-tests)
@@ -51,12 +51,23 @@ This will bring you a full operating system that contains:
 *  **MySQL** database 
 * **phpMyAdmin** service
 
+**NOTE:** _During the first time, it's possible that you can't access WordPress inmediately as the SQL database needs to be created and you can see `MySQL Connection Error: (2002) Connection refused` in your terminal, but just wait for the starting script to finished and you shouldn't see it anymore._
+
 2. Build the client and run the **NextJS server**
 
 ```
 cd frontend
 yarn run dev
 ```
+
+3. Go to `http://localhost:8080/wp-admin` and setup your WordPress
+
+	- Input your language, user and email.
+	- Go to **Settings > Permalinks** and select **Post name** , otherwise the REST API doesn't work.
+	- Go to **Plugins**, select all the plugins and click select **Activate** action.
+
+![WordPress installation](https://media.giphy.com/media/H8L5qihR6yODQ6B4au/giphy.gif)
+
 ### URLs
 
 Once your configuration is up and running you can access to the different services:
@@ -66,7 +77,7 @@ Once your configuration is up and running you can access to the different servic
 
 ## Configuration
 
-### Plugins
+### NextJS Plugins
 #### Google Analytics Integration
 In order to be able to use Google Analytics in your webpage, you can do it by adding your GA code to `frontend/next.config.js`:
 
@@ -75,7 +86,7 @@ In order to be able to use Google Analytics in your webpage, you can do it by ad
 // ...
 module.exports = withTypescript({
 	env: {
-	GA_KEY:  "UA-xxxxxxxxx-1",
+		GA_KEY:  "UA-xxxxxxxxx-1",
 	}
 });
 ```
@@ -87,7 +98,7 @@ If you want to use [Hotjar](https://www.hotjar.com/) in your application, you ca
 // ...
 module.exports = withTypescript({
 	env: {
-	HOTJAR_KEY:  "123131131", 
+		HOTJAR_KEY:  "123131131", 
 	}
 });
 ```

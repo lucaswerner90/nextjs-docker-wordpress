@@ -6,11 +6,14 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
-
-RewriteCond %{HTTP:Authorization} ^(.*)
-RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
-
-SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
-
 </IfModule>
+
+
+php_value upload_max_filesize 2048M
+php_value post_max_size 2048M
+php_value memory_limit 2048M
+php_value max_execution_time 300
+php_value max_input_time 300
+
+
 # END WordPress

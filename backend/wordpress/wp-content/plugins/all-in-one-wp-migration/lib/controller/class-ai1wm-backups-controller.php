@@ -93,11 +93,24 @@ class Ai1wm_Backups_Controller {
 	public static function add_label( $params = array() ) {
 		ai1wm_setup_environment();
 
-		$backups_labels = get_option( AI1WM_BACKUPS_LABELS, array() );
-
 		if ( empty( $params ) ) {
 			$params = stripslashes_deep( $_POST );
 		}
+
+		// Set secret key
+		$secret_key = null;
+		if ( isset( $params['secret_key'] ) ) {
+			$secret_key = trim( $params['secret_key'] );
+		}
+
+		try {
+			// Ensure that unauthorized people cannot access add_label action
+			ai1wm_verify_secret_key( $secret_key );
+		} catch ( Ai1wm_Not_Valid_Secret_Key_Exception $e ) {
+			exit;
+		}
+
+		$backups_labels = get_option( AI1WM_BACKUPS_LABELS, array() );
 
 		if ( empty( $params['backup_label'] ) ) {
 			unset( $backups_labels[ trim( $params['backup_name'] ) ] );
@@ -105,7 +118,7 @@ class Ai1wm_Backups_Controller {
 			echo json_encode(
 				array(
 					'success' => update_option( AI1WM_BACKUPS_LABELS, $backups_labels ),
-					'label'   => $params['backup_label'],
+					'label'   => esc_html( $params['backup_label'] ),
 				)
 			);
 			exit;
@@ -117,7 +130,39 @@ class Ai1wm_Backups_Controller {
 					AI1WM_BACKUPS_LABELS,
 					array_merge( $backups_labels, array( trim( $params['backup_name'] ) => trim( $params['backup_label'] ) ) )
 				),
-				'label'   => trim( $params['backup_label'] ),
+				'label'   => esc_html( $params['backup_label'] ),
+			)
+		);
+		exit;
+	}
+
+	public static function backup_list( $params = array() ) {
+		ai1wm_setup_environment();
+
+		if ( empty( $params ) ) {
+			$params = stripslashes_deep( $_GET );
+		}
+
+		// Set secret key
+		$secret_key = null;
+		if ( isset( $params['secret_key'] ) ) {
+			$secret_key = trim( $params['secret_key'] );
+		}
+
+		try {
+			// Ensure that unauthorized people cannot access backup_list action
+			ai1wm_verify_secret_key( $secret_key );
+		} catch ( Ai1wm_Not_Valid_Secret_Key_Exception $e ) {
+			exit;
+		}
+
+		$model = new Ai1wm_Backups;
+
+		Ai1wm_Template::render(
+			'backups/backups-list',
+			array(
+				'backups'        => $model->get_files(),
+				'backups_labels' => get_option( AI1WM_BACKUPS_LABELS, array() ),
 			)
 		);
 		exit;

@@ -2,8 +2,8 @@
 Contributors: ClaudioLaBarbera
 Tags: api, json, json-rest-api, menu-routes, menus, REST, wp-api, wp-rest-api, v2
 Requires at least: 4.4
-Tested up to: 5.1
-Stable tag: 0.6.1
+Tested up to: 5.2.2
+Stable tag: 0.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,10 @@ Of course! This is the GitHub Repository https://github.com/thebatclaudio/wp-res
 Nothing to show. This plugin has no settings or frontend, it just extends WP API with new routes.
 
 == Changelog ==
+
+0.7.1 - Bug fix: menu items were returned as an object instead of array
+
+0.7 - New way to check menu item's relatives, now it works with infinite child levels + various bug fixes
 
 0.6.1 - Bug fix
 

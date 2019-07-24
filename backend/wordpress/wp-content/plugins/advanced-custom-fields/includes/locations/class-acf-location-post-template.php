@@ -81,36 +81,53 @@ class acf_location_post_template extends acf_location {
 	
 	function rule_match( $result, $rule, $screen ) {
 		
-		// Check if this rule is relevant to the current screen.
-		// Find $post_id in the process.
-		if( isset($screen['post_type']) ) {
-			$post_type = $screen['post_type'];
-		} elseif( isset($screen['post_id']) ) {
-			$post_type = get_post_type( $screen['post_id'] );
-		} else {
-			return false;
-		}
-		
-		// Check if this post type has templates.
-		$post_templates = acf_get_post_templates();
-		if( !isset($post_templates[ $post_type ]) ) {
-			return false;
-		}
-		
-		// get page template allowing for screen or database value.
-		$page_template = acf_maybe_get( $screen, 'page_template' );
+		// vars
+		$templates = array();
 		$post_id = acf_maybe_get( $screen, 'post_id' );
-		if( $page_template === null ) {
+		$page_template = acf_maybe_get( $screen, 'page_template' );
+		$post_type = $this->get_post_type( $screen  );
+		
+		
+		// bail early if no post_type found (not a post)
+		if( !$post_type ) return false;
+		
+		
+		// get templates (WP 4.7)
+		if( acf_version_compare('wp', '>=', '4.7') ) {
+			
+			$templates = acf_get_post_templates();
+			
+		}
+		
+		
+		// 'page' is always a valid pt even if no templates exist in the theme
+		// allows scenario where page_template = 'default' and no templates exist
+		if( !isset($templates['page']) ) {
+			
+			$templates['page'] = array();
+			
+		}
+		
+		
+		// bail early if this post type does not allow for templates
+		if( !isset($templates[ $post_type ]) ) return false;
+		
+		
+		// get page template
+		if( !$page_template ) {
+		
 			$page_template = get_post_meta( $post_id, '_wp_page_template', true );
+			
 		}
 		
-		// Treat empty value as default template.
-		if( $page_template === '' ) {
-			$page_template = 'default';
-		}
 		
-		// Compare.
+		// new post - no page template
+		if( !$page_template ) $page_template = "default";
+		
+		
+		// match
 		return $this->compare( $page_template, $rule );
+		
 	}
 	
 	
@@ -129,17 +146,24 @@ class acf_location_post_template extends acf_location {
 	
 	function rule_values( $choices, $rule ) {
 		
-		// Default choices.
+		// vars
 		$choices = array(
 			'default' => apply_filters( 'default_page_template_title',  __('Default Template', 'acf') )
 		);
 		
-		// Merge in all post templates.
-		$post_templates = acf_get_post_templates();
-		$choices = array_merge($choices, $post_templates);
-				
-		// Return choices.
+		
+		// get templates (WP 4.7)
+		if( acf_version_compare('wp', '>=', '4.7') ) {
+			
+			$templates = acf_get_post_templates();
+			$choices = array_merge($choices, $templates);
+			
+		}
+		
+		
+		// return choices
 		return $choices;
+		
 	}
 	
 }

@@ -213,7 +213,7 @@ class acf_admin_field_group {
 		
 		
 		// set global var
-		$field_group = acf_get_field_group( $post->ID );
+		$field_group = acf_get_field_group( $post );
 		
 		
 		// metaboxes
@@ -557,7 +557,7 @@ class acf_admin_field_group {
 		
 		// get fields
 		$view = array(
-			'fields'	=> acf_get_fields( $field_group ),
+			'fields'	=> acf_get_fields_by_id( $field_group['ID'] ),
 			'parent'	=> 0
 		);
 		

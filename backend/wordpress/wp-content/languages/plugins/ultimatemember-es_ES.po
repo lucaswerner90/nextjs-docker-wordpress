@@ -1,0 +1,4000 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Member 1.1.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-29 22:35+0200\n"
+"PO-Revision-Date: 2015-05-18 22:30-0300\n"
+"Last-Translator: Mariano Talbot <mariano@talbot.com.ar>\n"
+"Language-Team: Ultimate Member <umplugin@gmail.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: admin/core/lib/ReduxFramework\n"
+
+#: addons/multi_language.php:107
+msgid ""
+"To make a form appear in a specific language, enter the locale then select a "
+"form to assign to. Clear the locale and save changes to delete an assigned "
+"translation."
+msgstr ""
+"Para hacer que un formulario aparezca en un idioma específico, entrar en la "
+"configuración regional luego selecciona un formulario para asignar a. Claro el "
+"locale y guardar los cambios para eliminar una traducción asignada."
+
+#: addons/multi_language.php:110
+msgid "Register Forms"
+msgstr "Formularios de registro"
+
+#: addons/multi_language.php:111
+msgid "Login Forms"
+msgstr "Formularios de acceso"
+
+#: addons/multi_language.php:112
+msgid "Profile Forms"
+msgstr "Formularios de perfil"
+
+#: addons/multi_language.php:152
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: admin/core/um-admin-access.php:100
+msgid "Access Control"
+msgstr "Control de accesos"
+
+#: admin/core/um-admin-actions-ajax.php:11
+#: admin/core/um-admin-actions-fields.php:11
+#: admin/core/um-admin-actions-modal.php:98
+msgid "Please login as administrator"
+msgstr "Por favor, inicie sesión como administrador"
+
+#: admin/core/um-admin-actions-modal.php:23
+msgid "Manage conditional fields support"
+msgstr "Administrar campos condicionales"
+
+#: admin/core/um-admin-actions-modal.php:25
+msgid "Add conditional fields support"
+msgstr "Añadir campos condicionales"
+
+#: admin/core/um-admin-actions-modal.php:30
+msgid "Reset all rules"
+msgstr "Restablecer todas las reglas"
+
+#: admin/core/um-admin-actions-modal.php:123
+msgid "Search Icons..."
+msgstr "Buscar Iconos..."
+
+#: admin/core/um-admin-actions-modal.php:144
+msgid "Setup New Field"
+msgstr "Configurar nuevo campo"
+
+#: admin/core/um-admin-actions-modal.php:160
+msgid "Predefined Fields"
+msgstr "Campos predefinidos"
+
+#: admin/core/um-admin-actions-modal.php:172
+msgid "None"
+msgstr "Ninguno"
+
+#: admin/core/um-admin-actions-modal.php:176
+msgid "Custom Fields"
+msgstr "Campos personalizados"
+
+#: admin/core/um-admin-actions-modal.php:187
+msgid "You did not create any custom fields"
+msgstr "No has creado ningún campo personalizado"
+
+#: admin/core/um-admin-actions-modal.php:221
+#: admin/core/um-admin-actions-modal.php:291
+msgid "This field type is not setup correcty."
+msgstr "Este tipo de campo no se ha configurado correctamente."
+
+#: admin/core/um-admin-actions.php:104
+#, php-format
+msgid "Duplicate of %s"
+msgstr "Duplicar de %s"
+
+#: admin/core/um-admin-builder.php:92 admin/core/um-admin-builder.php:158
+#: admin/core/um-admin-dragdrop.php:140
+msgid "Add Row"
+msgstr "Añadir Fila"
+
+#: admin/core/um-admin-builder.php:93 admin/core/um-admin-builder.php:159
+#: admin/core/um-admin-dragdrop.php:141
+msgid "Edit Row"
+msgstr "Editar Fila"
+
+#: admin/core/um-admin-builder.php:162 admin/core/um-admin-dragdrop.php:143
+#: admin/core/um-admin-dragdrop.php:157 admin/core/um-admin-dragdrop.php:182
+msgid "Delete Row"
+msgstr "Borrar FIla"
+
+#: admin/core/um-admin-columns.php:25
+msgid "Duplicate"
+msgstr "Duplicar"
+
+#: admin/core/um-admin-columns.php:47 admin/core/um-admin-columns.php:65
+msgid "ID"
+msgstr "ID"
+
+#: admin/core/um-admin-columns.php:48 admin/core/um-admin-columns.php:66
+msgid "Title"
+msgstr "Título"
+
+#: admin/core/um-admin-columns.php:49
+msgid "Type"
+msgstr "Tipo"
+
+#: admin/core/um-admin-columns.php:50 admin/core/um-admin-columns.php:67
+#: admin/core/um-admin-metabox.php:256 admin/core/um-admin-metabox.php:296
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: admin/core/um-admin-columns.php:51 admin/core/um-admin-columns.php:68
+msgid "Date"
+msgstr "Fecha"
+
+#: admin/core/um-admin-dashboard.php:74 admin/core/um-admin-redux.php:55
+msgid "Ultimate Member"
+msgstr "Ultimate Member"
+
+#: admin/core/um-admin-dashboard.php:77
+msgid "Dashboard"
+msgstr "Panel de control"
+
+#: admin/core/um-admin-dashboard.php:80
+#, php-format
+msgid "%s | Ultimate Member"
+msgstr "%s | Ultimate Member"
+
+#: admin/core/um-admin-dashboard.php:90 core/um-taxonomies.php:18
+msgid "Forms"
+msgstr "Formularios"
+
+#: admin/core/um-admin-dashboard.php:91 core/um-taxonomies.php:36
+msgid "User Roles"
+msgstr "Roles de usuario"
+
+#: admin/core/um-admin-dashboard.php:94 core/um-taxonomies.php:56
+msgid "Member Directories"
+msgstr "Directorios de Miembros"
+
+#: admin/core/um-admin-dashboard.php:105 core/um-filters-addons.php:26
+msgid "Extensions"
+msgstr "Extensiones:"
+
+#: admin/core/um-admin-dashboard.php:120
+msgid "Users Overview"
+msgstr "Resumen de usuarios"
+
+#: admin/core/um-admin-dashboard.php:122
+msgid "Latest from our blog"
+msgstr "Lo último de nuestro blog"
+
+#: admin/core/um-admin-dashboard.php:124
+msgid "Purge Temp Files"
+msgstr "Eliminar archivos temporales"
+
+#: admin/core/um-admin-dashboard.php:127 admin/core/um-admin-dashboard.php:129
+#: admin/core/um-admin-dashboard.php:131
+msgid "Language"
+msgstr "Idioma"
+
+#: admin/core/um-admin-functions.php:28 admin/core/um-admin-functions.php:31
+msgid "Form updated."
+msgstr "Formulario actualizado."
+
+#: admin/core/um-admin-functions.php:29 admin/core/um-admin-functions.php:47
+msgid "Custom field updated."
+msgstr "Campo personalizado actualizado."
+
+#: admin/core/um-admin-functions.php:30 admin/core/um-admin-functions.php:48
+msgid "Custom field deleted."
+msgstr "Campo personalizado eliminado."
+
+#: admin/core/um-admin-functions.php:32
+msgid "Form restored to revision."
+msgstr "Formulario restaurado a revisión."
+
+#: admin/core/um-admin-functions.php:33
+msgid "Form created."
+msgstr "Formulario creado."
+
+#: admin/core/um-admin-functions.php:34
+msgid "Form saved."
+msgstr "Formulario guardado."
+
+#: admin/core/um-admin-functions.php:35
+msgid "Form submitted."
+msgstr "Formulario enviado."
+
+#: admin/core/um-admin-functions.php:36
+msgid "Form scheduled."
+msgstr "Formulario programado."
+
+#: admin/core/um-admin-functions.php:37
+msgid "Form draft updated."
+msgstr "Borrador de formulario actualizado."
+
+#: admin/core/um-admin-functions.php:46 admin/core/um-admin-functions.php:49
+msgid "Role updated."
+msgstr "Rol actualizado."
+
+#: admin/core/um-admin-functions.php:50
+msgid "Role restored to revision."
+msgstr "Rol restaurado a revisión"
+
+#: admin/core/um-admin-functions.php:51
+msgid "Role created."
+msgstr "Rol creado"
+
+#: admin/core/um-admin-functions.php:52
+msgid "Role saved."
+msgstr "Rol guardado"
+
+#: admin/core/um-admin-functions.php:53
+msgid "Role submitted."
+msgstr "Rol enviado."
+
+#: admin/core/um-admin-functions.php:54
+msgid "Role scheduled."
+msgstr "Rol programado"
+
+#: admin/core/um-admin-functions.php:55
+msgid "Role draft updated."
+msgstr "Borrador de Rol actualizado"
+
+#: admin/core/um-admin-metabox.php:130 core/um-builtin.php:882
+#: core/um-builtin.php:897 um-config.php:77 um-config.php:87 um-config.php:97
+#: um-config.php:258 um-config.php:268 um-config.php:278 um-config.php:288
+#: um-config.php:320 um-config.php:351 um-config.php:1143
+msgid "Yes"
+msgstr "Sí"
+
+#: admin/core/um-admin-metabox.php:131 admin/core/um-admin-roles.php:48
+#: core/um-actions-account.php:20 core/um-builtin.php:881 core/um-builtin.php:882
+#: core/um-builtin.php:896 core/um-builtin.php:897 um-config.php:78
+#: um-config.php:88 um-config.php:98 um-config.php:259 um-config.php:269
+#: um-config.php:279 um-config.php:289 um-config.php:321 um-config.php:352
+#: um-config.php:1144
+msgid "No"
+msgstr "No"
+
+#: admin/core/um-admin-metabox.php:251
+msgid "General Options"
+msgstr "Opciones Generales"
+
+#: admin/core/um-admin-metabox.php:252
+msgid "Profile Card"
+msgstr "Tarjeta de perfil"
+
+#: admin/core/um-admin-metabox.php:253
+msgid "Search Options"
+msgstr "Opciones de búsqueda"
+
+#: admin/core/um-admin-metabox.php:254
+msgid "Results &amp; Pagination"
+msgstr "Resultados &amp; paginación"
+
+#: admin/core/um-admin-metabox.php:258
+msgid "Styling: General"
+msgstr "Estilos: General"
+
+#: admin/core/um-admin-metabox.php:260
+msgid "Styling: Profile Card"
+msgstr "Estilos: Tarjeta de perfil"
+
+#: admin/core/um-admin-metabox.php:269
+msgid "Administrative Permissions"
+msgstr "Permisos administrativos"
+
+#: admin/core/um-admin-metabox.php:271
+msgid "General Permissions"
+msgstr "Permisos Generales"
+
+#: admin/core/um-admin-metabox.php:273
+msgid "Profile Access"
+msgstr "Perfil de acceso"
+
+#: admin/core/um-admin-metabox.php:275
+msgid "Homepage Options"
+msgstr "Opciones Página de inicio"
+
+#: admin/core/um-admin-metabox.php:277
+msgid "Registration Options"
+msgstr "Opciones de registro"
+
+#: admin/core/um-admin-metabox.php:279
+msgid "Login Options"
+msgstr "Opciones de inicio de sesión"
+
+#: admin/core/um-admin-metabox.php:281
+msgid "Logout Options"
+msgstr "Opciones de cierre de sesión"
+
+#: admin/core/um-admin-metabox.php:283
+msgid "Delete Options"
+msgstr "Opciones de eliminación"
+
+#: admin/core/um-admin-metabox.php:294
+msgid "Select Form Type"
+msgstr "Seleccionar el tipo de formulario"
+
+#: admin/core/um-admin-metabox.php:295
+msgid "Form Builder"
+msgstr "Generador de formularios"
+
+#: admin/core/um-admin-metabox.php:298 admin/core/um-admin-metabox.php:303
+#: admin/core/um-admin-metabox.php:309
+msgid "Customize this form"
+msgstr "Personalizar este formulario"
+
+#: admin/core/um-admin-metabox.php:299 admin/core/um-admin-metabox.php:305
+#: admin/core/um-admin-metabox.php:311 admin/templates/form/login_css.php:4
+#: admin/templates/form/profile_css.php:4 admin/templates/form/register_css.php:4
+#: um-config.php:1757 um-config.php:1763
+msgid "Custom CSS"
+msgstr "Personalizar CSS"
+
+#: admin/core/um-admin-metabox.php:304
+msgid "User Meta"
+msgstr "Meta usuario"
+
+#: admin/core/um-admin-metabox.php:310
+msgid "Options"
+msgstr "Opciones"
+
+#: admin/core/um-admin-metabox.php:472
+msgid ""
+"Select where this field should appear. This option should only be changed on "
+"the profile form and allows you to show a field in one mode only (edit or view) "
+"or in both modes."
+msgstr ""
+"Seleccione el lugar donde debería aparecer este campo. Esta opción sólo se debe "
+"cambiar en el formulario de perfil y le permite mostrar un campo en un modo "
+"único (editar o ver) o en ambos modos."
+
+#: admin/core/um-admin-metabox.php:506
+msgid "If"
+msgstr "Si"
+
+#: admin/core/um-admin-metabox.php:575
+msgid "Value"
+msgstr "Valor"
+
+#: admin/core/um-admin-metabox.php:693
+msgid "Optional text to include with the divider"
+msgstr "Texto opcional para incluir con el divisor"
+
+#: admin/core/um-admin-metabox.php:884
+msgid ""
+"Turn on to force users to create a strong password (A combination of one "
+"lowercase letter, one uppercase letter, and one number). If turned on this "
+"option is only applied to register forms and not to login forms."
+msgstr ""
+"Active para obligar a los usuarios a crear una contraseña segura (combinación "
+"de letras minúsculas, letras mayúsculas y números). Si se activa esta opción "
+"sólo se aplica a los formularios de registro, no a los formularios de acceso."
+
+#: admin/core/um-admin-metabox.php:894
+msgid ""
+"Turn on to add a confirm password field. If turned on the confirm password "
+"field will only show on register forms and not on login forms."
+msgstr ""
+"Active para agregar un campo de confirmación de contraseña. Si se activa el "
+"campo de confirmación de contraseña sólo se mostrará en los formularios de "
+"registro y no en los formularios de acceso."
+
+#: admin/core/um-admin-notices.php:48
+#, php-format
+msgid ""
+"Registration is disabled. Please go to the <a href=\"%s\">general settings</a> "
+"page in the WordPress admin and select anyone can register. <a href=\"%s\">Hide "
+"this notice</a>"
+msgstr ""
+"El registro de usuarios está deshabilitado. Por favor, vaya a la página <a href="
+"\"%s\">configuración general</a> en la administración de WordPress y seleccione "
+"\"cualquiera puede registrarse\". <a href=\"%s\">Ocultar este aviso</a>"
+
+#: admin/core/um-admin-notices.php:60
+#, php-format
+msgid ""
+"Exif is not enabled on your server. Mobile photo uploads will not be rotated "
+"correctly until you enable the exif extension. <a href=\"%s\">Hide this notice</"
+"a>"
+msgstr ""
+"Exif no está activado en tu servidor. La subida de fotos móviles no se girarán "
+"correctamente hasta que habilite la extensión EXIF. <a href=\"%s\">Ocultar este "
+"aviso</a>"
+
+#: admin/core/um-admin-notices.php:86
+#, php-format
+msgid ""
+"Your site language is <strong>%1$s</strong>. Good news! Ultimate Member is "
+"already available in <strong>%2$s language</strong>. <a href=\"%3$s\">Download "
+"the translation</a> files and start using the plugin in your language now."
+msgstr ""
+"El idioma de su sitio es <strong>%1$s</strong>. ¡Buenas noticias!, Ultimate "
+"Member ya está disponible en el idioma <strong>%2$s</strong>. <a href=\"%3$s"
+"\">Descargue la traducción</a> de los archivos y empezar a utilizar el plugin "
+"en su idioma ahora."
+
+#: admin/core/um-admin-notices.php:97
+#, php-format
+msgid ""
+"Ultimate Member has not yet been translated to your langeuage: <strong>%1$s</"
+"strong>. If you have translated the plugin you need put these files "
+"<code>ultimatemember-%1$s.po and ultimatemember-%1$s.mo</code> in <strong>/wp-"
+"content/languages/plugins/</strong> for the plugin to be translated in your "
+"language. <a href=\"%2$s\">Hide this notice</a>"
+msgstr ""
+"Ultimate Member todavía no ha sido traducido a su idioma<strong>%1$s.</strong>. "
+"Si ha traducido el plugin necesita poner estos archivos <code>ultimatemember-"
+"%1$s.po y ultimatemember-%1$s.mo</code> en <strong>wp-content / plugins / "
+"languages ​​/ /</strong> para que el plugin sea traducido a su idioma. <a href="
+"\"%2$s\">Ocultar este aviso</a>"
+
+#: admin/core/um-admin-notices.php:129
+#, php-format
+msgid ""
+"Are you sure you want to delete the selected user(s)? The following users will "
+"be deleted: <p>%s</p> <strong>This cannot be undone!</strong>"
+msgstr ""
+"¿Seguro que quieres eliminar los usuarios seleccionados?, Los siguientes "
+"usuarios se eliminarán: (% s) <strong>Esto no se puede deshacer!</strong>"
+
+#: admin/core/um-admin-notices.php:130 core/um-actions-profile.php:201
+msgid "Remove"
+msgstr "Quitar"
+
+#: admin/core/um-admin-notices.php:130
+msgid "Undo"
+msgstr "Deshacer"
+
+#: admin/core/um-admin-notices.php:135
+msgid "Your translation files have been updated successfully."
+msgstr "Se han actualizado con éxito los archivos de traducción."
+
+#: admin/core/um-admin-notices.php:139
+msgid "Your temp uploads directory is now clean."
+msgstr "El directorio temp subidas está limpio."
+
+#: admin/core/um-admin-notices.php:143
+msgid "The form has been duplicated successfully."
+msgstr "El formulario se ha duplicado con éxito."
+
+#: admin/core/um-admin-notices.php:147
+msgid "User has been updated."
+msgstr "El usuario ha sido actualizado."
+
+#: admin/core/um-admin-notices.php:151
+msgid "Users have been updated."
+msgstr "Los usuarios se han actualizado."
+
+#: admin/core/um-admin-notices.php:155
+msgid "Super administrators cannot be modified."
+msgstr "Súper administradores no pueden ser modificados."
+
+#: admin/core/um-admin-notices.php:156
+msgid "Other users have been updated."
+msgstr "Otros usuarios han sido actualizados."
+
+#: admin/core/um-admin-redux.php:59 admin/core/um-admin-redux.php:60 index.php:51
+msgid "Settings"
+msgstr "Ajustes"
+
+#: admin/core/um-admin-roles.php:20
+msgid "Role Title"
+msgstr "Título del Rol"
+
+#: admin/core/um-admin-roles.php:21
+msgid "No. of Members"
+msgstr "Nº de miembros"
+
+#: admin/core/um-admin-roles.php:21
+msgid "The total number of members who have this role on your site"
+msgstr "El número total de miembros que tienen este rol en su sitio."
+
+#: admin/core/um-admin-roles.php:22
+msgid "Core / Built-in"
+msgstr "Núcleo / Incorporado"
+
+#: admin/core/um-admin-roles.php:22
+msgid "A core role is installed by default and may not be removed"
+msgstr "Un rol base se instala por defecto y no se puede quitar"
+
+#: admin/core/um-admin-roles.php:23
+msgid "WP-Admin Access"
+msgstr "Acceso WP-Admin"
+
+#: admin/core/um-admin-roles.php:23
+msgid "Let you know If users of this role can view the WordPress backend or not"
+msgstr ""
+"Permitirá saber si los usuarios de este rol pueden ver el backend de WordPress "
+"o no"
+
+#: admin/core/um-admin-roles.php:46
+msgid "This role can access the WordPress backend"
+msgstr "Este Rol puede acceder al backend de WordPress"
+
+#: admin/core/um-admin-roles.php:64
+msgid "Core"
+msgstr "Núcleo"
+
+#: admin/core/um-admin-users.php:38
+msgid "Edit"
+msgstr "Editar"
+
+#: admin/core/um-admin-users.php:39
+msgid "Edit in frontend"
+msgstr "Editar en frontend"
+
+#: admin/core/um-admin-users.php:42
+msgid "Info"
+msgstr "Info"
+
+#: admin/core/um-admin-users.php:129 admin/templates/dashboard/users.php:12
+msgid "Approved"
+msgstr "Aprobado"
+
+#: admin/core/um-admin-users.php:130
+msgid "Pending review"
+msgstr "Pendiente de revisión."
+
+#: admin/core/um-admin-users.php:131
+msgid "Waiting e-mail confirmation"
+msgstr "Esperando confirmación por e-mail"
+
+#: admin/core/um-admin-users.php:132 admin/templates/dashboard/users.php:40
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: admin/core/um-admin-users.php:133 admin/templates/dashboard/users.php:17
+msgid "Rejected"
+msgstr "Rechazado"
+
+#: admin/core/um-admin-users.php:163 admin/core/um-admin-users.php:199
+msgid "You do not have enough permissions to do that."
+msgstr "No tienes suficientes permisos para hacerlo."
+
+#: admin/core/um-admin-users.php:267 admin/core/um-admin-users.php:269
+msgid "Filter by"
+msgstr "Filtrar por"
+
+#: admin/core/um-admin-users.php:277
+msgid "Filter"
+msgstr "Filtro"
+
+#: admin/core/um-admin-users.php:283 admin/core/um-admin-users.php:285
+msgid "Take Action"
+msgstr "Actuar"
+
+#: admin/core/um-admin-users.php:289 core/um-fields.php:1279
+msgid "Apply"
+msgstr "Aplicar"
+
+#: admin/core/um-admin-users.php:295
+msgid "Community role&hellip;"
+msgstr "Rol de la Comunidad&hellip;"
+
+#: admin/core/um-admin-users.php:302
+msgid "Change"
+msgstr "Cambiar"
+
+#: admin/core/um-admin-users.php:317
+msgid "Community Role"
+msgstr "Rol Comunidad"
+
+#: admin/core/um-admin-users.php:317
+msgid "This is the membership role set by Ultimate Member plugin"
+msgstr "Este es el Rol de miembros establecido por el plugin Ultimate Member"
+
+#: admin/templates/access/settings.php:1
+msgid "Apply custom access settings?"
+msgstr "¿Aplicar configuración de acceso personalizada?"
+
+#: admin/templates/access/settings.php:1
+msgid "Switch to yes to override global access settings"
+msgstr "Cambie a sí para anular la configuración de acceso globales"
+
+#: admin/templates/access/settings.php:10
+msgid "Content Availability"
+msgstr "Contenido disponible"
+
+#: admin/templates/access/settings.php:10
+msgid "Who can access this content?"
+msgstr "¿Quién puede acceder a este contenido?"
+
+#: admin/templates/access/settings.php:16
+msgid "Content accessible to Everyone"
+msgstr "Contenido accesible para todos"
+
+#: admin/templates/access/settings.php:17
+msgid "Content accessible to Logged Out Users"
+msgstr "Contenido accesible a usuarios con sesión NO iniciada"
+
+#: admin/templates/access/settings.php:18
+msgid "Content accessible to Logged In Users"
+msgstr "Contenido accesible a los usuarios con sesión iniciada"
+
+#: admin/templates/access/settings.php:24 admin/templates/access/settings.php:50
+msgid "Redirect URL"
+msgstr "URL de redireccionamiento"
+
+#: admin/templates/access/settings.php:24 admin/templates/access/settings.php:50
+msgid ""
+"This is the URL that user is redirected to If he is not permitted to view this "
+"content"
+msgstr ""
+"Esta es la URL que se redirige al usuario si no se le permite para ver este "
+"contenido"
+
+#: admin/templates/access/settings.php:38
+msgid "Select the member roles that can see this content?"
+msgstr "¿Seleccionar los roles de los miembros que pueden ver este contenido?"
+
+#: admin/templates/access/settings.php:38
+msgid ""
+"If you do not select any role, all members will be able to view this content"
+msgstr "Si no selecciona ningún rol, todos los miembros podrán ver este contenido"
+
+#: admin/templates/dashboard/language-contrib.php:1
+#, php-format
+msgid ""
+"Ultimate Member is not yet available in your language: <strong>%1$s</strong>."
+msgstr ""
+"Ultimate Member aún no está disponible en su idioma: <strong>%1$s</strong>."
+
+#: admin/templates/dashboard/language-contrib.php:3
+msgid ""
+"If you want to contribute this translation to the plugin, please add it on our "
+"<a href=\"https://ultimatemember.com/forums/\">community forum</a>."
+msgstr ""
+"Si quieres contribuir con esta traducción del plugin, por favor entra en "
+"nuestro <a href=\"https://ultimatemember.com/forums/topic/spanish-language-es-"
+"es/\"><foro</a>."
+
+#: admin/templates/dashboard/language-download.php:1
+#, php-format
+msgid ""
+"Ultimate Member is available in your language: <strong>%1$s (%2$s)</strong>."
+msgstr ""
+"Ultimate Member está disponible en su idioma: <strong>%1$s (%2$s)</strong>.."
+
+#: admin/templates/dashboard/language-download.php:3
+msgid "Download Translation"
+msgstr "Descargar traducción"
+
+#: admin/templates/dashboard/language-update.php:1
+#, php-format
+msgid ""
+"You are currently using Ultimate Member in your language: <strong>%1$s (%2$s)</"
+"strong>."
+msgstr ""
+"Actualmente está utilizando Ultimate Member en su idioma: <strong>%1$s (%2$s)</"
+"strong>."
+
+#: admin/templates/dashboard/language-update.php:3
+msgid "Force Update Translation"
+msgstr "Forzar Actualización de Traducción"
+
+#: admin/templates/dashboard/users.php:7 um-config.php:13
+msgid "Users"
+msgstr "Usuarios"
+
+#: admin/templates/dashboard/users.php:30
+msgid "Pending Review"
+msgstr "Pendiente de revisión."
+
+#: admin/templates/dashboard/users.php:35
+msgid "Awaiting E-mail Confirmation"
+msgstr "Espera de confirmación  Email"
+
+#: admin/templates/directory/appearance.php:3
+#: admin/templates/form/login_customize.php:14
+#: admin/templates/form/profile_customize.php:26
+#: admin/templates/form/register_customize.php:26
+msgid "Template"
+msgstr "Plantilla"
+
+#: admin/templates/directory/general.php:19
+msgid "User Roles to Display"
+msgstr "Roles de usuario para mostrar"
+
+#: admin/templates/directory/general.php:32
+msgid "Only show members who have uploaded a profile photo"
+msgstr "Mostrar sólo los usuarios que han subido una foto de perfil"
+
+#: admin/templates/directory/general.php:41
+msgid "Only show members who have uploaded a cover photo"
+msgstr "Mostrar sólo los usuarios que han subido una foto de portada"
+
+#: admin/templates/directory/general.php:50
+msgid "Sort users by"
+msgstr "Ordena los usuarios por"
+
+#: admin/templates/directory/general.php:68
+msgid "Meta key"
+msgstr "Meta key"
+
+#: admin/templates/directory/pagination.php:6
+msgid "Number of profiles per page"
+msgstr "Número de perfiles por página"
+
+#: admin/templates/directory/pagination.php:6
+msgid "Number of profiles to appear on page for standard users"
+msgstr "Número de perfiles que aparecerán en la página para los usuarios estándar"
+
+#: admin/templates/directory/pagination.php:15
+msgid "Number of profiles per page (for Mobiles & Tablets)"
+msgstr "Número de perfiles por página (para Móviles y Tablets)"
+
+#: admin/templates/directory/pagination.php:15
+msgid "Number of profiles to appear on page for mobile users"
+msgstr "Número de perfiles que aparezca en la página para los usuarios móviles"
+
+#: admin/templates/directory/pagination.php:24
+msgid "Maximum number of profiles"
+msgstr "Número máximo de perfiles"
+
+#: admin/templates/directory/pagination.php:24
+msgid ""
+"Use this setting to control the maximum number of profiles to appear in this "
+"directory. Leave blank to disable this limit"
+msgstr ""
+"Utilice esta configuración para controlar el número máximo de perfiles que "
+"aparecerán en este directorio. Dejar en blanco para desactivar este límite"
+
+#: admin/templates/directory/profile.php:6
+msgid "Enable Profile Photo"
+msgstr "Habilitar Perfil Foto"
+
+#: admin/templates/directory/profile.php:15
+msgid "Enable Cover Photo"
+msgstr "Habilitar la foto de portada"
+
+#: admin/templates/directory/profile.php:24
+msgid "Show display name"
+msgstr "Visualización de nombre"
+
+#: admin/templates/directory/profile.php:33
+msgid "Show tagline below profile name"
+msgstr "Mostrar lema debajo del nombre de perfil"
+
+#: admin/templates/directory/profile.php:42
+msgid "Choose field(s) to display in tagline"
+msgstr "Elige campos que desea mostrar en el eslogan"
+
+#: admin/templates/directory/profile.php:90
+msgid "Show extra user information below tagline?"
+msgstr "¿Mostrar información de usuario adicional debajo del eslogan?"
+
+#: admin/templates/directory/profile.php:99
+msgid "Enable reveal section transition by default"
+msgstr "Habilitar revelar sección de transición por defecto"
+
+#: admin/templates/directory/profile.php:108
+msgid "Choose field(s) to display in reveal section"
+msgstr "Elige campo (s) que se mostrará en la sección revelar"
+
+#: admin/templates/directory/profile.php:156
+msgid "Show social connect icons"
+msgstr "Mostrar iconos sociales de conexión"
+
+#: admin/templates/directory/profile_card.php:3
+msgid "Profile card background"
+msgstr "Fondo Tarjeta del perfil"
+
+#: admin/templates/directory/profile_card.php:7
+msgid "Profile card text"
+msgstr "Texto Tarjeta del perfil"
+
+#: admin/templates/directory/profile_card.php:11
+msgid "Profile card border color"
+msgstr "Color de borde en la targeta del perfil"
+
+#: admin/templates/directory/profile_card.php:15
+msgid "Profile photo border color"
+msgstr "Color de borde en la foto del perfil"
+
+#: admin/templates/directory/profile_card.php:19
+msgid "Profile card border thickness"
+msgstr "Grosor del borde en la tarjeta del perfil"
+
+#: admin/templates/directory/search.php:6
+msgid "Enable Search feature"
+msgstr "Habilitar características de búsqueda"
+
+#: admin/templates/directory/search.php:15
+msgid "User Roles that can use search"
+msgstr "Roles de usuario que puede usar la búsqueda"
+
+#: admin/templates/directory/search.php:28
+msgid "Choose field(s) to enable in search"
+msgstr "Elige campos para permitir en la búsqueda"
+
+#: admin/templates/directory/search.php:80
+msgid "Results Text"
+msgstr "Resultados texto"
+
+#: admin/templates/directory/search.php:80
+msgid ""
+"Customize the search result text . e.g. Found 3,000 Members. Leave this blank "
+"to not show result text"
+msgstr ""
+"Personalizar el texto resultado de búsqueda. por ejemplo: Encontrados 3.000 "
+"miembros. Deje en blanco para no mostrar texto de resultado"
+
+#: admin/templates/directory/search.php:83 core/um-setup.php:49
+#: core/um-setup.php:162
+msgid "{total_users} Members"
+msgstr "{total_users} Miembros"
+
+#: admin/templates/directory/search.php:89
+msgid "Single Result Text"
+msgstr "Texto para resultado único"
+
+#: admin/templates/directory/search.php:89
+msgid "Same as above but in case of 1 user found only"
+msgstr "Igual que el anterior pero en caso de encontrar un sólo usuario"
+
+#: admin/templates/directory/search.php:92 core/um-setup.php:50
+#: core/um-setup.php:163
+msgid "{total_users} Member"
+msgstr "{total_users} Miembro"
+
+#: admin/templates/directory/search.php:98
+msgid "Custom text if no users were found"
+msgstr "Texto personalizado si no se encuentran usuarios"
+
+#: admin/templates/directory/search.php:101 core/um-setup.php:51
+msgid "We are sorry. We cannot find any users who match your search criteria."
+msgstr ""
+"Lo sentimos. No podemos encontrar usuarios que coincidan con sus criterios de "
+"búsqueda."
+
+#: admin/templates/form/builder.php:14
+msgid "Live Preview"
+msgstr "Previsualización"
+
+#: admin/templates/form/builder.php:28
+msgid "Add Master Row"
+msgstr "Añadir Fila principal"
+
+#: admin/templates/form/login_css.php:4 admin/templates/form/profile_css.php:4
+#: admin/templates/form/register_css.php:4
+msgid "Enter custom css that will be applied to this form only"
+msgstr "Introduzca css personalizado que se aplicará solamente a este formulario"
+
+#: admin/templates/form/login_customize.php:4
+#: admin/templates/form/profile_customize.php:4
+#: admin/templates/form/register_customize.php:4
+msgid "Use global settings?"
+msgstr "¿Usar configuración global?"
+
+#: admin/templates/form/login_customize.php:26
+#: admin/templates/form/profile_customize.php:38
+#: admin/templates/form/register_customize.php:38
+msgid "Max. Width (px)"
+msgstr "Max. Ancho (px)"
+
+#: admin/templates/form/login_customize.php:30
+#: admin/templates/form/profile_customize.php:46
+#: admin/templates/form/register_customize.php:42
+msgid "Alignment"
+msgstr "Alineación"
+
+#: admin/templates/form/login_customize.php:40
+#: admin/templates/form/profile_customize.php:56
+#: admin/templates/form/register_customize.php:52
+msgid "Field Icons"
+msgstr "Iconos de campo"
+
+#: admin/templates/form/login_customize.php:50
+#: admin/templates/form/profile_customize.php:66
+#: admin/templates/form/register_customize.php:62
+msgid "Primary Button Text"
+msgstr "Texto principal del botón"
+
+#: admin/templates/form/login_customize.php:54
+#: admin/templates/form/profile_customize.php:70
+#: admin/templates/form/register_customize.php:66
+msgid "Primary Button Color"
+msgstr "Color primario del botón"
+
+#: admin/templates/form/login_customize.php:58
+#: admin/templates/form/profile_customize.php:74
+#: admin/templates/form/register_customize.php:70
+msgid "Primary Button Hover Color"
+msgstr "Color del botón principal al pasar por encima"
+
+#: admin/templates/form/login_customize.php:62
+#: admin/templates/form/profile_customize.php:78
+#: admin/templates/form/register_customize.php:74
+msgid "Primary Button Text Color"
+msgstr "Color primario del texto del botón"
+
+#: admin/templates/form/login_customize.php:67
+#: admin/templates/form/profile_customize.php:83
+#: admin/templates/form/register_customize.php:79
+msgid "Show Secondary Button"
+msgstr "Mostrar botón secundario"
+
+#: admin/templates/form/login_customize.php:75
+#: admin/templates/form/profile_customize.php:91
+#: admin/templates/form/register_customize.php:87
+msgid "Secondary Button Text"
+msgstr "Texto del botón secundario"
+
+#: admin/templates/form/login_customize.php:79
+#: admin/templates/form/profile_customize.php:95
+#: admin/templates/form/register_customize.php:91
+msgid "Secondary Button Color"
+msgstr "Botón Secundario color"
+
+#: admin/templates/form/login_customize.php:83
+#: admin/templates/form/profile_customize.php:99
+#: admin/templates/form/register_customize.php:95
+msgid "Secondary Button Hover Color"
+msgstr "Color del botón secundario al pasar por encima"
+
+#: admin/templates/form/login_customize.php:87
+#: admin/templates/form/profile_customize.php:103
+#: admin/templates/form/register_customize.php:99
+msgid "Secondary Button Text Color"
+msgstr "Color secundario del texto del botón"
+
+#: admin/templates/form/login_customize.php:92
+msgid "Show Forgot Password Link?"
+msgstr "Mostrar Link ¿ha olvidado su contraseña?"
+
+#: admin/templates/form/login_customize.php:101
+msgid "Show \"Remember Me\"?"
+msgstr "Mostrar \"Recuerdame\"?"
+
+#: admin/templates/form/login_settings.php:3
+msgid "Redirection after Login"
+msgstr "Redirección después de inicio de sesión"
+
+#: admin/templates/form/login_settings.php:6
+msgid "Default"
+msgstr "Por defecto"
+
+#: admin/templates/form/login_settings.php:16 admin/templates/role/delete.php:18
+#: admin/templates/role/login.php:20 admin/templates/role/logout.php:18
+#: admin/templates/role/register.php:37 admin/templates/role/register.php:76
+#: admin/templates/role/register.php:124
+msgid "Set Custom Redirect URL"
+msgstr "Aplique una URL de redirección personalizada"
+
+#: admin/templates/form/mode.php:6
+msgid "<strong>Note:</strong> Form type cannot be changed for the default forms."
+msgstr ""
+"<strong>Nota:</strong> Tipo de formulario no se puede cambiar para los "
+"formularios predeterminados."
+
+#: admin/templates/form/mode.php:9 um-config.php:1542
+msgid "Registration Form"
+msgstr "Formulario de registro"
+
+#: admin/templates/form/mode.php:11
+msgid "Profile Form"
+msgstr "Formulario de Perfil"
+
+#: admin/templates/form/mode.php:13 um-config.php:1644
+msgid "Login Form"
+msgstr "Formulario de acceso"
+
+#: admin/templates/form/profile_customize.php:14
+msgid "Make this profile role-specific"
+msgstr "Marcar este perfil con un rol especifico"
+
+#: admin/templates/form/profile_customize.php:42
+msgid "Profile Area Max. Width (px)"
+msgstr "Perfil Area Max. Ancho (px)"
+
+#: admin/templates/form/profile_customize.php:107
+msgid "Base Background Color"
+msgstr "Color de fondo"
+
+#: admin/templates/form/profile_customize.php:111
+msgid "Enable Cover Photos"
+msgstr "Habilitar foto de portada"
+
+#: admin/templates/form/profile_customize.php:119
+msgid "Cover photo ratio"
+msgstr "Relación de Fotografía de la portada"
+
+#: admin/templates/form/profile_customize.php:129 um-config.php:1298
+msgid "Profile Photo Size"
+msgstr "Tamaño de la foto del perfil"
+
+#: admin/templates/form/profile_customize.php:133 um-config.php:1307
+msgid "Profile Photo Style"
+msgstr "Estilo de la foto del perfil"
+
+#: admin/templates/form/profile_customize.php:136 um-config.php:1311
+msgid "Circle"
+msgstr "Círculo"
+
+#: admin/templates/form/profile_customize.php:137 um-config.php:1312
+msgid "Rounded Corners"
+msgstr "Esquinas redondeadas"
+
+#: admin/templates/form/profile_customize.php:138 um-config.php:1313
+msgid "Square"
+msgstr "Cuadrado"
+
+#: admin/templates/form/profile_customize.php:143
+msgid "Header Background Color"
+msgstr "Color de fondo del Encabezado"
+
+#: admin/templates/form/profile_customize.php:147
+msgid "Header Meta Text Color"
+msgstr "Color del texto del Encabezado"
+
+#: admin/templates/form/profile_customize.php:151
+msgid "Header Link Color"
+msgstr "Color del enlace en cabecera"
+
+#: admin/templates/form/profile_customize.php:155
+msgid "Header Link Hover"
+msgstr "Sobre el Link de cabecera"
+
+#: admin/templates/form/profile_customize.php:159
+msgid "Header Icon Link Color"
+msgstr "Color del icono del link de cabecera"
+
+#: admin/templates/form/profile_customize.php:163
+msgid "Header Icon Link Hover"
+msgstr "Sobre el icono del link cd cabecera"
+
+#: admin/templates/form/profile_customize.php:168
+msgid "Show display name in profile header?"
+msgstr "¿ Que nombre se mostrará en el encabezado de perfil?"
+
+#: admin/templates/form/profile_customize.php:177
+msgid "Show social links in profile header?"
+msgstr "¿Mostrar vínculos sociales en cabecera del perfil?"
+
+#: admin/templates/form/profile_customize.php:186
+msgid "Show user description in profile header?"
+msgstr "¿Mostrar descripción del usuario en el encabezado de perfil?"
+
+#: admin/templates/form/profile_settings.php:4
+msgid "Field(s) to show in user meta"
+msgstr "Campos para mostrar en el meta usuario"
+
+#: admin/templates/form/register_customize.php:4
+msgid ""
+"Switch to no if you want to customize this form settings, styling &amp; "
+"appearance"
+msgstr ""
+"Cambie a no si desea personalizar la configuración de formulario, estilo y "
+"apariencia"
+
+#: admin/templates/form/register_customize.php:14
+msgid "Assign role to form"
+msgstr "Asignar Rol al formulario"
+
+#: admin/templates/form/register_customize.php:42 um-config.php:1198
+#: um-config.php:1568 um-config.php:1670
+msgid "The shortcode is centered by default unless you specify otherwise here"
+msgstr ""
+"El shortcode se centra de forma predeterminada a menos que se especifique otra "
+"cosa"
+
+#: admin/templates/form/register_customize.php:52
+msgid "Whether to show field icons and where to show them relative to the field"
+msgstr ""
+"Ya sea para mostrar los iconos de campo y donde mostrarlos en relación con el "
+"campo"
+
+#: admin/templates/form/register_customize.php:62
+#: admin/templates/form/register_customize.php:87
+msgid "Customize the button text"
+msgstr "Personalice el texto del botón"
+
+#: admin/templates/form/register_customize.php:66
+msgid "Override the default primary button color"
+msgstr "Anular el color del botón principal predeterminado"
+
+#: admin/templates/form/register_customize.php:70
+msgid "Override the default primary button hover color"
+msgstr "Anular el botón principal del color activable por defecto"
+
+#: admin/templates/form/register_customize.php:74
+msgid "Override the default primary button text color"
+msgstr "Anular el botón principal del color de texto predeterminado"
+
+#: admin/templates/form/register_customize.php:91
+msgid "Override the default secondary button color"
+msgstr "Botón Secundario color"
+
+#: admin/templates/form/register_customize.php:95
+msgid "Override the default secondary button hover color"
+msgstr "Anular el botón secundario del color activable por defecto"
+
+#: admin/templates/form/register_customize.php:99
+msgid "Override the default secondary button text color"
+msgstr "Anular el botón secundario del color de texto predeterminado"
+
+#: admin/templates/modal/dynamic_edit_field.php:6
+msgid "Edit Field"
+msgstr "Editar campo"
+
+#: admin/templates/modal/dynamic_edit_field.php:14
+#: admin/templates/modal/dynamic_edit_row.php:14
+msgid "Update"
+msgstr "Actualizar"
+
+#: admin/templates/modal/dynamic_edit_field.php:15
+#: admin/templates/modal/dynamic_edit_row.php:15
+#: admin/templates/modal/dynamic_new_divider.php:15
+#: admin/templates/modal/dynamic_new_field.php:15
+#: admin/templates/modal/dynamic_new_group.php:15 core/um-actions-profile.php:202
+#: core/um-actions-profile.php:316 core/um-actions-profile.php:326
+#: core/um-actions-profile.php:464 core/um-fields.php:1280
+#: core/um-fields.php:1365
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: admin/templates/modal/dynamic_edit_row.php:6
+msgid "Edit Row Settings"
+msgstr "Editar configuración de fila"
+
+#: admin/templates/modal/dynamic_form_preview.php:4
+msgid "Live Form Preview"
+msgstr "Previsualización en vivo del formulario"
+
+#: admin/templates/modal/dynamic_form_preview.php:12
+msgid "Continue editing"
+msgstr "Continuar con la edición"
+
+#: admin/templates/modal/dynamic_new_divider.php:6
+msgid "Add a New Divider"
+msgstr "Agregar un nuevo divisor"
+
+#: admin/templates/modal/dynamic_new_divider.php:14
+#: admin/templates/modal/dynamic_new_field.php:14
+#: admin/templates/modal/dynamic_new_group.php:14
+msgid "Add"
+msgstr "Agregar"
+
+#: admin/templates/modal/dynamic_new_field.php:6
+msgid "Add a New Field"
+msgstr "Agregar nuevo campo"
+
+#: admin/templates/modal/dynamic_new_group.php:6
+msgid "Add a New Field Group"
+msgstr "Nuevo grupo de campos"
+
+#: admin/templates/modal/dynamic_registration_preview.php:4
+msgid "Review Registration Details"
+msgstr "Detalles de la opinión de inscripción"
+
+#: admin/templates/modal/fields.php:4
+msgid "Fields Manager"
+msgstr "Administrador de campos"
+
+#: admin/templates/modal/fonticons.php:4
+#, php-format
+msgid "Choose from %s available icons"
+msgstr "Elija entre %s iconos disponibles"
+
+#: admin/templates/role/admin.php:7 admin/templates/role/admin.php:16
+msgid "Can access wp-admin?"
+msgstr "¿Puede acceder a wp-admin?"
+
+#: admin/templates/role/admin.php:7
+msgid ""
+"The core admin role must always have access to wp-admin / WordPress backend"
+msgstr ""
+"El rol de administrador principal siempre debe tener acceso a wp-admin / "
+"backend de WordPress"
+
+#: admin/templates/role/admin.php:11 admin/templates/role/admin.php:20
+msgid "Force hiding adminbar in frontend?"
+msgstr "¿Fuerza ocultar adminbar en frontend?"
+
+#: admin/templates/role/admin.php:11 admin/templates/role/admin.php:20
+msgid "Show/hide the adminbar on frontend"
+msgstr "Mostrar / ocultar la adminbar en frontend"
+
+#: admin/templates/role/admin.php:16
+msgid ""
+"Allow this role to access the admin dashboard. If turned on the WordPress "
+"toolbar will appear at top of the page."
+msgstr ""
+"Permitir que este rol pueda acceder al panel de control de administración. Si "
+"se activa la barra de herramientas de WordPress aparecerá en la parte superior "
+"de la página."
+
+#: admin/templates/role/admin.php:26
+msgid "Can edit other member accounts?"
+msgstr "¿Puede editar otras cuentas de usuario?"
+
+#: admin/templates/role/admin.php:26
+msgid "Allow this role to edit accounts of other members"
+msgstr "Permitir que este rol pueda editar cuentas de otros miembros"
+
+#: admin/templates/role/admin.php:31
+msgid "Can edit these user roles only"
+msgstr "Sólo puede editar estos roles de usuario"
+
+#: admin/templates/role/admin.php:31
+msgid ""
+"Which roles that role can edit, choose none to allow role to edit all member "
+"roles"
+msgstr ""
+"Cuáles roles pueden editar que rol, seleccionar ninguno para permitir rol "
+"editar todos los roles de los miembros"
+
+#: admin/templates/role/admin.php:44
+msgid "Can delete other member accounts?"
+msgstr "¿Puede eliminar otras cuentas de usuario?"
+
+#: admin/templates/role/admin.php:44
+msgid "Allow this role to edit the profile fields of certain roles only"
+msgstr ""
+"Permitir a este rol poder editar los campos de perfil de ciertos roles sólo"
+
+#: admin/templates/role/admin.php:49
+msgid "Can delete these user roles only"
+msgstr "Se puede eliminar solamente estos roles de usuario"
+
+#: admin/templates/role/admin.php:49
+msgid ""
+"Which roles that role can delete, choose none to allow role to delete all "
+"member roles"
+msgstr ""
+"Cuáles roles pueden borrar que rol, seleccionar ninguno para permitir borrar "
+"todos los roles de los miembros"
+
+#: admin/templates/role/delete.php:6
+msgid "Action to be taken after account is deleted"
+msgstr "Acción a ser tomada después de que se elimine la cuenta"
+
+#: admin/templates/role/delete.php:6
+msgid "Select what happens when a user with this role deletes their own account"
+msgstr ""
+"Seleccione lo que sucede cuando un usuario con este rol elimina su propia cuenta"
+
+#: admin/templates/role/delete.php:10 admin/templates/role/logout.php:10
+msgid "Go to Homepage"
+msgstr "Ir a la página de inicio"
+
+#: admin/templates/role/delete.php:11 admin/templates/role/logout.php:11
+msgid "Go to Custom URL"
+msgstr "Ir a una URL personalizada"
+
+#: admin/templates/role/delete.php:18
+msgid "Set a url to redirect this user role to after they delete account"
+msgstr ""
+"Establezca una url para redirigir este rol de usuario después borrar la cuenta"
+
+#: admin/templates/role/general.php:6
+msgid "Can edit their profile?"
+msgstr "¿Puede editar su perfil?"
+
+#: admin/templates/role/general.php:6
+msgid "Can this role edit his own profile?"
+msgstr "¿Puede esta rol editar su propio perfil?"
+
+#: admin/templates/role/general.php:11
+msgid "Can delete their account?"
+msgstr "¿Puede eliminar su cuenta?"
+
+#: admin/templates/role/general.php:11
+msgid ""
+"Allow this role to delete their account and end their membership on your site"
+msgstr ""
+"Permitir que este rol pueda eliminar su cuenta y poner fin a su membresía en su "
+"sitio"
+
+#: admin/templates/role/home.php:6
+msgid "Can view default homepage?"
+msgstr "¿Puede ver la página de inicio?"
+
+#: admin/templates/role/home.php:6
+msgid "Allow this user role to view your site's homepage"
+msgstr ""
+"Permitir que este rol de usuario pueda ver las páginas de inicio de su sitio"
+
+#: admin/templates/role/home.php:15
+msgid "Custom Homepage Redirect"
+msgstr "Redirección de página de inicio personalizada"
+
+#: admin/templates/role/home.php:15
+msgid ""
+"Set a url to redirect this user role to if they try to view your site's "
+"homepage "
+msgstr ""
+"Configurar una url para redireccionar este rol de usuario si intenta ver página "
+"principal de su sitio"
+
+#: admin/templates/role/login.php:6
+msgid "Action to be taken after login"
+msgstr "Medidas que deban adoptarse después de inicio de sesión"
+
+#: admin/templates/role/login.php:6
+msgid "Select what happens when a user with this role logins to your site"
+msgstr "Seleccione lo que sucede cuando un usuario con este rol accede a su sitio"
+
+#: admin/templates/role/login.php:10 admin/templates/role/register.php:29
+msgid "Redirect to profile"
+msgstr "Redirigir al perfil"
+
+#: admin/templates/role/login.php:11 admin/templates/role/register.php:30
+#: admin/templates/role/register.php:60 admin/templates/role/register.php:108
+msgid "Redirect to URL"
+msgstr "URL de redireccionamiento"
+
+#: admin/templates/role/login.php:12
+msgid "Refresh active page"
+msgstr "Actualiza la página activa"
+
+#: admin/templates/role/login.php:13
+msgid "Redirect to WordPress Admin"
+msgstr "Redirigir a WordPress admin"
+
+#: admin/templates/role/login.php:20
+msgid ""
+"Set a url to redirect this user role to after they login with their account"
+msgstr ""
+"Establezca una url para redirigir este rol de usuario después de que inicie "
+"sesión con su cuenta"
+
+#: admin/templates/role/logout.php:6
+msgid "Action to be taken after logout"
+msgstr "Acción que se realizarán después de cerrar la sesión"
+
+#: admin/templates/role/logout.php:6
+msgid "Select what happens when a user with this role logouts of your site"
+msgstr ""
+"Seleccione lo que sucede cuando un usuario con este rol cierra sesión en su "
+"sitio"
+
+#: admin/templates/role/logout.php:18
+msgid "Set a url to redirect this user role to after they logout from site"
+msgstr ""
+"Establecer una url para redireccionar este rol de usuario después de cerrar "
+"sesión en el sitio"
+
+#: admin/templates/role/profile.php:6
+msgid "Can view other member profiles?"
+msgstr "¿Puede ver los perfiles de otros miembros?"
+
+#: admin/templates/role/profile.php:6
+msgid "Can this role view all member profiles?"
+msgstr "¿Puede este rol ver todos los perfiles de miembros?"
+
+#: admin/templates/role/profile.php:11
+msgid "Can view these user roles only"
+msgstr "Puede ver estos roles de usuario sólo"
+
+#: admin/templates/role/profile.php:11
+msgid ""
+"Which roles that role can view, choose none to allow role to view all member "
+"roles"
+msgstr ""
+"Qué roles pueden ver que rol, seleccionar ninguno para permitir a este rol ver "
+"todos los roles de los miembros"
+
+#: admin/templates/role/profile.php:24
+msgid "Can make their profile private?"
+msgstr "¿Puede hacer su perfil privado?"
+
+#: admin/templates/role/profile.php:24
+msgid "Can this role make their profile private?"
+msgstr "¿Puede este rol hacer su perfil privado?"
+
+#: admin/templates/role/profile.php:29
+msgid "Can view/access private profiles?"
+msgstr "¿Puede ver/acceder a los perfiles privados?"
+
+#: admin/templates/role/profile.php:29
+msgid "Can this role view private profiles?"
+msgstr "¿Puede este  rol ver perfiles privados?"
+
+#: admin/templates/role/register.php:6
+msgid "Registration Status"
+msgstr "Estado del Registro"
+
+#: admin/templates/role/register.php:6
+msgid ""
+"Select the status you would like this user role to have after they register on "
+"your site"
+msgstr ""
+"Seleccione el estado que desea para este rol de usuario que tendrá después de "
+"que se registren en su sitio"
+
+#: admin/templates/role/register.php:13
+msgid "Auto Approve"
+msgstr "Auto aprobar"
+
+#: admin/templates/role/register.php:14
+msgid "Require Email Activation"
+msgstr "Requieren la activación por correo electrónico"
+
+#: admin/templates/role/register.php:15
+msgid "Require Admin Review"
+msgstr "Requieren una revisión de la administración"
+
+#: admin/templates/role/register.php:25 admin/templates/role/register.php:53
+#: admin/templates/role/register.php:101
+msgid "Action to be taken after registration"
+msgstr "Acción que se realizará después de Registrarse"
+
+#: admin/templates/role/register.php:25 admin/templates/role/register.php:53
+#: admin/templates/role/register.php:101
+msgid ""
+"Select what action is taken after a person registers on your site. Depending on "
+"the status you can redirect them to their profile, a custom url or show a "
+"custom message"
+msgstr ""
+"Seleccione la acción que se toma después de que una persona se registra en su "
+"sitio. Dependiendo del estado puede redirigirlos a su perfil, una url "
+"personalizada o mostrar un mensaje personalizado."
+
+#: admin/templates/role/register.php:59 admin/templates/role/register.php:107
+msgid "Show custom message"
+msgstr "Mostrar mensaje personalizado"
+
+#: admin/templates/role/register.php:67 admin/templates/role/register.php:115
+msgid "Personalize the custom message"
+msgstr "Personalice el mensaje"
+
+#: admin/templates/role/register.php:70
+msgid ""
+"Thank you for registering. Before you can login we need you to activate your "
+"account by clicking the activation link in the email we just sent you."
+msgstr ""
+"Gracias por registrarse. Antes de poder iniciar sesión necesitamos que activar "
+"su cuenta haciendo clic en el enlace de activación en el correo electrónico que "
+"acabamos de enviarle."
+
+#: admin/templates/role/register.php:85
+msgid "URL redirect after e-mail activation"
+msgstr "URL de redirección después de la activación de e-mail"
+
+#: admin/templates/role/register.php:85
+msgid ""
+"If you want users to go to a specific page other than login page after e-mail "
+"activation, enter the URL here."
+msgstr ""
+"Si desea enviar a los usuarios a una página específica que no sea la página de "
+"inicio de sesión después de la activación del correo electrónico, escriba la "
+"dirección URL aquí."
+
+#: admin/templates/role/register.php:118
+msgid ""
+"Thank you for applying for membership to our site. We will review your details "
+"and send you an email letting you know whether your application has been "
+"successful or not."
+msgstr ""
+"Gracias por su solicitud de adhesión a nuestro sitio. Vamos a revisar sus datos "
+"y le enviaremos un correo electrónico que le permita saber si su solicitud ha "
+"sido aprobada o no."
+
+#: core/lib/upload/um-file-upload.php:42 core/lib/upload/um-image-upload.php:43
+msgid "A theme or plugin compatibility issue"
+msgstr "Un problema de compatibilidad de tema o plugin"
+
+#: core/um-account.php:25 um-config.php:122
+msgid "Account"
+msgstr "Cuenta"
+
+#: core/um-account.php:28
+msgid "Change Password"
+msgstr "Cambiar contraseña"
+
+#: core/um-account.php:31
+msgid "Privacy"
+msgstr "Privacidad"
+
+#: core/um-account.php:34 um-config.php:725
+msgid "Notifications"
+msgstr "Notificaciones"
+
+#: core/um-account.php:37 core/um-actions-account.php:31
+#: core/um-actions-account.php:66 core/um-actions-account.php:124
+#: core/um-actions-account.php:172 core/um-builtin.php:888
+#: core/um-builtin.php:891
+msgid "Delete Account"
+msgstr "Eliminar cuenta"
+
+#: core/um-actions-account.php:69
+msgid "You must provide your first name"
+msgstr "Debe proporcionar su nombre de pila"
+
+#: core/um-actions-account.php:73
+msgid "You must provide your last name"
+msgstr "Debe proporcionar su apellido"
+
+#: core/um-actions-account.php:77
+msgid "You must provide your e-mail"
+msgstr "Debe proporcionar su dirección de e-mail"
+
+#: core/um-actions-account.php:81
+msgid "Please provide a valid e-mail"
+msgstr "Por favor ingrese un e-mail válida"
+
+#: core/um-actions-account.php:85
+msgid "Email already linked to another account"
+msgstr "Ya vinculada a otra cuenta de correo electrónico"
+
+#: core/um-actions-account.php:94 core/um-actions-account.php:129
+msgid "This is not your password"
+msgstr "Por favor, confirme su contraseña"
+
+#: core/um-actions-account.php:99
+msgid "Your new password does not match"
+msgstr "La nueva contraseña no coincide"
+
+#: core/um-actions-account.php:106 core/um-actions-password.php:123
+msgid "Your password must contain at least 8 characters"
+msgstr "La contraseña debe contener al menos 8 caracteres."
+
+#: core/um-actions-account.php:110 core/um-actions-password.php:127
+msgid "Your password must contain less than 30 characters"
+msgstr "Su contraseña debe contener menos de 30 caracteres"
+
+#: core/um-actions-account.php:114 core/um-actions-form.php:206
+#: core/um-actions-password.php:131
+msgid ""
+"Your password must contain at least one lowercase letter, one capital letter "
+"and one number"
+msgstr ""
+"Su contraseña debe contener al menos una letra minúscula, una letra mayúscula y "
+"un número"
+
+#: core/um-actions-account.php:126
+msgid "You must enter your password"
+msgstr "Debe introducir su contraseña"
+
+#: core/um-actions-account.php:202
+msgid "Update Privacy"
+msgstr "Actualización de Privacidad"
+
+#: core/um-actions-account.php:232
+msgid "Update Account"
+msgstr "Actualizar Cuenta"
+
+#: core/um-actions-account.php:262
+msgid "Update Password"
+msgstr "Actualizar contraseña"
+
+#: core/um-actions-account.php:288
+msgid "Email me when"
+msgstr "Envíeme un correo cuando"
+
+#: core/um-actions-account.php:296
+msgid "Update Notifications"
+msgstr "Notificaciones de actualización"
+
+#: core/um-actions-ajax.php:42 core/um-actions-ajax.php:57
+#: core/um-actions-ajax.php:107
+msgid "You can not edit this user"
+msgstr "No puede editar este usuario"
+
+#: core/um-actions-ajax.php:74
+msgid "Invalid parameters"
+msgstr "Parámetros no válidos"
+
+#: core/um-actions-ajax.php:77
+msgid "Invalid coordinates"
+msgstr "Coordenadas no válidas"
+
+#: core/um-actions-ajax.php:80
+msgid "Invalid Image file"
+msgstr "Archivo de imagen no válido"
+
+#: core/um-actions-core.php:76
+msgid "You do not have permission to delete this user."
+msgstr "No tienes permiso para eliminar este usuario."
+
+#: core/um-actions-form.php:99
+msgid "You are not allowed to use this word as your username."
+msgstr "No se le permite utilizar esta palabra como nombre de usuario."
+
+#: core/um-actions-form.php:159 core/um-actions-form.php:163
+#, php-format
+msgid "%s is required."
+msgstr "%s es requerido."
+
+#: core/um-actions-form.php:168
+msgid "Please specify account type."
+msgstr "Por favor, especifique el tipo de cuenta."
+
+#: core/um-actions-form.php:176
+#, php-format
+msgid "%s is required"
+msgstr "%s es requerido."
+
+#: core/um-actions-form.php:182
+#, php-format
+msgid "You are only allowed to enter a maximum of %s words"
+msgstr "Sólo se le permite entrar un máximo de %s palabras"
+
+#: core/um-actions-form.php:188
+#, php-format
+msgid "Your %s must contain at least %s characters"
+msgstr "Su %s debe contener caracteres al menos %s"
+
+#: core/um-actions-form.php:194
+#, php-format
+msgid "Your %s must contain less than %s characters"
+msgstr "Su %s debe contener menos de %s caracteres"
+
+#: core/um-actions-form.php:200
+msgid "You can not use HTML tags here"
+msgstr "No puede utilizar etiquetas HTML aquí"
+
+#: core/um-actions-form.php:212
+msgid "Please confirm your password"
+msgstr "Por favor, confirme su contraseña"
+
+#: core/um-actions-form.php:215 core/um-actions-password.php:141
+msgid "Your passwords do not match"
+msgstr "Las contraseñas no coinciden"
+
+#: core/um-actions-form.php:221
+#, php-format
+msgid "Please select at least %s choices"
+msgstr "Por favor, seleccione al menos %s opciones"
+
+#: core/um-actions-form.php:227
+#, php-format
+msgid "You can only select up to %s choices"
+msgstr "Sólo se puede seleccionar un máximo de opciones %s"
+
+#: core/um-actions-form.php:237
+msgid "Please enter numbers only in this field"
+msgstr "Por favor escriba números en este campo"
+
+#: core/um-actions-form.php:243
+msgid "Please enter a valid phone number"
+msgstr "Por favor Introduce un teléfono válido."
+
+#: core/um-actions-form.php:249 core/um-actions-form.php:255
+#: core/um-actions-form.php:261 core/um-actions-form.php:267
+#: core/um-actions-form.php:273 core/um-actions-form.php:279
+#: core/um-actions-form.php:285 core/um-actions-form.php:291
+#, php-format
+msgid "Please enter a valid %s username or profile URL"
+msgstr "Por favor, introduzca un nombre de usuario válido % s o perfil URL"
+
+#: core/um-actions-form.php:298 core/um-actions-form.php:312
+msgid "You must provide a username"
+msgstr "Debe proporcionar un nombre de usuario"
+
+#: core/um-actions-form.php:300 core/um-actions-form.php:314
+msgid "Your username is already taken"
+msgstr "Tu nombre de usuario ya está en uso"
+
+#: core/um-actions-form.php:302
+msgid "Username cannot be an email"
+msgstr "Nombre de usuario no puede ser una dirección de correo electrónico"
+
+#: core/um-actions-form.php:304 core/um-actions-form.php:318
+msgid "Your username contains invalid characters"
+msgstr "Tu nombre de usuario contiene caracteres no válidos"
+
+#: core/um-actions-form.php:316 core/um-actions-form.php:330
+#: core/um-actions-form.php:342
+msgid "This email is already linked to an existing account"
+msgstr "Este correo electrónico ya está vinculada a una cuenta existente"
+
+#: core/um-actions-form.php:328
+msgid "You must provide your email"
+msgstr "Debe proporcionar su correo electrónico"
+
+#: core/um-actions-form.php:332 core/um-actions-form.php:340
+msgid "This is not a valid email"
+msgstr "Esto no es un correo electrónico válido"
+
+#: core/um-actions-form.php:334
+msgid "Your email contains invalid characters"
+msgstr "Su correo electrónico contiene caracteres no válidos"
+
+#: core/um-actions-form.php:358
+#, php-format
+msgid "Your user description must contain less than %s characters"
+msgstr "Su descripción del usuario debe contener menos de %s caracteres"
+
+#: core/um-actions-global.php:28
+msgid "Only fill in if you are not human"
+msgstr "Sólo complete si no eres un robot"
+
+#: core/um-actions-login.php:16
+msgid "Please enter your username or email"
+msgstr "Por favor; proporcione su nombre de usuario o correo electrónico"
+
+#: core/um-actions-login.php:20
+msgid "Please enter your username"
+msgstr "Por favor, introduzca su nombre de usuario"
+
+#: core/um-actions-login.php:24
+msgid "Please enter your email"
+msgstr "Por favor, introduzca su dirección de correo electrónico."
+
+#: core/um-actions-login.php:48
+msgid " Sorry, we can't find an account with that email address"
+msgstr ""
+"Lo sentimos, no podemos encontrar una cuenta con la dirección de correo "
+"electrónico"
+
+#: core/um-actions-login.php:50
+msgid " Sorry, we can't find an account with that username"
+msgstr "Lo sentimos, no podemos encontrar una cuenta con ese nombre de usuario"
+
+#: core/um-actions-login.php:54
+msgid "Please enter your password"
+msgstr "Por favor, introduzca su contraseña"
+
+#: core/um-actions-login.php:69
+msgid "Password is incorrect. Please try again."
+msgstr "Contraseña incorrecta. Vuelva a intentarlo."
+
+#: core/um-actions-login.php:192
+msgid "Keep me signed in"
+msgstr "Recordar Conexión"
+
+#: core/um-actions-login.php:225
+msgid "Forgot your password?"
+msgstr "¿Olvido su contraseña?"
+
+#: core/um-actions-members.php:64
+msgid "Search"
+msgstr "Búsqueda"
+
+#: core/um-actions-members.php:64
+msgid "Reset"
+msgstr "Restablecer"
+
+#: core/um-actions-members.php:123
+msgid "Jump to page:"
+msgstr "Ir a la página:"
+
+#: core/um-actions-members.php:127
+#, php-format
+msgid "%s of %d"
+msgstr "%s de %d"
+
+#: core/um-actions-members.php:136
+msgid "First Page"
+msgstr "Primera página"
+
+#: core/um-actions-members.php:142
+msgid "Previous"
+msgstr "Anterior"
+
+#: core/um-actions-members.php:160
+msgid "Next"
+msgstr "Siguiente"
+
+#: core/um-actions-members.php:166
+msgid "Last Page"
+msgstr "Última página"
+
+#: core/um-actions-misc.php:56 core/um-actions-misc.php:91
+msgid "Registration is currently disabled"
+msgstr "Registro actualmente deshabilitado"
+
+#: core/um-actions-misc.php:67
+msgid "Your account was updated successfully."
+msgstr "Su cuenta se ha actualizado correctamente."
+
+#: core/um-actions-misc.php:71
+msgid "You have successfully changed your password."
+msgstr "Ha cambiado correctamente la contraseña."
+
+#: core/um-actions-misc.php:75
+msgid "Your account is now active! You can login."
+msgstr "Su cuenta está activa! Puede iniciar sesión."
+
+#: core/um-actions-misc.php:87
+msgid "An error has been encountered"
+msgstr "Se ha encontrado un error"
+
+#: core/um-actions-misc.php:95 core/um-filters-login.php:33
+msgid "This email address has been blocked."
+msgstr "Esta dirección de correo electrónico ha sido bloqueada."
+
+#: core/um-actions-misc.php:99
+msgid "We do not accept registrations from that domain."
+msgstr "No se aceptan inscripciones de dicho dominio."
+
+#: core/um-actions-misc.php:103 core/um-filters-login.php:36
+msgid "Your IP address has been blocked."
+msgstr "Su dirección IP ha sido bloqueada."
+
+#: core/um-actions-misc.php:107 core/um-filters-login.php:78
+msgid "Your account has been disabled."
+msgstr "La cuenta ha sido desactivada."
+
+#: core/um-actions-misc.php:111 core/um-filters-login.php:81
+msgid "Your account has not been approved yet."
+msgstr "Su cuenta no ha sido aprobado todavía."
+
+#: core/um-actions-misc.php:115 core/um-filters-login.php:84
+msgid "Your account is awaiting e-mail verification."
+msgstr "Su cuenta está a la espera de la verificación por e-mail."
+
+#: core/um-actions-misc.php:119 core/um-filters-login.php:87
+msgid "Your membership request has been rejected."
+msgstr "Su solicitud de miembro ha sido rechazada."
+
+#: core/um-actions-password.php:80 core/um-actions-password.php:111
+#: core/um-form.php:84
+msgid "Hello, spam bot!"
+msgstr "Hola, bot de spam!"
+
+#: core/um-actions-password.php:83 core/um-actions-password.php:114
+#: core/um-form.php:87
+msgid ""
+"Whoa, slow down! You're seeing this message because you tried to submit a form "
+"too fast and we think you might be a spam bot. If you are a real human being "
+"please wait a few seconds before submitting the form. Thanks!"
+msgstr ""
+"Buff, disminuye la velocidad! Estás viendo este mensaje porque estas tratando "
+"de enviar un formulario demasiado rápido y se piensa que podrías ser un robot "
+"de spam. Si eres un ser humano real, por favor, espera unos segundos antes de "
+"enviar el formulario. Gracias!"
+
+#: core/um-actions-password.php:86
+msgid "Please provide your username or email"
+msgstr "Por favor; proporcione su nombre de usuario o correo electrónico"
+
+#: core/um-actions-password.php:92
+msgid " We can't find an account registered with that address or username "
+msgstr ""
+"No podemos encontrar una cuenta registrada con esa dirección o nombre de usuario"
+
+#: core/um-actions-password.php:117
+msgid "You must enter a new password"
+msgstr "Debes introducir una nueva contraseña"
+
+#: core/um-actions-password.php:137
+msgid "You must confirm your new password"
+msgstr "Debes confirmar tu nueva contraseña"
+
+#: core/um-actions-password.php:193
+msgid "Reset my password"
+msgstr "Restablecer contraseña"
+
+#: core/um-actions-password.php:220
+msgid "Change my password"
+msgstr "Cambiar mi contraseña"
+
+#: core/um-actions-profile.php:53
+msgid "You are not allowed to edit this user."
+msgstr "No está autorizado a editar este usuario."
+
+#: core/um-actions-profile.php:186 core/um-builtin.php:825
+msgid "Change your cover photo"
+msgstr "Cambiar su foto de portada"
+
+#: core/um-actions-profile.php:200
+msgid "Change cover photo"
+msgstr "Cambiar foto de portada"
+
+#: core/um-actions-profile.php:242
+msgid "Upload a cover photo"
+msgstr "Sube una foto de la portada"
+
+#: core/um-actions-profile.php:315
+msgid "Upload photo"
+msgstr "Subir foto"
+
+#: core/um-actions-profile.php:324 core/um-fields.php:1246
+#: core/um-fields.php:1279
+msgid "Change photo"
+msgstr "Cambiar foto"
+
+#: core/um-actions-profile.php:325
+msgid "Remove photo"
+msgstr "Eliminar foto"
+
+#: core/um-actions-profile.php:375
+msgid "Tell us a bit about yourself..."
+msgstr "Cuéntanos un poco sobre ti..."
+
+#: core/um-actions-profile.php:386
+#, php-format
+msgid "This user account status is %s"
+msgstr "El estado de la cuenta de usuario es %s"
+
+#: core/um-actions-profile.php:461
+msgid "Edit Profile"
+msgstr "Editar Perfil"
+
+#: core/um-actions-profile.php:462
+msgid "My Account"
+msgstr "Mi Cuenta"
+
+#: core/um-actions-profile.php:463 core/um-actions-user.php:62
+msgid "Logout"
+msgstr "Desconectarse"
+
+#: core/um-actions-user.php:61
+msgid "Your account"
+msgstr "Tu cuenta"
+
+#: core/um-builtin.php:461 core/um-builtin.php:865
+msgid "Everyone"
+msgstr "Todo el mundo"
+
+#: core/um-builtin.php:461 core/um-user.php:696
+msgid "Only me"
+msgstr "Sólo yo"
+
+#: core/um-builtin.php:466 core/um-builtin.php:469 um-config.php:36
+#: um-config.php:51
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: core/um-builtin.php:479 core/um-builtin.php:482 core/um-builtin.php:844
+msgid "Username or E-mail"
+msgstr "Nombre de usuario o correo electrónico"
+
+#: core/um-builtin.php:490 core/um-builtin.php:493 core/um-builtin.php:902
+#: core/um-builtin.php:905
+msgid "Password"
+msgstr "Contraseña"
+
+#: core/um-builtin.php:504 core/um-builtin.php:507
+msgid "First Name"
+msgstr "Nombre"
+
+#: core/um-builtin.php:514 core/um-builtin.php:517
+msgid "Last Name"
+msgstr "Apellidos"
+
+#: core/um-builtin.php:524 core/um-builtin.php:527
+msgid "Registration Date"
+msgstr "Fecha de registro"
+
+#: core/um-builtin.php:535 core/um-builtin.php:538
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#: core/um-builtin.php:545 core/um-builtin.php:548
+msgid "E-mail Address"
+msgstr "Dirección de email"
+
+#: core/um-builtin.php:556 core/um-builtin.php:559
+msgid "Biography"
+msgstr "Biografía"
+
+#: core/um-builtin.php:569 core/um-builtin.php:572
+msgid "Birth Date"
+msgstr "Fecha de nacimiento:"
+
+#: core/um-builtin.php:583 core/um-builtin.php:586
+msgid "Gender"
+msgstr "Sexo"
+
+#: core/um-builtin.php:590
+msgid "Male"
+msgstr "Varón"
+
+#: core/um-builtin.php:590
+msgid "Female"
+msgstr "Mujer"
+
+#: core/um-builtin.php:594 core/um-builtin.php:597
+msgid "Country"
+msgstr "Pais"
+
+#: core/um-builtin.php:598
+msgid "Choose a Country"
+msgstr "Seleccione un país"
+
+#: core/um-builtin.php:606 core/um-builtin.php:609
+msgid "Facebook"
+msgstr "Facebook"
+
+#: core/um-builtin.php:624 core/um-builtin.php:627
+msgid "Twitter"
+msgstr "Twitter"
+
+#: core/um-builtin.php:642 core/um-builtin.php:645
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: core/um-builtin.php:660 core/um-builtin.php:663
+msgid "Google+"
+msgstr "Google+"
+
+#: core/um-builtin.php:678 core/um-builtin.php:681
+msgid "Instagram"
+msgstr "Instagram"
+
+#: core/um-builtin.php:696 core/um-builtin.php:699
+msgid "Skype ID"
+msgstr "Skype ID"
+
+#: core/um-builtin.php:711 core/um-builtin.php:714
+msgid "YouTube"
+msgstr "YouTube"
+
+#: core/um-builtin.php:729 core/um-builtin.php:732
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: core/um-builtin.php:747
+msgid "Roles (Dropdown)"
+msgstr "Roles (desplegable)"
+
+#: core/um-builtin.php:750 core/um-builtin.php:762
+msgid "Account Type"
+msgstr "Tipo de cuenta"
+
+#: core/um-builtin.php:759
+msgid "Roles (Radio)"
+msgstr "Roles (Radio)"
+
+#: core/um-builtin.php:770
+msgid "Languages"
+msgstr "Idiomas"
+
+#: core/um-builtin.php:773
+msgid "Languages Spoken"
+msgstr "Idiomas que hablas"
+
+#: core/um-builtin.php:774
+msgid "Select languages"
+msgstr "Seleccionar idiomas"
+
+#: core/um-builtin.php:782 core/um-builtin.php:785
+msgid "Phone Number"
+msgstr "﻿Número teléfono"
+
+#: core/um-builtin.php:794 core/um-builtin.php:797
+msgid "Mobile Number"
+msgstr "Numero Móvil"
+
+#: core/um-builtin.php:808
+msgid "Profile Photo"
+msgstr "Foto del perfil"
+
+#: core/um-builtin.php:811
+msgid "Change your profile photo"
+msgstr "Cambiar tu foto de perfil"
+
+#: core/um-builtin.php:812
+msgid "Upload your photo here"
+msgstr "Sube tu foto aquí"
+
+#: core/um-builtin.php:822
+msgid "Cover Photo"
+msgstr "Foto de portada."
+
+#: core/um-builtin.php:826
+msgid "Upload profile cover here"
+msgstr "Sube portada del perfil aquí"
+
+#: core/um-builtin.php:837
+msgid "Password Reset"
+msgstr "Restablecer contraseña"
+
+#: core/um-builtin.php:839
+msgid "To reset your password, please enter your email address or username below"
+msgstr ""
+"Para restablecer su contraseña, introduzca su dirección de correo electrónico o "
+"nombre de usuario debajo"
+
+#: core/um-builtin.php:847
+msgid "Enter your username or email"
+msgstr "Introduzca su nombre de usuario o correo electrónico"
+
+#: core/um-builtin.php:857 core/um-builtin.php:860
+msgid "Profile Privacy"
+msgstr "Perfil de Privacidad"
+
+#: core/um-builtin.php:861
+msgid "Who can see your public profile?"
+msgstr "¿Quién puede ver tu perfil público?"
+
+#: core/um-builtin.php:873 core/um-builtin.php:876
+msgid "Hide my profile from directory"
+msgstr "Ocultar mi perfil del directorio"
+
+#: core/um-builtin.php:877
+msgid "Here you can hide yourself from appearing in public directory"
+msgstr "Aquí puedes esconderte de aparecer en el directorio público"
+
+#: core/um-builtin.php:892
+msgid ""
+"If you confirm, everything related to your profile will be deleted permanently "
+"from the site"
+msgstr ""
+"Si confirma, todo lo relacionado con su perfil será borrado definitivamente del "
+"sitio"
+
+#: core/um-cron.php:15
+msgid "Once Weekly"
+msgstr "Una vez a la semana"
+
+#: core/um-datetime.php:26
+#, php-format
+msgid "%s year old"
+msgstr "%s año de edad"
+
+#: core/um-datetime.php:28
+#, php-format
+msgid "%s years old"
+msgstr "%s años de edad"
+
+#: core/um-datetime.php:30
+msgid "Less than 1 year old"
+msgstr "Menos de 1 año de edad"
+
+#: core/um-fields.php:546
+msgid "Custom Field"
+msgstr "Campo personalizado"
+
+#: core/um-fields.php:805 core/um-fields.php:826
+msgid "Upload"
+msgstr "Subir"
+
+#: core/um-fields.php:989
+msgid "Current Password"
+msgstr "Contraseña actual"
+
+#: core/um-fields.php:1018
+msgid "New Password"
+msgstr "Nueva contraseña"
+
+#: core/um-fields.php:1050
+#, php-format
+msgid "Confirm %s"
+msgstr "Confirme %s"
+
+#: core/um-fields.php:1229 core/um-fields.php:1309
+msgid "Upload Photo"
+msgstr "Subir foto"
+
+#: core/um-fields.php:1279 core/um-fields.php:1364
+msgid "Processing..."
+msgstr "Procesando ..."
+
+#: core/um-fields.php:1325 core/um-fields.php:1364
+msgid "Change file"
+msgstr "Cambiar archivo"
+
+#: core/um-fields.php:1364
+msgid "Save"
+msgstr "Guardar"
+
+#: core/um-fields.php:2045
+#, php-format
+msgid ""
+"Your profile is looking a little empty. Why not <a href=\"%s\">add</a> some "
+"information!"
+msgstr ""
+"Su perfil está quedando un poco vacío. ¿Por qué no <a href=\"%s\">Añade</a> un "
+"poco más de información?"
+
+#: core/um-fields.php:2047
+msgid "This user has not added any information to their profile yet."
+msgstr "Este usuario todavía no ha añadido ninguna información a su perfil."
+
+#: core/um-files.php:315
+msgid "Your image is invalid or too large!"
+msgstr "¡Su imagen no es válida o demasiado grande!"
+
+#: core/um-files.php:321 core/um-files.php:323
+#, php-format
+msgid "Your photo is too small. It must be at least %spx wide."
+msgstr "Su foto es demasiado pequeña. Debe ser al menos %s px de ancha."
+
+#: core/um-filters-addons.php:16
+msgid "Activated"
+msgstr "Activado"
+
+#: core/um-filters-addons.php:17
+msgid "Deactivated"
+msgstr "Desactivado"
+
+#: core/um-filters-addons.php:33
+msgid "Tools"
+msgstr "Herramientas"
+
+#: core/um-filters-addons.php:57
+msgid "Licenses"
+msgstr "Licencias"
+
+#: core/um-filters-fields.php:11
+msgid "Required"
+msgstr "Necesario"
+
+#: core/um-filters-fields.php:21
+msgid "Age"
+msgstr "Edad"
+
+#: core/um-filters-fields.php:31
+#, php-format
+msgid "Joined %s"
+msgstr "Registrado %s"
+
+#: core/um-filters-fields.php:93
+msgid "This file has been removed."
+msgstr "Este archivo se ha eliminado."
+
+#: core/um-filters-fields.php:115
+msgid "Untitled photo"
+msgstr "foto sin título"
+
+#: core/um-filters-profile.php:10
+msgid "About"
+msgstr "Acerca de"
+
+#: core/um-filters-user.php:11 core/um-filters-user.php:33
+#: core/um-filters-user.php:38
+msgid "Approve Membership"
+msgstr "Aprobar Membresía"
+
+#: core/um-filters-user.php:12 core/um-filters-user.php:34
+msgid "Reject Membership"
+msgstr "Rechazar Membresía"
+
+#: core/um-filters-user.php:13 core/um-filters-user.php:42
+msgid "Put as Pending Review"
+msgstr "Poner como pendiente de revisar"
+
+#: core/um-filters-user.php:14 core/um-filters-user.php:46
+msgid "Resend Activation E-mail"
+msgstr "Reenviar activación E-mail"
+
+#: core/um-filters-user.php:15
+msgid "Deactivate"
+msgstr "Desactivar"
+
+#: core/um-filters-user.php:16
+msgid "Reactivate"
+msgstr "Reactivar"
+
+#: core/um-filters-user.php:17
+msgid "Delete"
+msgstr "Borrar"
+
+#: core/um-filters-user.php:50
+msgid "Deactivate this account"
+msgstr "Desactivar esta cuenta"
+
+#: core/um-filters-user.php:54
+msgid "Reactivate this account"
+msgstr "Reactivar esta cuenta"
+
+#: core/um-filters-user.php:58
+msgid "Delete this user"
+msgstr "Eliminar este usuario"
+
+#: core/um-filters-user.php:64
+msgid "Login as this user"
+msgstr "Entrar como este usuario"
+
+#: core/um-navmenu-walker-edit.php:18
+msgid "Display Mode"
+msgstr "Modo de visualización:"
+
+#: core/um-navmenu-walker-edit.php:19
+msgid "By Role"
+msgstr "Por Rol"
+
+#: core/um-navmenu-walker-edit.php:78
+msgid "Who can see this menu link?"
+msgstr "¿Quién puede ver este enlace del menú?"
+
+#: core/um-navmenu-walker-edit.php:98
+msgid "Select the member roles that can see this link"
+msgstr "Seleccione los roles de los miembros que pueden ver este link"
+
+#: core/um-password.php:29
+msgid "This is not a valid hash, or it has expired."
+msgstr "Esto no es un hash válido o ha expirado."
+
+#: core/um-setup.php:135 core/um-setup.php:156
+msgid "Register"
+msgstr "Registrarse"
+
+#: core/um-setup.php:140 core/um-setup.php:149
+msgid "Login"
+msgstr "Iniciar Sesión"
+
+#: core/um-short-functions.php:135
+msgid "date submitted"
+msgstr "Fecha enviado"
+
+#: core/um-short-functions.php:140
+msgid "(empty)"
+msgstr "(vacio)"
+
+#: core/um-shortcodes.php:234
+msgid "Default Template"
+msgstr "Usar la plantilla por defecto"
+
+#: core/um-taxonomies.php:19
+msgid "Form"
+msgstr "Formulario"
+
+#: core/um-taxonomies.php:20 core/um-taxonomies.php:38 core/um-taxonomies.php:58
+msgid "Add New"
+msgstr "Agregar nuevo"
+
+#: core/um-taxonomies.php:21
+msgid "Add New Form"
+msgstr "Agregar Nuevo Formulario"
+
+#: core/um-taxonomies.php:22
+msgid "Edit Form"
+msgstr "Editar formulario"
+
+#: core/um-taxonomies.php:23
+msgid "You did not create any forms yet"
+msgstr "No has creado ningún formulario aun."
+
+#: core/um-taxonomies.php:24 core/um-taxonomies.php:42 core/um-taxonomies.php:62
+msgid "Nothing found in Trash"
+msgstr "No se ha encontrado nada en la Papelera"
+
+#: core/um-taxonomies.php:25
+msgid "Search Forms"
+msgstr "Formularios de búsqueda"
+
+#: core/um-taxonomies.php:37
+msgid "User Role"
+msgstr "Rol del usuario"
+
+#: core/um-taxonomies.php:39
+msgid "Add New User Role"
+msgstr "Agregar nuevo rol de usuario"
+
+#: core/um-taxonomies.php:40
+msgid "Edit User Role"
+msgstr "Editar rol de usuario"
+
+#: core/um-taxonomies.php:41
+msgid "You did not create any user roles yet"
+msgstr "No has creado ningún rol de usuario aun"
+
+#: core/um-taxonomies.php:43
+msgid "Search User Roles"
+msgstr "Búsqueda de roles de usuario"
+
+#: core/um-taxonomies.php:57
+msgid "Member Directory"
+msgstr "Directorio de Miembros"
+
+#: core/um-taxonomies.php:59
+msgid "Add New Member Directory"
+msgstr "Añadir nuevo directorio de  miembros"
+
+#: core/um-taxonomies.php:60
+msgid "Edit Member Directory"
+msgstr "Editar Directorio de miembros"
+
+#: core/um-taxonomies.php:61
+msgid "You did not create any member directories yet"
+msgstr "No ha creado ningún directorio aun."
+
+#: core/um-taxonomies.php:63
+msgid "Search Member Directories"
+msgstr "Búsqueda de directorios"
+
+#: core/um-tracking.php:147
+#, php-format
+msgid ""
+"Allow Ultimate Member to track plugin usage? Opt-in to tracking and our "
+"newsletter and we will immediately e-mail you a 20% discount which you can use "
+"on any of our extensions. No sensitive data is tracked."
+msgstr ""
+"¿Permitir a Ultimate Member rastrear el uso del plugin? Opt-in para seguimiento "
+"y nuestro boletín de noticias e inmediatamente enviaré por email un 20% de "
+"descuento que puede utilizar en cualquiera de nuestras extensiones. Ningún dato "
+"sensibles es rastreado."
+
+#: core/um-tracking.php:151
+msgid "Allow tracking"
+msgstr "Permitir seguimiento"
+
+#: core/um-tracking.php:152
+msgid "Do not allow tracking"
+msgstr "No permitir seguimiento"
+
+#: core/um-user-posts.php:67
+msgid "Posts"
+msgstr "Entradas"
+
+#: core/um-user-posts.php:72
+msgid "Comments"
+msgstr "Comentarios"
+
+#: core/um-user.php:197 core/um-user.php:202
+msgid "This is not allowed for security reasons."
+msgstr "Esto no está permitido por razones de seguridad."
+
+#: index.php:49
+msgid "Docs"
+msgstr "﻿Documentos"
+
+#: index.php:50
+msgid "Support"
+msgstr "Soporte"
+
+#: index.php:55
+msgid "Remove this plugin"
+msgstr "Eliminar este plugin"
+
+#: index.php:55
+msgid "Uninstall"
+msgstr "Desinstalar"
+
+#: templates/password-reset.php:21
+msgid ""
+"We have sent you a password reset link to your e-mail. Please check your inbox."
+msgstr ""
+"Hemos enviado a tu email un link para que puedas restablecer la contraseña. Por "
+"favor revisa tu bandeja de entrada."
+
+#: templates/profile/comments-single.php:6
+#, php-format
+msgid "On <a href=\"%1$s\">%2$s</a>"
+msgstr "En <a href=\"%1$s\">%2$s</a>"
+
+#: templates/profile/comments-single.php:15 templates/profile/comments.php:14
+msgid "load more comments"
+msgstr "cargar más comentarios"
+
+#: templates/profile/comments.php:23
+msgid "You have not made any comments."
+msgstr "No ha hecho ningún comentario."
+
+#: templates/profile/comments.php:23
+msgid "This user has not made any comments."
+msgstr "Este usuario no ha hecho ningún comentario."
+
+#: templates/profile/posts-single.php:16
+#, php-format
+msgid "%s ago"
+msgstr "﻿Hace %s"
+
+#: templates/profile/posts-single.php:18
+msgid "no comments"
+msgstr "No hay comentarios"
+
+#: templates/profile/posts-single.php:18
+msgid "1 comment"
+msgstr "1 comentario"
+
+#: templates/profile/posts-single.php:18
+#, php-format
+msgid "% comments"
+msgstr "% comentarios"
+
+#: templates/profile/posts-single.php:27 templates/profile/posts.php:14
+msgid "load more posts"
+msgstr "Ver más artículos"
+
+#: templates/profile/posts.php:23
+msgid "You have not created any posts."
+msgstr "No has creado ninguna entrada."
+
+#: templates/profile/posts.php:23
+msgid "This user has not created any posts."
+msgstr "Este usuario aun no ha creado ninguna entrada"
+
+#: um-config.php:20
+msgid "Default New User Role"
+msgstr "Rol para usuarios nuevos por defecto"
+
+#: um-config.php:21
+msgid ""
+"Select the default role that will be assigned to user after registration If you "
+"did not specify custom role settings per form."
+msgstr ""
+"Seleccione el rol predeterminado que se asignará al usuario después de "
+"Registrarse. Si no se ha especificado la configuración de funciones "
+"personalizadas por formulario."
+
+#: um-config.php:24
+msgid "Choose user role..."
+msgstr "Elija rol de usuario ..."
+
+#: um-config.php:31
+msgid "Profile Permalink Base"
+msgstr "Perfil Base Permalink"
+
+#: um-config.php:32
+msgid ""
+"Here you can control the permalink structure of the user profile URL globally"
+msgstr ""
+"Aquí puedes controlar la estructura permalink de la URL de perfil de usuario a "
+"nivel global"
+
+#: um-config.php:37
+msgid "First and Last Name"
+msgstr "Nombre y apellido"
+
+#: um-config.php:38
+msgid "User ID"
+msgstr "ID de Usuario"
+
+#: um-config.php:40 um-config.php:60
+msgid "Select..."
+msgstr "Seleccionar..."
+
+#: um-config.php:47
+msgid "User Display Name"
+msgstr "Nombre a mostrar"
+
+#: um-config.php:48
+msgid ""
+"This is the name that will be displayed for users on the front end of your "
+"site. Default setting uses first/last name as display name if it exists"
+msgstr ""
+"Este es el nombre que se mostrará a los usuarios en la parte delantera de su "
+"sitio. Ajuste por defecto utiliza nombre/apellido como nombre para mostrar si "
+"existe"
+
+#: um-config.php:52
+msgid "First name & last name"
+msgstr "Nombre y apellido"
+
+#: um-config.php:53
+msgid "Last name & first name"
+msgstr "Apellidos y nombre"
+
+#: um-config.php:54
+msgid "First name & first initial of last name"
+msgstr "Nombre y primera inicial del apellido"
+
+#: um-config.php:55
+msgid "First initial of first name & last name"
+msgstr "Primera inicial del nombre y apellido"
+
+#: um-config.php:56
+msgid "First name only"
+msgstr "Nombre solamente"
+
+#: um-config.php:57
+msgid "Display name"
+msgstr "Mostrar el Nombre"
+
+#: um-config.php:58
+msgid "Custom field(s)"
+msgstr "Campos personalizados"
+
+#: um-config.php:66
+msgid "Display Name Custom Field(s)"
+msgstr "Mostrar nombre Campos Personalizados"
+
+#: um-config.php:67
+msgid ""
+"Specify the custom field meta key or custom fields seperated by comma that you "
+"want to use to display users name on the frontend of your site"
+msgstr ""
+"Especifique los campos clave o personalizados meta de campos personalizados "
+"separados por comas que desea utilizar para mostrar el nombre de usuarios en la "
+"interfaz de su sitio"
+
+#: um-config.php:74
+msgid "Automatically redirect author page to their profile?"
+msgstr "¿Redirigir automáticamente página del autor a su perfil?"
+
+#: um-config.php:76
+msgid ""
+"If enabled, author pages will automatically redirect to the user's profile page"
+msgstr ""
+"Si está activado, las páginas de autor se redirigiran automáticamente a la "
+"página de perfil del usuario."
+
+#: um-config.php:84
+msgid "Enable Members Directory"
+msgstr "¿Permitir directorio de miembros?"
+
+#: um-config.php:86
+msgid "Control whether to enable or disable member directories on this site"
+msgstr ""
+"Controlar si se debe habilitar o deshabilitar los directorios de miembros de "
+"este sitio"
+
+#: um-config.php:94
+msgid "Use Gravatars?"
+msgstr "¿Utilizar Gravatars?"
+
+#: um-config.php:96
+msgid ""
+"Do you want to use gravatars instead of the default plugin profile photo (If "
+"the user did not upload a custom profile photo / avatar)"
+msgstr ""
+"¿Quieres utilizar Gravatars en lugar de la foto del perfil en el plugin por "
+"defecto? (Si el usuario no sube una foto de perfil personalizado/avatar)"
+
+#: um-config.php:104
+msgid "Require a strong password? (when user resets password only)"
+msgstr ""
+"¿Requiere una contraseña segura? (cuando el usuario restablece contraseña "
+"solamente)"
+
+#: um-config.php:106
+msgid ""
+"Enable or disable a strong password rules on password reset and change procedure"
+msgstr ""
+"Habilitar o deshabilitar normas fuertes para contraseña segura sobre "
+"restablecer contraseña  y cambiar el procedimiento"
+
+#: um-config.php:107 um-config.php:131 um-config.php:141 um-config.php:151
+#: um-config.php:161 um-config.php:184 um-config.php:194 um-config.php:742
+#: um-config.php:775 um-config.php:809 um-config.php:1235 um-config.php:1323
+#: um-config.php:1348 um-config.php:1403 um-config.php:1413 um-config.php:1423
+#: um-config.php:1455 um-config.php:1465 um-config.php:1480 um-config.php:1494
+#: um-config.php:1517 um-config.php:1527 um-config.php:1605 um-config.php:1707
+#: um-config.php:1735 um-config.php:1745 um-config.php:1804 um-config.php:1814
+#: um-config.php:1824 um-config.php:1834 um-config.php:1861 um-config.php:1870
+msgid "On"
+msgstr "Habilitado"
+
+#: um-config.php:108 um-config.php:132 um-config.php:142 um-config.php:152
+#: um-config.php:162 um-config.php:185 um-config.php:195 um-config.php:743
+#: um-config.php:776 um-config.php:810 um-config.php:1236 um-config.php:1324
+#: um-config.php:1349 um-config.php:1404 um-config.php:1414 um-config.php:1424
+#: um-config.php:1456 um-config.php:1466 um-config.php:1481 um-config.php:1495
+#: um-config.php:1518 um-config.php:1528 um-config.php:1606 um-config.php:1708
+#: um-config.php:1736 um-config.php:1746 um-config.php:1805 um-config.php:1815
+#: um-config.php:1825 um-config.php:1835 um-config.php:1862 um-config.php:1871
+msgid "Off"
+msgstr "Deshabilitado"
+
+#: um-config.php:128
+msgid "Password Account Tab"
+msgstr "Pestaña de contraseña de cuenta"
+
+#: um-config.php:138
+msgid "Privacy Account Tab"
+msgstr "Pestaña de privacidad cuenta"
+
+#: um-config.php:140
+msgid "Enable/disable the Privacy account tab in account page"
+msgstr ""
+"Habilitar/deshabilitar la pestaña de privacidad de cuenta en la página de cuenta"
+
+#: um-config.php:148
+msgid "Notifications Account Tab"
+msgstr "Pestaña de notificaciones de cuenta"
+
+#: um-config.php:150
+msgid "Enable/disable the Notifications account tab in account page"
+msgstr ""
+"Habilitar/deshabilitar la pestaña de Notificaciones de cuenta en la página de "
+"cuenta"
+
+#: um-config.php:158
+msgid "Delete Account Tab"
+msgstr "Pestaña de Eliminación de cuenta"
+
+#: um-config.php:160
+msgid "Enable/disable the Delete account tab in account page"
+msgstr "Habilitar/deshabilitar la pestaña Borrar cuenta en la página cuenta"
+
+#: um-config.php:168
+msgid "Account Deletion Custom Text"
+msgstr "Texto personalizado de cancelación de cuenta"
+
+#: um-config.php:169
+msgid ""
+"Are you sure you want to delete your account? This will erase all of your "
+"account data from the site. To delete your account enter your password below"
+msgstr ""
+"¿Seguro que quieres borrar tu cuenta? Esto borrará todos los datos de su cuenta "
+"en el sitio. Para eliminar tu cuenta escribe la contraseña"
+
+#: um-config.php:170
+msgid ""
+"This is custom text that will be displayed to users before they delete their "
+"accounts from your site"
+msgstr ""
+"Se trata de un texto personalizado que se mostrará a los usuarios antes de que "
+"eliminen sus cuentas desde su sitio"
+
+#: um-config.php:181
+msgid "Add a First & Last Name fields"
+msgstr "Añadir campos de nombre y apellido"
+
+#: um-config.php:183
+msgid ""
+"Whether to enable these fields on the user account page by default or hide them."
+msgstr ""
+"Si se permiten estos campos en la cuenta de usuario de la página por defecto u "
+"ocultarlos."
+
+#: um-config.php:191
+msgid "Require a strong password?"
+msgstr "¿Requiere una contraseña segura?"
+
+#: um-config.php:193
+msgid ""
+"Enable or disable a strong password rules on account page / change password tab"
+msgstr ""
+"Activar o desactivar fuertes reglas de contraseña en la página cuenta / pestaña "
+"cambio de contraseña"
+
+#: um-config.php:209
+msgid "Access"
+msgstr "Accesos"
+
+#: um-config.php:215
+msgid "Panic Key"
+msgstr "Clave Pánico"
+
+#: um-config.php:216
+msgid ""
+"Panic Key is a random generated key that allow you to access the WordPress "
+"backend always regardless of backend settings."
+msgstr ""
+"Clave de pánico es una clave generada al azar que le permiten acceder al "
+"BackEnd de WordPress siempre independientemente de la configuración del back-"
+"end."
+
+#: um-config.php:225
+msgid "Global Site Access"
+msgstr "Acceso global al sitio"
+
+#: um-config.php:227
+msgid ""
+"Globally control the access of your site, you can have seperate restrict "
+"options per post/page by editing the desired item."
+msgstr ""
+"Globalmente controlar el acceso de tu sitio, puedes querer restringir opciones "
+"separadas por entrada/página editando el elemento deseado."
+
+#: um-config.php:237
+msgid "Custom Redirect URL"
+msgstr "URL de redirección personalizada"
+
+#: um-config.php:238
+msgid ""
+"A logged out user will be redirected to this url If he is not permitted to "
+"access the site"
+msgstr ""
+"Cuando un usuario cierre la sesión será redirigido a esta URL si no se le "
+"permite tener acceso al sitio"
+
+#: um-config.php:246
+msgid "Exclude the following URLs"
+msgstr "Excluir los siguientes URL"
+
+#: um-config.php:247
+msgid ""
+"Here you can exclude URLs beside the redirect URI to be accessible to everyone"
+msgstr ""
+"Aquí se pueden excluir URLs aunque la redirección URI sea accesible a todo el "
+"mundo"
+
+#: um-config.php:248
+msgid "Add New URL"
+msgstr "Añada nueva URL"
+
+#: um-config.php:255
+msgid "Exclude restricted pages from main loop"
+msgstr "Excluir páginas restringidas del bucle principal"
+
+#: um-config.php:257
+msgid "Whether to exclude restricted pages from main loop"
+msgstr "Si desea excluir páginas restringidas de bucle principal"
+
+#: um-config.php:265
+msgid "Exclude restricted pages from search loop"
+msgstr "Excluir páginas restringidas de bucle de búsqueda"
+
+#: um-config.php:267
+msgid "Whether to exclude restricted pages from search results"
+msgstr "Si desea excluir páginas restringidas de resultados de búsqueda"
+
+#: um-config.php:275
+msgid "Exclude restricted pages from archive loop"
+msgstr "Excluir páginas restringidas del bucle principal"
+
+#: um-config.php:277
+msgid "Whether to exclude restricted pages from archives"
+msgstr "Ya sea para excluir páginas restringidas de archivos"
+
+#: um-config.php:285
+msgid "Allow Backend Login Screen for Guests"
+msgstr "Permite pantalla de Login de Backend para los visitantes"
+
+#: um-config.php:287
+msgid "Control whether guests are able to access the WP-admin login screen or not"
+msgstr ""
+"Controlar si los visitantes son capaces de acceder a la pantalla de inicio de "
+"sesión WP-admin o no"
+
+#: um-config.php:296
+msgid "Redirect to alternative login page"
+msgstr "Redirigir a una página de acceso alternativa"
+
+#: um-config.php:297
+msgid ""
+"If you disable backend access to login screen, specify here where a user will "
+"be redirected"
+msgstr ""
+"Si deshabilita el acceso a la pantalla de inicio de sesión del backend, "
+"especifique aquí donde un usuario será redirigido"
+
+#: um-config.php:309 um-config.php:341
+msgid "Custom URL"
+msgstr "URL personalizada"
+
+#: um-config.php:310 um-config.php:342
+msgid ""
+"Enter an alternate url here to redirect a user If they try to access the "
+"backend register screen"
+msgstr ""
+"Introduzca una url alternativa aquí para redirigir a un usuario si intentan "
+"acceder a la pantalla de registro de backend"
+
+#: um-config.php:317
+msgid "Allow Backend Register Screen for Guests"
+msgstr "Permitir pantalla de acceso del Backend para los visitantes"
+
+#: um-config.php:319
+msgid ""
+"Control whether guests are able to access the WP-admin register screen or not"
+msgstr ""
+"Controlar si los visitantes son capaces de acceder a la pantalla de inicio de "
+"sesión WP-admin o no"
+
+#: um-config.php:328
+msgid "Redirect to alternative register page"
+msgstr "Redirigir a la página de registro alternativo"
+
+#: um-config.php:329
+msgid ""
+"If you disable backend access to register screen, specify here where a user "
+"will be redirected"
+msgstr ""
+"Si deshabilita el acceso a la pantalla de inicio de sesión del backend, "
+"especifique aquí donde un usuario será redirigido"
+
+#: um-config.php:349
+msgid "Enable the Access Control widget for Admins only?"
+msgstr ""
+"¿Habilitar el widget de Control de acceso para los administradores solamente?"
+
+#: um-config.php:358
+msgid "Whitelisted Backend IPs"
+msgstr "Lista blanca Backend IPs"
+
+#: um-config.php:359
+msgid ""
+"Always allow the specified IP addresses to access the backend login screen and "
+"WP-admin to avoid being locked from site backend."
+msgstr ""
+"Siempre permita que las direcciones IP especificadas accedan a la pantalla de "
+"acceso del backend y WP-admin para evitar ser cerrada desde el backend del "
+"sitio."
+
+#: um-config.php:365
+msgid "Blocked IP Addresses"
+msgstr "Direcciones IP bloqueadas"
+
+#: um-config.php:366
+msgid ""
+"This will block the listed IPs from signing up or signing in to the site, you "
+"can use full IP numbers or target specific range with a wildcard"
+msgstr ""
+"Esto bloqueará las IPs listadas de inscribirse o iniciar sesión en el sitio, se "
+"puede utilizar números IP completos o identifique rango específico con un "
+"comodín"
+
+#: um-config.php:372
+msgid "Blocked Email Addresses"
+msgstr "Direcciones de correo electrónico bloqueadas"
+
+#: um-config.php:373
+msgid ""
+"This will block the specified e-mail addresses from being able to sign up or "
+"sign in to your site. To block an entire domain, use something like *@domain.com"
+msgstr ""
+"Bloqueará las direcciones de correo electrónico especificada de poder "
+"registrarse o iniciar sesión en su sitio. Para bloquear un dominio entero, usar "
+"algo como *@domain.com"
+
+#: um-config.php:379
+msgid "Blacklist Words"
+msgstr "Lista negra de palabras"
+
+#: um-config.php:380
+msgid ""
+"This option lets you specify blacklist of words to prevent anyone from signing "
+"up with such a word as their username"
+msgstr ""
+"Esta opción le permite especificar una lista negra de las palabras para evitar "
+"que alguien incluya una palabra como su nombre de usuario"
+
+#: um-config.php:395
+msgid "Emails"
+msgstr "Correos electrónicos"
+
+#: um-config.php:401
+msgid "Mail appears from"
+msgstr "Correo aparecerá como"
+
+#: um-config.php:402
+msgid "e.g. Site Name"
+msgstr "Por ejemplo: nombre del sitio"
+
+#: um-config.php:409
+msgid "Mail appears from address"
+msgstr "Dirección de correo que aparecerá"
+
+#: um-config.php:410 um-config.php:733
+msgid "e.g. admin@companyname.com"
+msgstr "Por ejemplo: admin@companyname.com"
+
+#: um-config.php:417
+msgid "Use HTML for E-mails?"
+msgstr "¿Usar HTML para el correo electrónico?"
+
+#: um-config.php:419
+msgid ""
+"If you enable HTML for e-mails, you can customize the HTML e-mail templates "
+"found in <strong>templates/email</strong> folder."
+msgstr ""
+"Si habilitas HTML para el correo electrónico, puede personalizar las plantillas "
+"de correo electrónico HTML encontrados la carpeta <strong>templates/email</"
+"strong> ."
+
+#: um-config.php:425 um-config.php:433 um-config.php:443
+msgid "Account Welcome Email"
+msgstr "E-mail Bienvenida en activación de cuenta"
+
+#: um-config.php:427
+msgid ""
+"Whether to send the user an email when his account is automatically approved"
+msgstr ""
+"Si desea enviar al usuario un correo electrónico cuando su cuenta esté aprobada "
+"automáticamente"
+
+#: um-config.php:434 um-config.php:470 um-config.php:502 um-config.php:534
+#: um-config.php:570 um-config.php:601 um-config.php:632 um-config.php:663
+#: um-config.php:695 um-config.php:750 um-config.php:783 um-config.php:817
+msgid "Subject Line"
+msgstr "Línea del asunto"
+
+#: um-config.php:437 um-config.php:473 um-config.php:505 um-config.php:537
+#: um-config.php:573 um-config.php:604 um-config.php:635 um-config.php:666
+#: um-config.php:698 um-config.php:753 um-config.php:786 um-config.php:820
+msgid "This is the subject line of the e-mail"
+msgstr "Esta es la línea de asunto del correo electrónico"
+
+#: um-config.php:444 um-config.php:480 um-config.php:512 um-config.php:544
+#: um-config.php:580 um-config.php:611 um-config.php:642 um-config.php:673
+#: um-config.php:705 um-config.php:760 um-config.php:793 um-config.php:827
+msgid "Message Body"
+msgstr "Cuerpo del mensaje"
+
+#: um-config.php:461 um-config.php:469 um-config.php:479
+msgid "Account Activation Email"
+msgstr "E-mail activación cuenta"
+
+#: um-config.php:463
+msgid "Whether to send the user an email when his account needs e-mail activation"
+msgstr ""
+"Si desea enviar al usuario un correo electrónico cuando su cuenta necesita "
+"activación de e-mail"
+
+#: um-config.php:493 um-config.php:501 um-config.php:511
+msgid "Pending Review Email"
+msgstr "E-mail para cuenta pendiente de revisión"
+
+#: um-config.php:495
+msgid "Whether to send the user an email when his account needs admin review"
+msgstr ""
+"Si desea enviar al usuario un correo electrónico cuando su cuenta necesita "
+"revisión del administrador"
+
+#: um-config.php:525 um-config.php:533 um-config.php:543
+msgid "Account Approved Email"
+msgstr "E-mail Cuenta aprobada."
+
+#: um-config.php:527
+msgid "Whether to send the user an email when his account is approved"
+msgstr ""
+"Si desea enviar al usuario un correo electrónico cuando su cuenta esté aprobada"
+
+#: um-config.php:561 um-config.php:569 um-config.php:579
+msgid "Account Rejected Email"
+msgstr "E-mail a cuenta rechazada"
+
+#: um-config.php:563
+msgid "Whether to send the user an email when his account is rejected"
+msgstr ""
+"Si desea enviar al usuario un correo electrónico cuando su cuenta es rechazada"
+
+#: um-config.php:592 um-config.php:600 um-config.php:610
+msgid "Account Deactivated Email"
+msgstr "E-mail a cuenta desactivada"
+
+#: um-config.php:594
+msgid "Whether to send the user an email when his account is deactivated"
+msgstr ""
+"Si desea enviar al usuario un correo electrónico cuando su cuenta es desactivada"
+
+#: um-config.php:623 um-config.php:631 um-config.php:641
+msgid "Account Deleted Email"
+msgstr "E-Mail a cuenta eliminada"
+
+#: um-config.php:625
+msgid "Whether to send the user an email when his account is deleted"
+msgstr ""
+"Si desea enviar un correo electrónico a los usuarios cuando se elimina su cuenta"
+
+#: um-config.php:654 um-config.php:662 um-config.php:672
+msgid "Password Reset Email"
+msgstr "Email  ﻿Restablecer la Contraseña"
+
+#: um-config.php:656 um-config.php:688
+msgid ""
+"Whether to send the user an email when he request to reset password "
+"(Recommended, please keep on)"
+msgstr ""
+"Si desea enviar al usuario un correo electrónico cuando soliciten restablecer "
+"la contraseña (Recomendado, por favor, mantenga activado)"
+
+#: um-config.php:686 um-config.php:694 um-config.php:704
+msgid "Password Changed Email"
+msgstr "E-mail de cambio de compraseña"
+
+#: um-config.php:731
+msgid "Admin E-mail Address"
+msgstr "Dirección de correo electrónico para administración"
+
+#: um-config.php:739 um-config.php:749 um-config.php:759
+msgid "New User Notification"
+msgstr "Notificar nuevo usuario"
+
+#: um-config.php:741
+msgid "Whether to receive notification when a new user account is approved"
+msgstr ""
+"Si desea recibir una notificación cuando se aprueba una nueva cuenta de usuario"
+
+#: um-config.php:766 um-config.php:800 um-config.php:830
+msgid "This is the content of the e-mail"
+msgstr "Este es el contenido del correo electrónico"
+
+#: um-config.php:772 um-config.php:782 um-config.php:792
+msgid "Account Needs Review Notification"
+msgstr "Cuenta necesita notificación de revisión"
+
+#: um-config.php:774
+msgid "Whether to receive notification when an account needs admin review"
+msgstr ""
+"Si desea recibir una notificación cuando una cuenta necesita revisión "
+"administrativa"
+
+#: um-config.php:806 um-config.php:816 um-config.php:826
+msgid "Account Deletion Notification"
+msgstr "Notificación de cancelación de cuenta"
+
+#: um-config.php:808
+msgid "Whether to receive notification when an account is deleted"
+msgstr "Si desea recibir una notificación cuando se elimina una cuenta"
+
+#: um-config.php:844
+msgid "Uploads"
+msgstr "Subidas de archivos"
+
+#: um-config.php:850
+msgid "Profile Photo Maximum File Size"
+msgstr "Tamaño de archivo máximo de foto de perfil"
+
+#: um-config.php:851
+msgid "Sets a maximum size for the uploaded photo"
+msgstr "Establece el tamaño máximo de la foto subida"
+
+#: um-config.php:858
+msgid "Cover Photo Maximum File Size"
+msgstr "Tamaño máximo de archivo de imagen en portada"
+
+#: um-config.php:859
+msgid "Sets a maximum size for the uploaded cover"
+msgstr "Establece un tamaño máximo de la imagen de portada subida"
+
+#: um-config.php:866
+msgid "Profile Photo Thumbnail Sizes"
+msgstr "Tamaños de miniaturas de la foto de perfil"
+
+#: um-config.php:867
+msgid ""
+"Here you can define which thumbnail sizes will be created for each profile "
+"photo upload."
+msgstr ""
+"Aquí puede definir qué tamaños de miniaturas se creará para cada subida de foto "
+"de perfil."
+
+#: um-config.php:870 um-config.php:880
+msgid "Add New Size"
+msgstr "Añadir nuevo tamaño"
+
+#: um-config.php:876
+msgid "Cover Photo Thumbnail Sizes"
+msgstr "Tamaños de miniaturas para fotos de portada"
+
+#: um-config.php:877
+msgid ""
+"Here you can define which thumbnail sizes will be created for each cover photo "
+"upload."
+msgstr ""
+"Aquí puede definir qué tamaños miniatura se crearán para las subidas de foto de "
+"portada."
+
+#: um-config.php:886
+msgid "Image Quality"
+msgstr "Calidad de la imagen"
+
+#: um-config.php:887
+msgid ""
+"Quality is used to determine quality of image uploads, and ranges from 0 (worst "
+"quality, smaller file) to 100 (best quality, biggest file). The default range "
+"is 60."
+msgstr ""
+"Calidad se utiliza para determinar la calidad de la imagen subida y oscila "
+"entre 0 (peor calidad, archivo más pequeño) a 100 (mejor calidad, el archivo "
+"más grande). El intervalo predeterminado es 60."
+
+#: um-config.php:895
+msgid "Image Upload Maximum Width"
+msgstr "Anchura máxima de imagen"
+
+#: um-config.php:896
+msgid ""
+"Any image upload above this width will be resized to this limit automatically."
+msgstr ""
+"Cualquier imagen subida por encima de esta anchura será redimensionada "
+"automáticamente a este límite."
+
+#: um-config.php:904
+msgid "Cover Photo Minimum Width"
+msgstr "Anchura mínima para fotos de portada"
+
+#: um-config.php:905
+msgid "This will be the minimum width for cover photo uploads"
+msgstr ""
+"Esta será la anchura mínima para la foto de la portada que se permitirá subir"
+
+#: um-config.php:921
+msgid "SEO"
+msgstr "SEO"
+
+#: um-config.php:927
+msgid "User Profile Title"
+msgstr "Título de página para perfil de usuario"
+
+#: um-config.php:929
+msgid "This is the title that is displayed on a specific user profile"
+msgstr ""
+"Este es el título de la página que se muestra en el perfil de un usuario "
+"específico. (Etiquetas disponibles: {display_name}, {site_name} )"
+
+#: um-config.php:936
+msgid "User Profile Dynamic Meta Description"
+msgstr "Meta-descripción dinámica para página de perfil"
+
+#: um-config.php:937
+msgid ""
+"This will be used in the meta description that is available for search-engines."
+msgstr ""
+"Esto se utilizará en la descripción de la meta que está disponible para los "
+"motores de búsqueda. (Etiquetas disponibles: {display_name}, {site_name} )"
+
+#: um-config.php:951
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: um-config.php:961
+msgid "General"
+msgstr "General"
+
+#: um-config.php:968
+msgid "Members Default Template"
+msgstr "Plantilla predeterminada de miembros"
+
+#: um-config.php:969
+msgid "This will be the default template to output member directory"
+msgstr ""
+"Esta será la plantilla  predeterminada para presentación de directorio de "
+"miembros"
+
+#: um-config.php:979
+msgid "General Active Color"
+msgstr "Color primario general"
+
+#: um-config.php:981
+msgid ""
+"Active color is used commonly with many plugin elements as highlighted color or "
+"active selection for example. This color demonstrates the primary active color "
+"of the plugin"
+msgstr ""
+"Color activo se utiliza comúnmente con muchos elementos del plugin como el "
+"color resaltado o selección activa. Por ejemplo: Este color muestra el color "
+"activo primario del plugin."
+
+#: um-config.php:989
+msgid "General Secondary Color"
+msgstr "Color secundario general"
+
+#: um-config.php:991
+msgid ""
+"Secondary color is used for hovers, or active state for some elements of the "
+"plugin"
+msgstr ""
+"Color secundario se utiliza para elementos emergentes, o estado activo para "
+"algunos elementos de plugin"
+
+#: um-config.php:999
+msgid "Default Primary Button Color"
+msgstr "Color por defecto del botón principal"
+
+#: um-config.php:1008
+msgid "Default Primary Button Hover Color"
+msgstr "Color del botón principal al pasar por encima"
+
+#: um-config.php:1017
+msgid "Default Primary Button Text Color"
+msgstr "Color del texto principal botón predeterminado"
+
+#: um-config.php:1026
+msgid "Default Secondary Button Color"
+msgstr "Color por defecto del botón secundario"
+
+#: um-config.php:1035
+msgid "Default Secondary Button Hover Color"
+msgstr "Color del botón por defecto secundario  al pasar por encima"
+
+#: um-config.php:1044
+msgid "Default Secondary Button Text Color"
+msgstr "Color secundario del texto del botón predeterminado"
+
+#: um-config.php:1053
+msgid "Default Help Icon Color"
+msgstr "Color por defecto del icono ayuda"
+
+#: um-config.php:1065
+msgid "Form Inputs"
+msgstr "Entradas del formulario"
+
+#: um-config.php:1072
+msgid "Field Label Color"
+msgstr "Color de la etiqueta de campo"
+
+#: um-config.php:1080
+msgid "Field Border"
+msgstr "Borde del campo"
+
+#: um-config.php:1082
+msgid "The default border-style for input/fields in UM forms"
+msgstr ""
+"El estilo de borde predeterminado para la entrada/campos de formularios UM"
+
+#: um-config.php:1088
+msgid "Field Border on Focus"
+msgstr "Borde del campo onFocus"
+
+#: um-config.php:1090
+msgid "The default border style for fields on hover state"
+msgstr "El estilo de borde predeterminado para el estado onHover"
+
+#: um-config.php:1097
+msgid "Field Background Color"
+msgstr "Color de fondo del campo"
+
+#: um-config.php:1106
+msgid "Field Background Color on Focus"
+msgstr "Color del fondo onFocus"
+
+#: um-config.php:1115
+msgid "Field Text Color"
+msgstr "Color del texto del campo"
+
+#: um-config.php:1124
+msgid "Field Placeholder Color"
+msgstr "Color del campo de marcador de posición"
+
+#: um-config.php:1133
+msgid "Field Font Icon Color"
+msgstr "Color del campo para iconos de fuente"
+
+#: um-config.php:1141
+msgid "Show an asterisk for required fields"
+msgstr "Mostrar un asterisco para los campos obligatorios"
+
+#: um-config.php:1151
+msgid "Field Required Asterisk Color"
+msgstr "Color del asterisco para campo requerido"
+
+#: um-config.php:1164
+msgid "Profile"
+msgstr "Perfil"
+
+#: um-config.php:1171
+msgid "Profile Default Template"
+msgstr "Plantilla predeterminada del perfil"
+
+#: um-config.php:1172
+msgid "This will be the default template to output profile"
+msgstr "Esta será la plantilla predeterminada para  la presentación del perfil"
+
+#: um-config.php:1180
+msgid "Profile Maximum Width"
+msgstr "Perfil Ancho máximo"
+
+#: um-config.php:1188
+msgid "Profile Area Maximum Width"
+msgstr "Perfil Espacio Máximo Ancho"
+
+#: um-config.php:1190
+msgid ""
+"The maximum width of the profile area inside profile (below profile header)"
+msgstr ""
+"La anchura máxima de la zona de perfil dentro del perfil (por debajo de la "
+"cabecera de perfil)"
+
+#: um-config.php:1197
+msgid "Profile Shortcode Alignment"
+msgstr "Alineación del Shortcode del perfil"
+
+#: um-config.php:1201 um-config.php:1571 um-config.php:1673
+msgid "Centered"
+msgstr "Centrado"
+
+#: um-config.php:1202 um-config.php:1572 um-config.php:1674
+msgid "Left aligned"
+msgstr "Alineado a la izquierda"
+
+#: um-config.php:1203 um-config.php:1573 um-config.php:1675
+msgid "Right aligned"
+msgstr "Alineado a la derecha"
+
+#: um-config.php:1211
+msgid "Profile Field Icons"
+msgstr "Iconos de campos de perfil"
+
+#: um-config.php:1212
+msgid "This is applicable for edit mode only"
+msgstr "Esto es aplicable para el modo de edición sólo"
+
+#: um-config.php:1215 um-config.php:1585 um-config.php:1687
+msgid "Show inside text field"
+msgstr "Mostrar campo de texto en el interior"
+
+#: um-config.php:1216 um-config.php:1586 um-config.php:1688
+msgid "Show with label"
+msgstr "Mostrar con etiqueta"
+
+#: um-config.php:1217 um-config.php:1587 um-config.php:1689
+msgid "Turn off"
+msgstr "Deshabilitar"
+
+#: um-config.php:1224
+msgid "Profile Primary Button Text"
+msgstr "Texto del botón principal del perfil"
+
+#: um-config.php:1226
+msgid "The text that is used for updating profile button"
+msgstr "El texto que se utiliza para la actualización de botón de perfil"
+
+#: um-config.php:1232
+msgid "Profile Secondary Button"
+msgstr "Texto de botón secundario del perfil"
+
+#: um-config.php:1234 um-config.php:1604 um-config.php:1706
+msgid "Switch on/off the secondary button display in the form"
+msgstr "Activar/desactivar que el botón secundario se vea en el formulario"
+
+#: um-config.php:1242
+msgid "Profile Secondary Button Text"
+msgstr "Texto del botón secundario del perfil"
+
+#: um-config.php:1244
+msgid "The text that is used for cancelling update profile button"
+msgstr "Texto que se usará en el botón de cancelar la actualización del perfil"
+
+#: um-config.php:1252
+msgid "Profile Associated Role"
+msgstr "Perfil rol asociado"
+
+#: um-config.php:1253
+msgid ""
+"Normally, you can leave this to default as this restricts the profile per "
+"specified role only"
+msgstr ""
+"Normalmente, puede dejar esto por defecto como esto restringe el perfil por "
+"función especificada sólo"
+
+#: um-config.php:1262
+msgid "Profile Base Background Color"
+msgstr "Color de fondo Base de perfil"
+
+#: um-config.php:1271
+msgid "Profile Header Background Color"
+msgstr "Color de fondo de cabecera de perfil"
+
+#: um-config.php:1279
+msgid "Default Profile Photo"
+msgstr "Foto predeterminada del perfil"
+
+#: um-config.php:1280
+msgid ""
+"You can change the default profile picture globally here. Please make sure that "
+"the photo is 300x300px."
+msgstr ""
+"Puede cambiar la imagen de perfil por defecto a nivel global aquí. Por favor, "
+"asegúrese de que la foto es 300x300px."
+
+#: um-config.php:1291
+msgid "Default Cover Photo"
+msgstr "Foto predeterminada de la portada"
+
+#: um-config.php:1292
+msgid ""
+"You can change the default cover photo globally here. Please make sure that the "
+"default cover is large enough and respects the ratio you are using for cover "
+"photos."
+msgstr ""
+"Puedes cambiar la foto de portada por defecto a nivel global aquí. Por favor, "
+"asegúrate de que la portada por defecto es lo suficientemente grande y respeta "
+"la relación que está utilizando para fotos de portada."
+
+#: um-config.php:1300
+msgid ""
+"The global default of profile photo size. This can be overridden by individual "
+"form settings"
+msgstr ""
+"El valor predeterminado global del tamaño de la foto de perfil. Esto puede ser "
+"anulado por la configuración de formulario individuales"
+
+#: um-config.php:1308
+msgid ""
+"Whether to have rounded profile images, rounded corners, or none for the "
+"profile photo"
+msgstr ""
+"Si se han redondeado perfil imágenes, redondean las esquinas, o ninguna para la "
+"foto de perfil"
+
+#: um-config.php:1320
+msgid "Profile Cover Photos"
+msgstr "Foto de portada del perfil"
+
+#: um-config.php:1322
+msgid "Switch on/off the profile cover photos"
+msgstr "Encendido/apagado las fotos de portada de perfil"
+
+#: um-config.php:1331
+msgid "Profile Cover Ratio"
+msgstr "Ratio de la portada de perfil"
+
+#: um-config.php:1332
+msgid "Choose global ratio for cover photos of profiles"
+msgstr "Elija ratio global para ver las fotos de portada de perfiles"
+
+#: um-config.php:1345
+msgid "Profile Header Meta Text Icon"
+msgstr "Perfil encabezado Meta icono de texto"
+
+#: um-config.php:1347
+msgid "Display field icons for related user meta fields in header or not"
+msgstr ""
+"Mostrar iconos de campo para los campos de usuarios relacionados con meta en "
+"cabecera o no"
+
+#: um-config.php:1356
+msgid "Profile Header Meta Text Color"
+msgstr "Color del texto del Encabezado meta"
+
+#: um-config.php:1365
+msgid "Profile Header Link Color"
+msgstr "Perfil encabezado Link Color"
+
+#: um-config.php:1374
+msgid "Profile Header Link Hover"
+msgstr "Perfil Encabezado Enlace sobre"
+
+#: um-config.php:1383
+msgid "Profile Header Icon Link Color"
+msgstr "Perfil encabezado icono Color del vínculo"
+
+#: um-config.php:1392
+msgid "Profile Header Icon Link Hover"
+msgstr "Perfil Encabezado Icon Link Pasa el puntero"
+
+#: um-config.php:1400
+msgid "Show display name in profile header"
+msgstr "Nombre para mostrar Mostrar en cabecera del perfil"
+
+#: um-config.php:1402
+msgid "Switch on/off the user name on profile header"
+msgstr "Activar/desactivar el nombre de usuario de cabecera de perfil"
+
+#: um-config.php:1410
+msgid "Show social links in profile header"
+msgstr "Mostrar vínculos sociales en cabecera del perfil"
+
+#: um-config.php:1412
+msgid "Switch on/off the social links on profile header"
+msgstr "Activar/desactivar los vínculos sociales de cabecera de perfil"
+
+#: um-config.php:1420
+msgid "Show user description in header"
+msgstr "Mostrar descripción de usuario en cabecera"
+
+#: um-config.php:1422
+msgid "Switch on/off the user description on profile header"
+msgstr ""
+"Interruptor de activar/desactivar para la descripción del usuario en la "
+"cabecera de perfil"
+
+#: um-config.php:1430
+msgid "User description maximum chars"
+msgstr "Máximo de caracteres para descripción del usuario"
+
+#: um-config.php:1432
+msgid "Maximum number of characters to allow in user description field in header."
+msgstr ""
+"Número máximo de caracteres a permitir en el campo de descripción de usuario en "
+"cabecera."
+
+#: um-config.php:1439
+msgid "Profile Header Menu Position"
+msgstr "Posición del menú perfil encabezado"
+
+#: um-config.php:1441
+msgid ""
+"For incompatible themes, please make the menu open from left instead of bottom "
+"by default."
+msgstr ""
+"Para temas incompatibles, por favor, ponga el menú abierto desde la izquierda "
+"en lugar de fondo por defecto."
+
+#: um-config.php:1452
+msgid "Show a custom message if profile is empty"
+msgstr "Mostrar un mensaje personalizado si el perfil está vacío"
+
+#: um-config.php:1454
+msgid "Switch on/off the custom message that appears when the profile is empty"
+msgstr ""
+"Activar/desactivar el mensaje personalizado que aparece cuando el perfil está "
+"vacío"
+
+#: um-config.php:1462
+msgid "Show the emoticon"
+msgstr "Mostrar el emoticon"
+
+#: um-config.php:1464
+msgid "Switch on/off the emoticon (sad face) that appears above the message"
+msgstr ""
+"Encender/apagar el emoticono (cara triste) que aparece encima del mensaje."
+
+#: um-config.php:1478
+msgid "Enable profile menu"
+msgstr "Habilitar menú de perfil"
+
+#: um-config.php:1491
+#, php-format
+msgid "%s Tab"
+msgstr "%s Pestaña"
+
+#: um-config.php:1504
+msgid "Profile menu default tab"
+msgstr "Pestaña por defecto del menú"
+
+#: um-config.php:1505
+msgid "This will be the default tab on user profile page"
+msgstr "Esta será la pestaña por defecto de la página de perfil de usuario"
+
+#: um-config.php:1514
+msgid "Enable menu icons in desktop view"
+msgstr "Habilitar iconos de menú en vista de escritorio"
+
+#: um-config.php:1524
+msgid "Enable counts in menu"
+msgstr "Habilitar cuentas en menú"
+
+#: um-config.php:1534
+msgid "Profile Menu"
+msgstr "Menú de perfil"
+
+#: um-config.php:1549
+msgid "Registration Default Template"
+msgstr "Plantilla predeterminada de registro"
+
+#: um-config.php:1550
+msgid "This will be the default template to output registration"
+msgstr "Esta será la plantilla predeterminada para el registro"
+
+#: um-config.php:1558
+msgid "Registration Maximum Width"
+msgstr "Anchura máxima de formulario de registro"
+
+#: um-config.php:1560 um-config.php:1662
+msgid "The maximum width this shortcode can take from the page width"
+msgstr "Anchura máxima que el shortcode puede tomar de ancho en la página"
+
+#: um-config.php:1567
+msgid "Registration Shortcode Alignment"
+msgstr "Alineamiento del Shortcode de registro"
+
+#: um-config.php:1581
+msgid "Registration Field Icons"
+msgstr "Iconos de campos de registro"
+
+#: um-config.php:1582
+msgid "This controls the display of field icons in the registration form"
+msgstr ""
+"Controla la visualización de los iconos de campo en el formulario de inscripción"
+
+#: um-config.php:1594
+msgid "Registration Primary Button Text"
+msgstr "Texto del botón principal de registro"
+
+#: um-config.php:1596 um-config.php:1698
+msgid "The text that is used for primary button text"
+msgstr "El texto que se utiliza para el texto del botón principal"
+
+#: um-config.php:1602
+msgid "Registration Secondary Button"
+msgstr "Botón de registro secundario"
+
+#: um-config.php:1612
+msgid "Registration Secondary Button Text"
+msgstr "Texto del botón secundario de registro"
+
+#: um-config.php:1614 um-config.php:1716
+msgid "The text that is used for the secondary button text"
+msgstr "El texto que se utiliza para el texto del botón secundario"
+
+#: um-config.php:1621
+msgid "Registration Secondary Button URL"
+msgstr "URL de registro botón secundario"
+
+#: um-config.php:1623 um-config.php:1725
+msgid "You can replace default link for this button by entering custom URL"
+msgstr ""
+"Se puede reemplazar el enlace predeterminado para este botón introduciendo URL "
+"personalizada"
+
+#: um-config.php:1631
+msgid "Registration Default Role"
+msgstr "Rol de registro predeterminado"
+
+#: um-config.php:1632
+msgid ""
+"This will be the default role assigned to users registering thru registration "
+"form"
+msgstr ""
+"Este rol se asignará cuando los usuarios se registran a través del formulario "
+"de registro."
+
+#: um-config.php:1651
+msgid "Login Default Template"
+msgstr "Plantilla por defecto para inicio de sesión"
+
+#: um-config.php:1652
+msgid "This will be the default template to output login"
+msgstr "Esta será la plantilla por defecto a la salida de inicio de sesión"
+
+#: um-config.php:1660
+msgid "Login Maximum Width"
+msgstr "Ancho máximo de acceso"
+
+#: um-config.php:1669
+msgid "Login Shortcode Alignment"
+msgstr "Alineación del Shortcode de acceso"
+
+#: um-config.php:1683
+msgid "Login Field Icons"
+msgstr "Iconos de campo login"
+
+#: um-config.php:1684
+msgid "This controls the display of field icons in the login form"
+msgstr ""
+"Controla la visualización de los iconos de campo en el formulario de acceso"
+
+#: um-config.php:1696
+msgid "Login Primary Button Text"
+msgstr "Texto del botón principal de acceso"
+
+#: um-config.php:1704
+msgid "Login Secondary Button"
+msgstr "Boton secundario de acceso"
+
+#: um-config.php:1714
+msgid "Login Secondary Button Text"
+msgstr "Testo del botón secundario de acceso"
+
+#: um-config.php:1723
+msgid "Login Secondary Button URL"
+msgstr "Url del botón secundario de acceso"
+
+#: um-config.php:1732
+msgid "Login Forgot Password Link"
+msgstr "Mostrar Link ¿ha olvidado su contraseña?"
+
+#: um-config.php:1734
+msgid "Switch on/off the forgot password link in login form"
+msgstr ""
+"activar/desactivar el link ¿Ha olvidado su contraseña? en formulario de acceso"
+
+#: um-config.php:1742
+msgid "Show \"Remember Me\""
+msgstr "Mostrar \"Recuerdame\""
+
+#: um-config.php:1744
+msgid ""
+"Allow users to choose If they want to stay signed in even after closing the "
+"browser. If you do not show this option, the default will be to not remember "
+"login session."
+msgstr ""
+"Permitir a los usuarios elegir si quieren seguir conectados incluso después de "
+"cerrar el navegador. Si presentas esta opción, el valor por defecto será la de "
+"no recordar la sesión de inicio de sesión."
+
+#: um-config.php:1764
+msgid ""
+"Any custom css rules that you specify here will be applied globally to the "
+"plugin."
+msgstr ""
+"Cualquier regla css personalizado que especifique aquí se aplicará globalmente "
+"para el plugin."
+
+#: um-config.php:1780
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: um-config.php:1786
+msgid "Import & Export Settings"
+msgstr "Importación y Exportación  de ajustes"
+
+#: um-config.php:1793
+msgid "Do not allow registering these roles"
+msgstr "No permitir registrare a estos roles"
+
+#: um-config.php:1795
+msgid ""
+"Comma seperate roles (role slugs) that can not be registered from frontend ever "
+"for security."
+msgstr ""
+"Roles separados por comas (slugs de roles) que no pueden ser registrados en el "
+"frontend para seguridad."
+
+#: um-config.php:1801
+msgid "Enable Time Check Security"
+msgstr "Habilitar la seguridad con control tiempo"
+
+#: um-config.php:1803
+msgid ""
+"Turn this option off if you have a conflict with other plugins causing a spam "
+"bot message to appear unexpectedly."
+msgstr ""
+"Desactive esta opción si tiene un conflicto con otros plugins causando un spam "
+"bot mensaje a aparecer inesperadamente."
+
+#: um-config.php:1811
+msgid "Disable JS/CSS Compression"
+msgstr "Desactivar JS/CSS Compresión"
+
+#: um-config.php:1813
+msgid ""
+"Not recommended. This will load all plugin js and css files separately and may "
+"slow down your website. Use this setting for development or debugging purposes "
+"only."
+msgstr ""
+"No se recomienda. Esto cargará todos los archivos js  y css del plugin "
+"separados y puede ralentizar su sitio web. Utilice este ajuste sólo con fines "
+"de desarrollo o de depuración."
+
+#: um-config.php:1821
+msgid "Disable Nav Menu Settings"
+msgstr "Deshabilitar la configuración de menú Nav"
+
+#: um-config.php:1823
+msgid ""
+"This can disable the settings that appear in nav menus to apply custom access "
+"settings to nav items."
+msgstr ""
+"Esto puede desactivar los ajustes que aparecen en los menús de navegación para "
+"aplicar la configuración de acceso personalizado a los elementos de navegación."
+
+#: um-config.php:1831
+msgid "Never load plugin JS and CSS on homepage"
+msgstr "Nunca cargar plugin JS y CSS en la página principal"
+
+#: um-config.php:1833
+msgid "This can disable loading plugin js and css files on home page."
+msgstr ""
+"Esto puede desactivar la carga de los archivos JS y CSS del plugin en la página "
+"principal."
+
+#: um-config.php:1842
+msgid "Never load plugin JS and CSS on the following pages"
+msgstr "Nunca carga plugin de JS y CSS en las páginas siguientes"
+
+#: um-config.php:1843
+msgid ""
+"Enter a url or page slug (e.g /about/) to disable loading the plugin's css and "
+"js on that page."
+msgstr ""
+"Introduzca una url o slug de página (por ejemplo, /acerca/) para desactivar la "
+"carga de css y js del plugin en esa página."
+
+#: um-config.php:1844 um-config.php:1853
+msgid "Add New Page"
+msgstr "Añadir Nueva página"
+
+#: um-config.php:1851
+msgid "Only load plugin JS and CSS on the following pages"
+msgstr "Sólo cargar plugin JS y CSS en las páginas siguientes"
+
+#: um-config.php:1852
+msgid ""
+"Enter a url or page slug (e.g /about/) to enable loading the plugin's css and "
+"js on that page."
+msgstr ""
+"Introduzca una url o slug de página (por ejemplo, /acerca/) para desactivar la "
+"carga de css y js del plugin en esa página."
+
+#: um-config.php:1859
+msgid "Enable custom css tab?"
+msgstr "Activar CSS personalizado"
+
+#: um-config.php:1868
+msgid "Allow Tracking"
+msgstr "Permitir seguimiento"
+
+#: um-init.php:34
+msgid "Multi Language Support"
+msgstr "Soporte multilingüe"
+
+#: um-init.php:35
+msgid ""
+"This add-on helps you offer multi language forms to your visitors based on the "
+"languages you want."
+msgstr ""
+"Esta herramienta ayuda a ofrecer formularios en distintos idiomas a sus "
+"visitantes basados en los idiomas que quieras."
+
+#: um-init.php:39
+msgid "BuddyPress Avatar Transfer"
+msgstr "Transferencia de Avatar BuddyPress"
+
+#: um-init.php:40
+msgid ""
+"This add-on enables you to migrate your custom user photos from BuddyPress to "
+"use with Ultimate Member."
+msgstr ""
+"Esta herramienta le permite migrar tus fotos de usuario personalizados de "
+"BuddyPress para usar con Ultimate Member"
+
+#~ msgid ""
+#~ "Are you sure you want to delete the selected user(s)? The following users "
+#~ "will be deleted: (%s) <strong>This cannot be undone!</strong>"
+#~ msgstr ""
+#~ "¿Seguro que quieres eliminar los usuarios seleccionados?, Los siguientes "
+#~ "usuarios se eliminarán: (% s) <strong>Esto no se puede deshacer!</strong>"
+
+#~ msgid "Yes! Delete"
+#~ msgstr "Sí, borrar"
+
+#~ msgid "You must check %s."
+#~ msgstr "Usted debe verificar %s."
+
+#~ msgid "Thank you!"
+#~ msgstr "¡Muchas gracias!"
+
+#~ msgid "Your account is awaiting e-mail verifications."
+#~ msgstr "Su cuenta está pendiente de verificación de correo electrónico."
+
+#~ msgid "Countries"
+#~ msgstr "Países"
+
+#~ msgid "Field Border Style"
+#~ msgstr "Estilo de borde de campo"
+
+#~ msgid ""
+#~ "Help us improve Ultimate Member’s compatibility with other plugins and "
+#~ "themes by allowing us to track non-sensitive data on your site. Click <a "
+#~ "href=\"https://ultimatemember.com/tracking/\" target=\"_blank\">here</a> to "
+#~ "see what data we track."
+#~ msgstr ""
+#~ "Ayúdanos a mejorar la compatibilidad de Ultimate Member con otros plugins y "
+#~ "temas permitiendo un seguimiento de los datos no sensibles en su sitio. Haga "
+#~ "clic <a href=\"https://ultimatemember.com/tracking/\" target=\"_blank"
+#~ "\">aquí</a> para consultar los datos de los que hacemos un seguimiento."
+
+#~ msgid "Theme Compatibility Issue."
+#~ msgstr "Problema de compatibilidad del tema."
+
+#~ msgid "Regisration Date"
+#~ msgstr "Fecha de registro"
+
+#~ msgid "Do not allow"
+#~ msgstr "No permitir"
+
+#~ msgid ""
+#~ "This tool enables you to migrate your custom user photos from BuddyPress to "
+#~ "use with Ultimate Member."
+#~ msgstr ""
+#~ "Esta herramienta le permite migrar tus fotos de usuario personalizada de "
+#~ "BuddyPress para usar con Ultimate Member"
+
+#~ msgid "WordPress Role"
+#~ msgstr "Rol WordPress"
+
+#~ msgid "This is the membership role set by WordPress"
+#~ msgstr "Este es el rol de miembros establecido por WordPress"
+
+#~ msgid "Status"
+#~ msgstr "Estado"
+
+#~ msgid "This is current user status in your membership site"
+#~ msgstr "Este es el estado de afiliación del usuario actual en su sitio"
+
+#~ msgid ""
+#~ "If you want to contribute this translation to the plugin, please add it on "
+#~ "our <a href=\"https://ultimatemember.com/forums/\"><forums</a>."
+#~ msgstr ""
+#~ "Si quieres contribuir con esta traducción del plugin, por favor entra en "
+#~ "nuestro <a href=\"https://ultimatemember.com/forums/topic/spanish-language-"
+#~ "es-es/\"><foro</a>."
+
+#~ msgid "Recent Members"
+#~ msgstr "Miembros recientes"
+
+#~ msgid "Users Awaiting Review"
+#~ msgstr "Usuarios pendientes de revisión"
+
+#~ msgid "No users are awaiting manual verification so far."
+#~ msgstr "No hay usuarios esperando verificación manual en este momento."
+
+#~ msgid "Pending e-mail confirmation"
+#~ msgstr "A la espera de la confirmación por e-mail"
+
+#~ msgid "No users are awaiting e-mail validation yet."
+#~ msgstr ""
+#~ "No hay usuarios que estén en espera de validación de correo electrónico "
+#~ "todavía."
+
+#~ msgid "Recently Deactivated"
+#~ msgstr "Usuarios desactivados recientemente"
+
+#~ msgid "No users have been deactivated recently."
+#~ msgstr "Ningún usuario a sido desactivado recientemente."
+
+#~ msgid "Confirm New %s"
+#~ msgstr "Confirmar nueva %s"
+
+#~ msgid "Please create a team.php template in admin templates."
+#~ msgstr ""
+#~ "Por favor, cree una plantilla team.php en plantillas de administración."
+
+#~ msgid "outdatedBrowser_page_message"
+#~ msgstr ""
+#~ "The site you are visiting can only be viewed using a modern browser. Please "
+#~ "upgrade your browser to increase safety and your browsing experience. Choose "
+#~ "one of the browsers above. If you don't care <a href=\"?"
+#~ "forwardOutdatedBrowser=1\">click here</a>"
+
+#~ msgid "404_page_message"
+#~ msgstr ""
+#~ "The Page you are looking for doesn't exist or an other error occurred. <a "
+#~ "href=\"javascript:history.go(-1)\">Go back</a>, or head over to <a href=\"%s"
+#~ "\">%s</a> to choose a new direction."

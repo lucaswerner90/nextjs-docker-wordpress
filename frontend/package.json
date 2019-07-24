@@ -18,7 +18,8 @@
     "react-hotjar": "^2.0.0",
     "react-redux": "^7.1.0",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "wpapi": "^1.2.1"
   },
   "devDependencies": {
     "@types/enzyme": "^3.9.3",

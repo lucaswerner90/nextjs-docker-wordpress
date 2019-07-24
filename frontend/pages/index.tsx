@@ -5,15 +5,13 @@ import { connect } from 'react-redux';
 import { getSiteInfo, getSiteLogo, getSiteMenus } from '../src/redux/actions/siteInfoActions';
 import { getPosts } from '../src/redux/actions/postActions';
 import Link from 'next/link';
-import { Grid } from '@material-ui/core';
-
-
+import { Grid, Button } from '@material-ui/core';
 
 const simplePostRender = (post) => {
   const { id = '', title = { rendered: '' }, date = new Date(), slug = '' } = post;
   return (
     <Grid item xs={12} sm={6} md={4} key={id}>
-      <Link prefetch href={`post/${id}`} as={`post/${slug}`}>
+      <Link prefetch href={`artist/${slug}`}>
         <Typography variant="button" style={{ cursor: 'pointer' }} gutterBottom>
           {title.rendered}
         </Typography>
@@ -34,6 +32,13 @@ export const Index = ({ basicInfo = { name: '', description: '' }, posts = [] })
   return (
     <Layout>
       <Grid container justify="center">
+        <Grid item xs={12}>
+          <Link prefetch href="/register">
+            <Button color="secondary" style={{ cursor: 'pointer' }}>
+              Create new post
+            </Button>
+          </Link>
+        </Grid>
         <Grid item xs={12}>
           <Typography variant="h4" component="h1" gutterBottom>
             {name}

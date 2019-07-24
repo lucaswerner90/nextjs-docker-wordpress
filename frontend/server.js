@@ -7,16 +7,35 @@ const dev = process.env.NODE_ENV !== 'prod' && process.env.NODE_ENV !== 'product
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+// Wordpress API Configuration
+const wp = require('./next.config').publicRuntimeConfig.wp;
 
 app.prepare().then(() => {
     const server = express();
+
+    server.use(express.json());
     server.use(compression());
+
     server.use(express.static(__dirname + '/static'));
 
-    server.get('/post/:id', (req, res) => {
+    server.get('/artist/:slug', (req, res) => {
         const actualPage = '/post';
-        const queryParams = { id: req.params.id };
+        const queryParams = { slug: req.params.slug };
         app.render(req, res, actualPage, queryParams);
+    });
+
+    // Create a new post using the /artist endpoint
+    // https://github.com/WP-API/node-wpapi#creating-posts
+
+    server.post('/artist', async (req, res) => {
+        const { body = {} } = req;
+        try {
+            const response = await wp.posts().create(body);
+            res.send(response);
+        } catch (error) {
+            res.send(error);
+        }
+
     });
 
     server.get('*', (req, res) => {

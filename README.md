@@ -149,6 +149,9 @@ describe('Render index page correctly', () => {
 });
 ```
 
+## Additional Help
+
+* [NextJS Spectrum Chat](https://spectrum.chat/next-js/general?tab=posts)
 ## Deployment
 
 Add additional notes about how to deploy this on a live system

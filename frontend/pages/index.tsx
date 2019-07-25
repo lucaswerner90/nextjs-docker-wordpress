@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Layout from '../src/components/Layout';
 import { connect } from 'react-redux';
-import { getSiteInfo, getSiteLogo, getSiteMenus } from '../src/redux/actions/siteInfoActions';
+import { getSiteInfo } from '../src/redux/actions/siteInfoActions';
 import { getPosts } from '../src/redux/actions/postActions';
 import Link from 'next/link';
 import { Grid, Button } from '@material-ui/core';
@@ -71,9 +71,27 @@ Index.getInitialProps = async ({ store }) => {
   const [siteInfo, posts] = await Promise.all([
     store.dispatch(getSiteInfo()),
     store.dispatch(getPosts()),
-    store.dispatch(getSiteLogo()),
-    store.dispatch(getSiteMenus()),
   ]);
+
+  // 
+  // Example of how to get the data from the API in getInitialProps()
+  // 
+  // This should go at the beginning of the file:
+  // 
+  // import fetch from 'isomorphic-unfetch';
+  // import getConfig from 'next/config';
+  // const { publicRuntimeConfig } = getConfig();
+  // const { HOST_URL } = publicRuntimeConfig;
+  // 
+  // 
+  // 
+  // This should go here:
+  // 
+  // const res = await fetch(`${HOST_URL}/api/artist/genre/6`);
+  // const data = await res.json();
+  // console.log('Filter by genre -->', data);
+
+
   if (siteInfo && siteInfo.payload) {
     return { basicInfo: siteInfo.payload, posts: Object.values(posts.payload) };
   }

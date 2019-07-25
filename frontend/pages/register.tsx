@@ -11,7 +11,7 @@ import { Button } from '@material-ui/core';
 export class RegistrationForm extends Component<any, any> {
 
     createArtist = async () => {
-        const res = await fetch('/artist', {
+        const res = await fetch('/api/artist', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

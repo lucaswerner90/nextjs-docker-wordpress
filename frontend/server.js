@@ -24,10 +24,10 @@ app.prepare().then(() => {
         app.render(req, res, actualPage, queryParams);
     });
 
-    // Create a new post using the /artist endpoint
+    // Create a new post using the /post endpoint
     // https://github.com/WP-API/node-wpapi#creating-posts
 
-    server.post('/artist', async (req, res) => {
+    server.post('/api/artist', async (req, res) => {
         const { body = {} } = req;
         try {
             const response = await wp.posts().create(body);
@@ -38,6 +38,16 @@ app.prepare().then(() => {
 
     });
 
+    server.get('/api/artist/genre/:genre_id', async (req, res) => {
+        const { genre_id = '' } = req.params;
+        if (genre_id) {
+            const artists = await wp.artists().param('generos_musicales', [genre_id]);
+            return res.json({ data: artists });
+        }
+        return res.json({ data: [] });
+    });
+
+
     server.get('*', (req, res) => {
         return handle(req, res);
     });
@@ -46,7 +56,7 @@ app.prepare().then(() => {
     server.listen(PORT, (err) => {
         if (err) throw err;
         console.log(`NextJS is ready on port ${PORT}!`);
-    })
+    });
 
 }).catch((error) => {
     console.error(error.stack);

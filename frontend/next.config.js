@@ -1,13 +1,23 @@
 const API = process.env.API_URL || 'http://localhost:8000';
+const HOST_URL = process.env.HOST_URL || 'http://localhost:3000';
 
 // Wordpress API Configuration
 const WPAPI = require('wpapi');
+const WP_CUSTOM_ROUTES_CONFIG = require('./config/WPCustomRoutes');
 const wp = new WPAPI({
     endpoint: `${API}/wp-json`,
     username: process.env.WP_USERNAME || 'test',
     password: process.env.WP_PASSWORD || 'test',
-    auth:true
+    auth: true
 });
+
+// Define the custom routes automatically based on config/WPCustomRoutes
+const customRoutes = Object.keys(WP_CUSTOM_ROUTES_CONFIG);
+for (let i = 0; i < customRoutes.length; i++) {
+    const route = customRoutes[i];
+    const info = WP_CUSTOM_ROUTES_CONFIG[route];
+    wp[route] = wp.registerRoute("wp/v2", info.path, { params: info.params });
+}
 
 module.exports = {
     env: {
@@ -15,6 +25,7 @@ module.exports = {
         HOTJAR_KEY: ''
     },
     publicRuntimeConfig: {
+        HOST_URL,
         API,
         wp
     }

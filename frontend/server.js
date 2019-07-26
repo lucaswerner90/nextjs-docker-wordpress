@@ -30,7 +30,17 @@ app.prepare().then(() => {
     server.post('/api/artist', async (req, res) => {
         const { body = {} } = req;
         try {
-            const response = await wp.posts().create(body);
+            const response = await wp.artista().create(body);
+            res.send(response);
+        } catch (error) {
+            res.send(error);
+        }
+
+    });
+    server.put('/api/artist', async (req, res) => {
+        const { artistId, data } = req.body;
+        try {
+            const response = await wp.artista().id(artistId).update(data);
             res.send(response);
         } catch (error) {
             res.send(error);
@@ -41,7 +51,7 @@ app.prepare().then(() => {
     server.get('/api/artist/genre/:genre_id', async (req, res) => {
         const { genre_id = '' } = req.params;
         if (genre_id) {
-            const artists = await wp.artists().param('generos_musicales', [genre_id]);
+            const artists = await wp.artista().param('genero_musical', [genre_id]);
             return res.json({ data: artists });
         }
         return res.json({ data: [] });

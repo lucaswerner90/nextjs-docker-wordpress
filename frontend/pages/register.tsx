@@ -18,9 +18,10 @@ export class RegistrationForm extends Component<any, any> {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                title: 'any title',
-                content: 'some content here',
-                status: 'publish'
+                title: 'Random artist',
+                status: 'draft',
+                facebook: 'facebook.com',
+                genero_musical: [9]
             }),
         });
         const data = await res.json();

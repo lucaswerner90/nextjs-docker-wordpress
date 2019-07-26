@@ -36,6 +36,7 @@
     "enzyme-adapter-react-16": "^1.11.2",
     "jasmine-core": "^3.4.0",
     "jest": "latest",
+    "nodemon": "^1.19.1",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.8.4",
     "redux-mock-store": "^1.5.3",
@@ -45,8 +46,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "dev": "node server.js",
+    "dev": "nodemon server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   }
 }

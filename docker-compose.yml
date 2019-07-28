@@ -4,7 +4,6 @@ services:
     image: ${DB_ENGINE}:${DB_IMAGE_VERSION}
     volumes:
       - ./backend/db/db_data:/var/lib/mysql
-      - ./backend/db/init.sql:/docker-entrypoint-initdb.d/init.sql
     environment: 
       MYSQL_ROOT_USER: ${MYSQL_ROOT_USER}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -21,10 +20,9 @@ services:
   frontend:
     build: ./frontend
     environment: 
-      - NODE_ENV: ${NODE_ENV}
-      - API_URL: ${API_URL}
-    volumes: 
-      - ./frontend:/usr/src/app
+      PORT: 80
+      NODE_ENV: ${NODE_ENV}
+      API_URL: ${API_URL}
   
   api:
     build: ./backend/api
@@ -33,7 +31,9 @@ services:
     volumes:
       - ./backend/api:/usr/src/app
     environment: 
-      - NODE_ENV:${NODE_ENV}
+      NODE_ENV: ${NODE_ENV}
+      WP_USERNAME: ${WP_USERNAME}
+      WP_PASSWORD: ${WP_PASSWORD}
 
   wordpress:
     depends_on:

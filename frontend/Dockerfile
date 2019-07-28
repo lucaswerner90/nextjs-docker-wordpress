@@ -1,12 +1,11 @@
 FROM node:alpine
 
+# Create app directory
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-COPY package.json ./
-RUN npm install
-
-COPY . ./
-
-CMD ["npm", "test"]
-
-CMD ["npm", "run", "dev"]
+# Install app dependencies
+COPY . /usr/src/app/
+RUN yarn
+RUN yarn build
+CMD yarn start

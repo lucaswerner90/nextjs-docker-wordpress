@@ -1,17 +1,20 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Layout from '../src/components/Layout';
-import { connect } from 'react-redux';
-import { getSiteInfo } from '../src/redux/actions/siteInfoActions';
-import { getPosts } from '../src/redux/actions/postActions';
 import Link from 'next/link';
 import { Grid, Button } from '@material-ui/core';
+import fetch from 'isomorphic-unfetch';
+
+
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
+const { API } = publicRuntimeConfig;
 
 const simplePostRender = (post) => {
   const { id = '', title = { rendered: '' }, date = new Date(), slug = '' } = post;
   return (
     <Grid item xs={12} sm={6} md={4} key={id}>
-      <Link prefetch href={`artist/${slug}`}>
+      <Link prefetch href={`post/${slug}`}>
         <Typography variant="button" style={{ cursor: 'pointer' }} gutterBottom>
           {title.rendered}
         </Typography>
@@ -67,12 +70,14 @@ export const Index = ({ basicInfo = { name: '', description: '' }, posts = [] })
 }
 
 
-Index.getInitialProps = async ({ store }) => {
-  const [siteInfo, posts] = await Promise.all([
-    store.dispatch(getSiteInfo()),
-    store.dispatch(getPosts()),
-  ]);
+Index.getInitialProps = async () => {
+  const postResponse = await fetch(API);
+  const posts = await postResponse.json();
 
+
+  const siteInfoResponse = await fetch(`${API}/settings`);
+  const siteInfo = await siteInfoResponse.json();
+  console.log(siteInfo);
   // 
   // Example of how to get the data from the API in getInitialProps()
   // 
@@ -91,15 +96,7 @@ Index.getInitialProps = async ({ store }) => {
   // const data = await res.json();
   // console.log('Filter by genre -->', data);
 
-
-  if (siteInfo && siteInfo.payload) {
-    return { basicInfo: siteInfo.payload, posts: Object.values(posts.payload) };
-  }
-  return {};
+  return { ...posts };
 }
 
-const mapReduxStateToComponentProps = (state) => ({
-  basicInfo: state.siteInfo
-});
-
-export default connect(mapReduxStateToComponentProps)(Index);
+export default Index;

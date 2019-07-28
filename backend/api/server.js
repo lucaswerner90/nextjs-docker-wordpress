@@ -1,22 +1,96 @@
 const express = require('express');
+const server = express();
 
-const PORT = process.env.PORT || 9000;
+
+const PORT = process.env.PORT || 80;
 const dev = process.env.NODE_ENV == 'dev' || process.env.NODE_ENV == 'development';
 
-// Wordpress API Configuration
-// const wp = require('./next.config').publicRuntimeConfig.wp;
 
-const server = express();
+
+// Wordpress API Configuration
+const wp = require('./src/wordpressConfig');
+
+
+// Middlewares
 server.use(express.json());
 
 
 
-server.get('/', (req, res) => {
-    return res.send('API Works');
+// Routes
+server.get('/settings', async (req, res) => {
+    try {
+        const settings = await wp.settings();
+        return res.send(settings);
+    } catch (error) {
+        console.error(error);
+        return res.send(error);
+    }
+});
+server.get('/', async (req, res) => {
+    try {
+        const posts = await wp.posts();
+        return res.json({ posts });
+    } catch (error) {
+        console.error(error);
+    }
+});
+server.get('/post/:slug', async (req, res) => {
+    try {
+        const { slug } = req.params;
+        const data = await wp.posts().slug(slug);
+        return res.json({ ...data[0] });
+    } catch (error) {
+        console.error(error);
+        return res.send(error);
+    }
+});
+server.get('/media/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const data = await wp.media().id(id);
+        return res.send(data);
+    } catch (error) {
+        console.error(error);
+        return res.send(error);
+    }
 });
 
 
+// Create a new post using the /post endpoint
+// https://github.com/WP-API/node-wpapi#creating-posts
 
+server.post('artist', async (req, res) => {
+    const { body = {} } = req;
+    try {
+        const response = await wp.artista().create(body);
+        res.send(response);
+    } catch (error) {
+        res.send(error);
+    }
+
+});
+server.put('artist', async (req, res) => {
+    const { artistId, data } = req.body;
+    try {
+        const response = await wp.artista().id(artistId).update(data);
+        res.send(response);
+    } catch (error) {
+        res.send(error);
+    }
+
+});
+
+server.get('artist/genre/:genre_id', async (req, res) => {
+    const { genre_id = '' } = req.params;
+    if (genre_id) {
+        const artists = await wp.artista().param('genero_musical', [genre_id]);
+        return res.json({ data: artists });
+    }
+    return res.json({ data: [] });
+});
+
+
+// Execute
 server.listen(PORT, (err) => {
     if (err) throw err;
     console.log(`API is working on PORT: ${PORT} in: ${dev ? 'DEV' : 'PRODUCTION'} mode ... `);

@@ -34,7 +34,7 @@ export class RegistrationForm extends Component<any, any> {
                     <Typography variant="h4" component="h1" gutterBottom>
                         Create new post
                     </Typography>
-                    <Button variant="contained" color="primary" onClick={this.createArtist}>
+                    <Button variant="contained" onClick={this.createArtist}>
                         Create
                     </Button>
                 </Container>

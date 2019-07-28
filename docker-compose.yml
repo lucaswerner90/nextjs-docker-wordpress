@@ -1,7 +1,7 @@
-version: '2'
+version: '3'
 services:
   db:
-    image: mysql:5.6
+    image: ${DB_ENGINE}:${DB_IMAGE_VERSION}
     volumes:
       - ./backend/db/db_data:/var/lib/mysql
       - ./backend/db/init.sql:/docker-entrypoint-initdb.d/init.sql
@@ -14,17 +14,32 @@ services:
     depends_on:
       - db
     image: phpmyadmin/phpmyadmin
-    expose:
-      - 80
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: p4ssw0rd!
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
 
+  frontend:
+    build: ./frontend
+    environment: 
+      - NODE_ENV: ${NODE_ENV}
+      - API_URL: ${API_URL}
+    volumes: 
+      - ./frontend:/usr/src/app
+  
+  api:
+    build: ./backend/api
+    links: 
+      - wordpress
+    volumes:
+      - ./backend/api:/usr/src/app
+    environment: 
+      - NODE_ENV:${NODE_ENV}
 
   wordpress:
     depends_on:
       - phpmyadmin
       - db
+    restart: on-failure
     image: wordpress:latest
     volumes:
       - ./backend/wordpress/wp-content:/var/www/html/wp-content
@@ -37,9 +52,6 @@ services:
         define('WP_ALLOW_REPAIR', true );
         define('WP_HOME','${WORDPRESS_URL}:${NGINX_EXTERNAL_PORT}');
         define('WP_SITEURL','${WORDPRESS_URL}:${NGINX_EXTERNAL_PORT}');
-    expose:
-      - 80
-      - 443
   
   nginx:
     build: ./backend/nginx

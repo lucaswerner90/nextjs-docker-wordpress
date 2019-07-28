@@ -7,13 +7,10 @@
 	- [Installation](#installation)
 	- [URLs](#urls)
 - [Configuration](#configuration)
-	- [NextJS Plugins](#nextjs-plugins)
-		- [Google Analytics](#google-analytics-integration)
-		- [Hotjar](#hotjar-integration)
-- [Running the tests](#running-the-tests)
+- [Running the tests](#tests)
 	- [Frontend testing](#frontend-tests)
 - [Deployment](#deployment)
-- [Built with](#build-with)
+- [Built with](#built-with)
 - [Contributing](#contributing)
 - [Authors](#authors)
 - [License](#license)
@@ -41,29 +38,39 @@ In order to execute this project, you need to install these tools in your comput
 
 This project is mainly composed by two different sections: backend and frontend.
 
-1. Run the `docker-compose.yml` file by using:
+1. Add your customs domains and subdomains to your hosts file
+
+If you in OS X or Linux:
 
 ```sh
-docker-compose up
-```
-This will bring you a full operating system that contains:
-* **WordPress** instance _(with the frontend side disabled)_
-*  **MySQL** database 
-* **phpMyAdmin** service
-
-**NOTE:** _During the first time, it's possible that you can't access WordPress inmediately as the SQL database needs to be created and you can see `MySQL Connection Error: (2002) Connection refused` in your terminal, but just wait for the starting script to finished and you shouldn't see it anymore._
-
-2. Build the client and run the **NextJS server**
-
-```
-cd frontend
-yarn run dev
+sudo vi /etc/hosts
 ```
 
-3. Go to `http://localhost:8080/wp-admin` and setup your WordPress
+And add the following lines (you can change the domain name):
+
+```sh
+127.0.0.1 <your_domain>.com
+127.0.0.1 db.<your_domain>.com
+127.0.0.1 api.<your_domain>.com
+127.0.0.1 admin.<your_domain>.com
+```
+
+This will make all your subdomains accesible from your local machine.
+
+2. Run the `install.js` script:
+
+```sh
+chmod +x install.js
+```
+```sh
+./install.js
+```
+
+
+3. Setup your WordPress, by default it's installed in: `http://admin.<your_domain>.com:5000`
 
 	- Input your language, user and email.
-	- Go to **Settings > Permalinks** and select **Post name** , otherwise the REST API doesn't work.
+	- Go to **Settings > Permalinks** and select **Post name** , otherwise the REST API won't work.
 	- Go to **Plugins**, select all the plugins and click select **Activate** action.
 
 ![WordPress installation](https://media.giphy.com/media/H8L5qihR6yODQ6B4au/giphy.gif)
@@ -71,40 +78,16 @@ yarn run dev
 ### URLs
 
 Once your configuration is up and running you can access to the different services:
-* **WordPress (WP Admin)** - `http://localhost:8000/wp-admin`
-* **phpMyAdmin** - `http://localhost:8081`
-* **NextJS** - `http://localhost:3000` 
+* **WordPress (WP Admin)** 			- `http://admin.<your_domain>.com:5000/`
+* **phpMyAdmin** 					- `http://db.<your_domain>.com:5000`
+* **NextJS** 						- `http://<your_domain>.com:5000` 
+* **API** 							- `http://api.<your_domain>.com:5000` 
 
 ## Configuration
 
-### NextJS Plugins
-#### Google Analytics Integration
-In order to be able to use Google Analytics in your webpage, you can do it by adding your GA code to `frontend/next.config.js`:
+[TODO]
 
-```javascript
-// Change the GA_KEY value
-// ...
-module.exports = withTypescript({
-	env: {
-		GA_KEY:  "UA-xxxxxxxxx-1",
-	}
-});
-```
-
-#### Hotjar Integration
-If you want to use [Hotjar](https://www.hotjar.com/) in your application, you can do it including the Hotjar `SITE_ID` into the `HOTJAR_KEY` variable, inside `frontend/next.config.js`:
-```javascript
-// Change the HOTJAR_KEY value
-// ...
-module.exports = withTypescript({
-	env: {
-		HOTJAR_KEY:  "123131131", 
-	}
-});
-```
-
-
-## Running the tests
+## Tests
 
 ### Frontend tests
 
@@ -159,7 +142,7 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [NextJS](https://nextjs.org) - _used by Netflix, Uber, InVision, Binance, GitHub, Docker or Auth0 among the companies that use this technology._
-* [WordPress](https://wordpress.org/) - _Most famous CMS, actually around 25% of the whole web pages use WordPress to provide content._
+* [WordPress](https://wordpress.org/) - _Most famous CMS, actually around 60% of the whole web pages use WordPress to provide content._
 
 ## Contributing
 
@@ -175,4 +158,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-The main idea of this project is to be able to provide a simple boilerplate setup for new modern projects. The purpose is to provide freelancers a new way to work with WordPress, by using it just as a CMS, so they can focus on develop the application by themselves. 
+The main idea of this project is to be able to provide a simple boilerplate setup for new modern projects. The purpose is to provide freelancers a new way to work with WordPress, by using it just as a headless CMS, so they can focus on develop the application by themselves. 

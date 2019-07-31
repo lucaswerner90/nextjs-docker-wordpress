@@ -30,5 +30,9 @@ export const Index = () => {
     </Layout>
   );
 }
-
+Index.getInitialProps = ({ req }) => {
+  console.log(req.user);
+  console.log(req.isAuthenticated());
+  return {};
+}
 export default Index;

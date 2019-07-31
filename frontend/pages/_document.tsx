@@ -24,6 +24,8 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
+          <div id="fb-root"></div>
+          <script async defer src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v4.0&appId=349851075967056&autoLogAppEvents=1"></script>
           <Main />
           <NextScript />
         </body>

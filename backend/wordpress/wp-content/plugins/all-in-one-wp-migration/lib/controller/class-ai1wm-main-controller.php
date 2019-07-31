@@ -795,7 +795,7 @@ class Ai1wm_Main_Controller {
 					'Your file exceeds the maximum upload size for this site: <strong>%s</strong><br />%s%s',
 					AI1WM_PLUGIN_NAME
 				),
-				esc_html( size_format( wp_max_upload_size() ) ),
+				esc_html( ai1wm_size_format( wp_max_upload_size() ) ),
 				__(
 					'<a href="https://help.servmask.com/2018/10/27/how-to-increase-maximum-upload-file-size-in-wordpress/" target="_blank">How-to: Increase maximum upload file size</a> or ',
 					AI1WM_PLUGIN_NAME

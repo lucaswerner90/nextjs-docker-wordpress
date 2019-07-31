@@ -1,43 +1,12 @@
 const passport = require('passport');
-const uuid = require('uuid');
-const bcrypt = require('bcrypt');
-const LocalStrategy = require('./strategies/LocalStrategy');
 const FacebookStrategy = require('./strategies/FacebookStrategy');
 
-// Global functions for PassportJS
-function checkIsAuthenticated(req, res, next) {
-    if (req.isAuthenticated()) {
-        next();
-    }
-    res.redirect('/login');
-}
-function checkIsNotAuthenticated(req, res, next) {
-    if (req.isAuthenticated()) {
-        return res.redirect(req.url);
-    }
-    next();
-}
+const { checkIsAuthenticated, checkIsNotAuthenticated } = require('./common');
+
 const logOut = (req, res, next) => {
     req.logOut();
     res.status(200).send('Logged out');
 };
-
-
-const registerUser = async (req, res) => {
-    const { email, password } = req.body;
-    const hashedPassword = await bcrypt.hash(password, 10);
-    const user = {
-        email,
-        id: uuid.v4(),
-        password: hashedPassword
-    };
-    if (!global.users) {
-        global.users = [];
-    }
-    global.users.push(user);
-    res.status(200).send(user);
-}
-
 
 function setupPassport(server) {
     // Setup config
@@ -46,25 +15,22 @@ function setupPassport(server) {
 
 
     passport.serializeUser((user, done) => {
-        done(null, user.id);
+        // This is the info that we save inside the session
+        // the idea is that we use the user email as ID so we can then
+        // read that email and get the whole user object back using passport.deserializeUser()
+        done(null, user.email);
     });
 
     passport.deserializeUser((id, done) => {
-        done(null, {id});
+        // Here we need to look for the specific user and return the whole object
+        // in this case we're using the email address as the ID
+        // by doing some wp.users()...
+        console.log('Deserialize user -->', id);
+        done(null, id);
     });
 
-    // Add Passport Strategies
-    passport.use(LocalStrategy.strategy);
-    passport.use(FacebookStrategy.strategy);
-
-    // Local Strategy
-    server.post('/register', checkIsNotAuthenticated, registerUser);
-    server.post('/login', checkIsNotAuthenticated, LocalStrategy.login);
-    server.post('/logout', checkIsAuthenticated, logOut);
-
-
-    server.get('/auth/facebook', FacebookStrategy.login);
-    server.get('/auth/facebook/callback', passport.authenticate('facebook'));
+    // Facebook Strategy
+    FacebookStrategy.setup(passport, server);
 
 }
 

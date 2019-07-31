@@ -19,8 +19,13 @@ services:
 
   frontend:
     build: ./frontend
-    environment: 
+    environment:
+      FACEBOOK_APP_ID: ${FACEBOOK_APP_ID} 
+      FACEBOOK_APP_SECRET: ${FACEBOOK_APP_SECRET} 
       PORT: 80
+      WP_URL: "${WORDPRESS_URL}:${NGINX_EXTERNAL_PORT}"
+      FRONTEND_URL: "${FRONTEND_URL}:${NGINX_EXTERNAL_PORT}"
+      SESSION_SECRET: ${SESSION_SECRET}
       NODE_ENV: ${NODE_ENV}
       API_URL: ${API_URL}
   

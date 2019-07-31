@@ -1,41 +1,69 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Typography, Avatar, Grid } from '@material-ui/core';
+import React from 'react';
+import { Grid, Button, makeStyles, Paper, Avatar, Typography } from '@material-ui/core';
 import Link from 'next/link';
 
-export class Header extends Component<any> {
+const useStyles = makeStyles(_theme => ({
+    root: {
+        width: '100%',
+        height: '80px',
+        marginTop: '0',
+    },
+    paper: {
+        background: '#ffffff05',
+        flexDirection: 'row',
+        padding: '1%',
+        justifyContent: 'flex-end'
+    },
+}));
 
-    showMenuItems = (items = []) => {
-        return items.map(({ url = '', title = '' }) => {
-            return (
-                <Typography variant="body1" align="left" key={url}>
-                    <Link href={url}>
-                        <a>
-                            {title}
-                        </a>
-                    </Link>
-                </Typography>
-            );
-        });
-    }
-    render() {
-        const menuItems = this.props.menu || [];
-        return (
-            <Grid container justify="center" alignItems="center">
-                <Grid item xs={12} sm={12} md={2}>
-                    <Avatar alt="Logo" src={this.props.logo} />
-                </Grid>
-                <Grid item xs={12} sm={12} md={10}>
-                    {menuItems.length > 0 && this.showMenuItems(menuItems)}
-                </Grid>
+export default function Header() {
+    const classes = useStyles({});
+    return (
+        <Grid container justify="center" spacing={0}>
+            <Grid item xs={12}>
+                <Paper className={classes.paper}>
+
+
+
+
+                    <Grid container justify="flex-start" alignItems="center" spacing={2}>
+                        <Grid item>
+                            <Avatar src={'https://source.unsplash.com/Y9MoiZi9Rbg'} />
+                        </Grid>
+                        <Grid item>
+                            <Link href="/">
+                                <Typography variant="h5">
+                                    Your Page Title
+                                </Typography>
+                            </Link>
+                        </Grid>
+                    </Grid>
+
+
+                    <Grid container justify="flex-end" alignItems="center" spacing={2}>
+                        <Grid item>
+                            <Link href="/blog">
+                                <Button color="secondary" variant="text">
+                                    Blog
+                                </Button>
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link href="/login">
+                                <Button color="secondary" variant="text">
+                                    Access
+                                </Button>
+                            </Link>
+                        </Grid>
+                    </Grid>
+
+
+
+
+
+
+                </Paper>
             </Grid>
-        );
-    }
+        </Grid>
+    );
 }
-
-const mapReduxStateToComponentProps = (state) => ({
-    logo: state.siteInfo.logo,
-    menu: state.siteInfo.menus.header
-});
-
-export default connect(mapReduxStateToComponentProps)(Header);

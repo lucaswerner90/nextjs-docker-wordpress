@@ -35,19 +35,19 @@ site.books().genre([ genreId1, genreId2 ])...
 
 module.exports = {
     // Custom Taxonomies
-    "genero_musical": {
-        "path": "/genero_musical/",
-        "params": []
-    },
+    // "genero_musical": {
+    //     "path": "/genero_musical/",
+    //     "params": []
+    // },
     // Custom Post Types
     "artista": {
         "path": "/artista/",
         "params": [
-            "genero_musical"
+            // "genero_musical"
         ]
     },
-    "events": {
-        "path": "/event/",
-        "params": []
-    }
+    // "events": {
+    //     "path": "/event/",
+    //     "params": []
+    // }
 }

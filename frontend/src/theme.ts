@@ -2,25 +2,35 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 // Create a theme instance.
 const theme = createMuiTheme({
+  typography: {
+    h5: {
+      fontWeight: 'lighter'
+    }
+  },
   palette: {
-    type: 'light'
+    primary: {
+      main: '#000'
+    },
+    secondary: {
+      main: '#fff'
+    }
   },
   overrides: {
-    // Style sheet name ⚛️
     MuiButton: {
-      // Name of the rule
-      text: {
-        // Some CSS
-        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-        borderRadius: 3,
-        border: 0,
-        color: 'white',
-        height: 48,
-        padding: '0 30px',
-        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+      root: {
+        padding: '10px 16px',
       },
     },
-  },
+    MuiPaper: {
+      root: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        backgroundColor: '#ffffffbf',
+        padding: '6%'
+      },
+    }
+  }
 });
 
 export default theme;

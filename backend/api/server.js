@@ -13,16 +13,41 @@ const wp = require('./src/wordpressConfig');
 
 // Middlewares
 server.use(express.json());
+// Add headers
+server.use(function (req, res, next) {
 
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', '*');
+
+    // Request methods you wish to allow
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+
+    // Request headers you wish to allow
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    // Set to true if you need the website to include cookies in the requests sent
+    // to the API (e.g. in case you use sessions)
+    res.setHeader('Access-Control-Allow-Credentials', true);
+
+    // Pass to next layer of middleware
+    next();
+});
 
 
 // Routes
-server.get('/settings', async (req, res) => {
+server.get('/artista/:slug', async (req, res) => {
     try {
-        const settings = await wp.settings();
-        return res.send(settings);
+        const artista = await wp.artista().slug(req.params.slug);
+        return res.json({ data: artista });
     } catch (error) {
-        console.error(error);
+        return res.send(error);
+    }
+});
+server.get('/artistas', async (req, res) => {
+    try {
+        const artistas = await wp.artista();
+        return res.json({ data: artistas });
+    } catch (error) {
         return res.send(error);
     }
 });
@@ -31,7 +56,7 @@ server.get('/', async (req, res) => {
         const posts = await wp.posts();
         return res.json({ posts });
     } catch (error) {
-        console.error(error);
+        return res.send(error);
     }
 });
 server.get('/post/:slug', async (req, res) => {
@@ -40,7 +65,6 @@ server.get('/post/:slug', async (req, res) => {
         const data = await wp.posts().slug(slug);
         return res.json({ ...data[0] });
     } catch (error) {
-        console.error(error);
         return res.send(error);
     }
 });
@@ -50,7 +74,6 @@ server.get('/media/:id', async (req, res) => {
         const data = await wp.media().id(id);
         return res.send(data);
     } catch (error) {
-        console.error(error);
         return res.send(error);
     }
 });

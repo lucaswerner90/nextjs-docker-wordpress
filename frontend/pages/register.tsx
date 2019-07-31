@@ -1,45 +1,141 @@
-import React, { Component } from 'react';
-import { withRouter } from 'next/router';
-import Container from '@material-ui/core/Container';
+import React, { useState } from 'react';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Link from '@material-ui/core/Link';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Layout from '../src/components/Layout';
+import { makeStyles } from '@material-ui/core/styles';
+import { Paper } from '@material-ui/core';
+import Router from 'next/router';
 
-import { Button } from '@material-ui/core';
+const useStyles = makeStyles(theme => ({
+    '@global': {
+        body: {
+            backgroundImage: 'url(https://source.unsplash.com/featured/?music)',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            width: '100%',
+            height: '100vh',
+            backgroundPosition: 'center'
+        },
+    },
+    mainContainer: {
+        width: '100%',
+        height: '100vh'
+    },
+    form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing(3),
+    },
+    submit: {
+        margin: theme.spacing(3, 0, 2),
+    },
+}));
 
+export default function SignUp() {
+    const classes = useStyles({});
 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-export class RegistrationForm extends Component<any, any> {
+    const submitForm = async (e) => {
+        e.preventDefault();
+        try {
 
-    createArtist = async () => {
-        const res = await fetch('/api/artist', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                title: 'Random artist',
-                status: 'draft',
-                facebook: 'facebook.com',
-                genero_musical: [9]
-            }),
-        });
-        const data = await res.json();
-        console.log(data);
+            const res = await fetch('/register', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, password }),
+            });
+            if (res.ok) {
+                return Router.push('/login');
+            }
+            console.error('Can\'t register user');
+        } catch (error) {
+            console.error(error);
+        }
     }
-    render() {
-        return (
-            <Layout>
-                <Container maxWidth="sm">
-                    <Typography variant="h4" component="h1" gutterBottom>
-                        Create new post
-                    </Typography>
-                    <Button variant="contained" onClick={this.createArtist}>
-                        Create
-                    </Button>
-                </Container>
-            </Layout>
-        )
-    }
+    return (
+        <Grid container direction="row" justify="center" alignItems="center" className={classes.mainContainer}>
+            <Grid item xs={12} sm={8} md={4}>
+                <Paper>
+                    <Typography component="h1" variant="h5">
+                        Sign up
+                        </Typography>
+                    <form className={classes.form} noValidate>
+                        <Grid container spacing={2}>
+                            <Grid item xs={12} sm={12}>
+                                <TextField
+                                    autoComplete="name"
+                                    name="name"
+                                    variant="outlined"
+                                    required
+                                    fullWidth
+                                    id="name"
+                                    label="Name"
+                                    autoFocus
+                                    onChange={e => setName(e.target.value)}
+                                />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <TextField
+                                    value={email}
+                                    variant="outlined"
+                                    required
+                                    fullWidth
+                                    id="email"
+                                    label="Email Address"
+                                    name="email"
+                                    autoComplete="email"
+                                    onChange={e => setEmail(e.target.value)}
+                                />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <TextField
+                                    variant="outlined"
+                                    required
+                                    fullWidth
+                                    name="password"
+                                    label="Password"
+                                    type="password"
+                                    id="password"
+                                    autoComplete="current-password"
+                                    onChange={e => setPassword(e.target.value)}
+                                />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <FormControlLabel
+                                    control={<Checkbox value="allowExtraEmails" color="primary" />}
+                                    label="I want to receive inspiration, marketing promotions and updates via email."
+                                />
+                            </Grid>
+                        </Grid>
+                        <Button
+                            type="submit"
+                            fullWidth
+                            variant="contained"
+                            color="primary"
+                            className={classes.submit}
+                            onClick={submitForm}
+                        >
+                            Sign Up
+                        </Button>
+                        <Grid container justify="flex-end">
+                            <Grid item>
+                                <Link href="/login" variant="body2">
+                                    Already have an account? Sign in
+                                </Link>
+                            </Grid>
+                        </Grid>
+                    </form>
+                </Paper>
+            </Grid>
+        </Grid>
+    );
 }
-export default withRouter(RegistrationForm);

@@ -9,7 +9,30 @@ import { Provider } from 'react-redux';
 import { makeStore } from '../src/redux/store';
 import withRedux from "next-redux-wrapper";
 
+import fetch from 'isomorphic-unfetch';
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
+const { API } = publicRuntimeConfig;
+
 class MyApp extends App<any, any> {
+  static async getInitialProps({ Component, ctx }) {
+    const res = await fetch(`${API}/generalsettings`);
+    const generalSiteInfo = await res.json();
+
+    let componentProps = {};
+
+    if (Component.getInitialProps) {
+      componentProps = await Component.getInitialProps(ctx);
+    }
+
+    return {
+      pageProps: {
+        ...componentProps,
+        siteInfo: generalSiteInfo.error ? {} : generalSiteInfo[0],
+        user: ctx.req && ctx.req.user ? ctx.req.user : {}
+      }
+    };
+  }
   componentDidMount() {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -20,7 +43,6 @@ class MyApp extends App<any, any> {
 
   render() {
     const { Component, pageProps, store } = this.props;
-
     return (
       <Provider store={store}>
         <Container>

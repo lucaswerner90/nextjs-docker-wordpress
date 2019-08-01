@@ -24,8 +24,6 @@ function setupPassport(server) {
     passport.deserializeUser((obj, done) => {
         // Here we need to look for the specific user and return the whole object
         // in this case we're using the email address as the ID
-        // by doing some wp.users()...
-        console.log('Deserialize user -->', obj);
         done(null, obj);
     });
 

@@ -17,4 +17,5 @@ yarn.lock
 package-lock.json
 
 # Wordpress
-backend/db/db_data/
+backend/db
+backend/strapi

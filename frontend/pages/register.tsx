@@ -39,7 +39,6 @@ export default function SignUp() {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
 
     const submitForm = async (e) => {
         e.preventDefault();
@@ -51,7 +50,7 @@ export default function SignUp() {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ name, email, password }),
+                body: JSON.stringify({ name, email }),
             });
             if (res.ok) {
                 return Router.push('/login');
@@ -97,19 +96,6 @@ export default function SignUp() {
                                 />
                             </Grid>
                             <Grid item xs={12}>
-                                <TextField
-                                    variant="outlined"
-                                    required
-                                    fullWidth
-                                    name="password"
-                                    label="Password"
-                                    type="password"
-                                    id="password"
-                                    autoComplete="current-password"
-                                    onChange={e => setPassword(e.target.value)}
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
                                 <FormControlLabel
                                     control={<Checkbox value="allowExtraEmails" color="primary" />}
                                     label="I want to receive inspiration, marketing promotions and updates via email."
@@ -124,7 +110,7 @@ export default function SignUp() {
                             className={classes.submit}
                             onClick={submitForm}
                         >
-                            Sign Up
+                            Artist Sign Up
                         </Button>
                         <Grid container justify="flex-end">
                             <Grid item>

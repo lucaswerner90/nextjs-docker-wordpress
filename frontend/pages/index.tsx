@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles, Grid } from '@material-ui/core';
 import Layout from '../src/components/Layout';
+import { UPDATE_USER_INFO } from '../src/redux/actions/types';
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -30,9 +31,14 @@ export const Index = () => {
     </Layout>
   );
 }
-Index.getInitialProps = ({ req }) => {
-  console.log(req.user);
-  console.log(req.isAuthenticated());
+Index.getInitialProps = ({ req, store }) => {
+  if (req.user) {
+    store.dispatch({
+      type: UPDATE_USER_INFO,
+      payload: req.user,
+    });
+    console.log('Saving user: ', req.user);
+  }
   return {};
 }
 export default Index;

@@ -3,15 +3,7 @@ import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 
 export const initialState = {
-    siteInfo: {
-        name: '',
-        description: '',
-        logo: '',
-        menus: {
-            header: []
-        },
-    },
-    posts: []
+    user: {}
 };
 
 const enhancers = compose(

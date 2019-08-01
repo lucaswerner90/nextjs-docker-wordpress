@@ -18,19 +18,21 @@ function setupPassport(server) {
         // This is the info that we save inside the session
         // the idea is that we use the user email as ID so we can then
         // read that email and get the whole user object back using passport.deserializeUser()
-        done(null, user.email);
+        done(null, user);
     });
 
-    passport.deserializeUser((id, done) => {
+    passport.deserializeUser((obj, done) => {
         // Here we need to look for the specific user and return the whole object
         // in this case we're using the email address as the ID
         // by doing some wp.users()...
-        console.log('Deserialize user -->', id);
-        done(null, id);
+        console.log('Deserialize user -->', obj);
+        done(null, obj);
     });
 
     // Facebook Strategy
     FacebookStrategy.setup(passport, server);
+
+    server.get('/logout', logOut);
 
 }
 

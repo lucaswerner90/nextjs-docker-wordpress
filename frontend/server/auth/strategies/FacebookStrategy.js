@@ -1,6 +1,5 @@
 const FacebookStrategy = require('passport-facebook').Strategy;
 const { checkIsNotAuthenticated } = require('../common');
-const wp = require('../../wordpress');
 
 // This function receives the accessToken and the profile of the user
 // So if the user is not registered in the DB, we create this user,
@@ -21,7 +20,7 @@ const processUserProfile = async (accessToken, refreshToken, profile, done) => {
         id,
         gender,
         name: displayName,
-        email: emails.length > 0 ? emails[0] : '',
+        email: emails.length > 0 ? emails[0].value : '',
         profilePhoto: photos.length > 0 ? photos[0] : '',
     }
     return done(null, newUser);
@@ -52,10 +51,24 @@ const setup = (passport, server) => {
     server.get('/auth/facebook', checkIsNotAuthenticated, passport.authenticate('facebook', {
         scope: ['email']
     }));
-    server.get('/auth/facebook/callback', passport.authenticate('facebook', {
-        successRedirect: '/',
-        failureRedirect: '/login'
-    }));
+    server.get('/auth/facebook/callback', (req, res, next) => {
+        passport.authenticate('facebook', (err, user, info) => {
+            if (err) { return next(err); }
+            if (!user) { return res.redirect('/login') }
+            req.logIn(user, (err) => {
+                if (err) {
+                    return next(err);
+                }
+                if (req.session.returnTo) {
+                    const returnURL = req.session.returnTo;
+                    delete req.session.returnTo;
+                    return res.redirect(returnURL);
+                }
+                return res.redirect('/');
+
+            });
+        })(req, res, next)
+    });
 }
 
 module.exports = {

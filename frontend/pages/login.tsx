@@ -14,7 +14,6 @@ export class Login extends Component<any, any> {
             <React.Fragment>
                 <Grid container component="main" alignContent="center" justify="center" className={classes.root}>
                     <Grid item xs={12} sm={8} md={5} component={Paper} square>
-
                         <Typography component="h1" variant="h5" style={{ marginBottom: '10px' }}>
                             Login
                         </Typography>

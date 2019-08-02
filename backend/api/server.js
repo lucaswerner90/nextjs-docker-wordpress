@@ -10,6 +10,10 @@ const dev = process.env.NODE_ENV == 'dev' || process.env.NODE_ENV == 'developmen
 // Wordpress API Configuration
 const wp = require('./src/wordpressConfig');
 
+// IMPORTANT
+// WP REST Filter plugin allow us to filter by meta value, so if you want to filter by email, you will need to do this after
+// activate the plugin
+// http://admin.example.com:5000/wp-json/wp/v2/usuario?filter[meta_key]=email&filter[meta_value]=wernerlucas12@gmail.com
 
 // Middlewares
 server.use(express.json());

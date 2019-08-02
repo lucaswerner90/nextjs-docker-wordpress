@@ -10,6 +10,20 @@ import { makeStore } from '../src/redux/store';
 import withRedux from "next-redux-wrapper";
 
 class MyApp extends App<any, any> {
+  static async getInitialProps({ Component, ctx }) {
+    let componentProps = {};
+
+    if (Component.getInitialProps) {
+      componentProps = await Component.getInitialProps(ctx);
+    }
+
+    return {
+      pageProps: {
+        ...componentProps,
+        user: ctx.req && ctx.req.user ? ctx.req.user : {}
+      }
+    };
+  }
   componentDidMount() {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');

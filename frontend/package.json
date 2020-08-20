@@ -6,7 +6,7 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "latest",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "clsx": "latest",
     "compression": "^1.7.4",
     "express": "^4.17.1",
